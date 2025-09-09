@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect, useRef } from 'react'
 
 interface EmailSignupProps {
   variant?: 'hero' | 'cta'
@@ -10,6 +10,17 @@ export default function EmailSignup({ variant = 'hero' }: EmailSignupProps) {
   const [email, setEmail] = useState('')
   const [isLoading, setIsLoading] = useState(false)
   const [message, setMessage] = useState<{ text: string; type: 'success' | 'error' | 'info' } | null>(null)
+  const inputRef = useRef<HTMLInputElement | null>(null)
+
+  // Desktop: autofocus and select the input so it's immediately ready to type
+  useEffect(() => {
+    if (typeof window === 'undefined') return
+    const isDesktop = window.innerWidth >= 1024
+    if (isDesktop && inputRef.current) {
+      inputRef.current.focus()
+      inputRef.current.select()
+    }
+  }, [])
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
@@ -65,13 +76,22 @@ export default function EmailSignup({ variant = 'hero' }: EmailSignupProps) {
   return (
     <div className={`w-full ${isHero ? 'max-w-lg' : 'max-w-md'} mx-auto lg:mx-0`}>
       <form onSubmit={handleSubmit} className="space-y-4">
-        <div className="flex flex-col sm:flex-row gap-3">
+        <div className="flex flex-col gap-3">
           <input
             type="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             placeholder="Enter your email address"
             required
+            ref={inputRef}
+            onFocus={() => {
+              if (typeof window !== 'undefined' && window.innerWidth < 1024 && inputRef.current) {
+                inputRef.current.scrollIntoView({ behavior: 'smooth', block: 'center' })
+              }
+            }}
+            inputMode="email"
+            autoComplete="email"
+            autoCapitalize="none"
             className={`flex-1 ${isHero ? 'px-5 py-4 text-lg' : 'px-4 py-3 text-base'} rounded-xl border-2 transition-all duration-200 ${
               isDark 
                 ? 'bg-white text-gray-900 border-gray-300 focus:border-primary-500' 
@@ -87,13 +107,9 @@ export default function EmailSignup({ variant = 'hero' }: EmailSignupProps) {
                 : 'bg-gradient-to-r from-primary-600 to-green-500 hover:from-primary-700 hover:to-green-600 transform hover:scale-105 hover:shadow-xl'
             } text-white focus:outline-none focus:ring-4 focus:ring-primary-500/20 shadow-lg`}
           >
-            {isLoading ? 'Subscribing...' : 'Get Sunday Cents'}
+            {isLoading ? 'Subscribing...' : 'Subscribe'}
           </button>
         </div>
-        
-        <p className={`${isHero ? 'text-sm' : 'text-xs'} text-center ${isDark ? 'text-gray-300' : 'text-gray-500'}`}>
-          📧 Free forever. No spam.
-        </p>
         
         {message && (
           <div 

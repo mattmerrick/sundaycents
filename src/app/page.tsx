@@ -3,9 +3,6 @@
 import { useState } from 'react'
 import Header from '@/components/Header'
 import Hero from '@/components/Hero'
-import ValueProposition from '@/components/ValueProposition'
-import SocialProof from '@/components/SocialProof'
-import CTA from '@/components/CTA'
 import Footer from '@/components/Footer'
 
 export default function Home() {
@@ -13,8 +10,7 @@ export default function Home() {
     <main className="min-h-screen bg-white">
       <Header />
       <Hero />
-      <ValueProposition />
-      <CTA />
+      {/* Minimal above-the-fold page: just hero and footer */}
       <Footer />
     </main>
   )
