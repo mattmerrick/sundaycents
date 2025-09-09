@@ -43,6 +43,44 @@ export async function POST(request: NextRequest) {
     const data = await response.json()
 
     if (response.ok) {
+      // Fire server-side tracking to DataFast (best-effort)
+      const dfApiKey = process.env.DATAFAST_API_KEY
+      const dfEndpoint = process.env.DATAFAST_API_ENDPOINT || 'https://datafa.st/api/goals'
+      if (dfApiKey) {
+        const url = request.nextUrl
+        const utm_source = url.searchParams.get('utm_source') || ''
+        const utm_medium = url.searchParams.get('utm_medium') || ''
+        const utm_campaign = url.searchParams.get('utm_campaign') || ''
+        const referrer = request.headers.get('referer') || ''
+        const user_agent = request.headers.get('user-agent') || ''
+        const ip =
+          (request.headers.get('x-forwarded-for') || '').split(',')[0]?.trim() ||
+          (request as any).ip ||
+          ''
+
+        // Do not block response if DataFast is unavailable
+        fetch(dfEndpoint, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            Authorization: `Bearer ${dfApiKey}`,
+          },
+          body: JSON.stringify({
+            goal_name: 'newsletter_subscribed',
+            properties: {
+              email,
+              utm_source,
+              utm_medium,
+              utm_campaign,
+              referrer,
+              page: url.pathname,
+              user_agent,
+              ip,
+            },
+          }),
+        }).catch(() => {})
+      }
+
       return NextResponse.json(
         { message: 'Successfully subscribed!' },
         { status: 200 }

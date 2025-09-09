@@ -29,6 +29,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <script id="datafast-queue">
+          {`
+            window.datafast = window.datafast || function() {
+              window.datafast.q = window.datafast.q || [];
+              window.datafast.q.push(arguments);
+            };
+          `}
+        </script>
         <script
           defer
           data-website-id="68bfba1e9857cbb4de137228"

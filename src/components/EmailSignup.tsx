@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useEffect, useRef } from 'react'
+import { useRouter } from 'next/navigation'
 
 interface EmailSignupProps {
   variant?: 'hero' | 'cta'
@@ -11,6 +12,7 @@ export default function EmailSignup({ variant = 'hero' }: EmailSignupProps) {
   const [isLoading, setIsLoading] = useState(false)
   const [message, setMessage] = useState<{ text: string; type: 'success' | 'error' | 'info' } | null>(null)
   const inputRef = useRef<HTMLInputElement | null>(null)
+  const router = useRouter()
 
   // Desktop: autofocus and select the input so it's immediately ready to type
   useEffect(() => {
@@ -45,7 +47,6 @@ export default function EmailSignup({ variant = 'hero' }: EmailSignupProps) {
       const data = await response.json()
 
       if (response.ok) {
-        setMessage({ text: '🎉 Welcome to Sunday Cents! Check your email for confirmation.', type: 'success' })
         setEmail('')
         
         // Track successful signup
@@ -55,6 +56,27 @@ export default function EmailSignup({ variant = 'hero' }: EmailSignupProps) {
             event_label: 'sunday_cents'
           })
         }
+
+        // DataFast client-side goal: newsletter_subscribed with source details
+        if (typeof window !== 'undefined' && (window as any).datafast) {
+          try {
+            const url = new URL(window.location.href)
+            const utm_source = url.searchParams.get('utm_source') || ''
+            const utm_medium = url.searchParams.get('utm_medium') || ''
+            const utm_campaign = url.searchParams.get('utm_campaign') || ''
+            const referrer = document.referrer || ''
+            ;(window as any).datafast('newsletter_subscribed', {
+              utm_source,
+              utm_medium,
+              utm_campaign,
+              referrer,
+              page: window.location.pathname,
+            })
+          } catch {}
+        }
+
+        // Redirect to thank-you page
+        router.push('/thank-you')
       } else {
         if (data.error === 'MEMBER_EXISTS_WITH_EMAIL_ADDRESS') {
           setMessage({ text: 'You\'re already subscribed! Check your email for the latest issue.', type: 'info' })
