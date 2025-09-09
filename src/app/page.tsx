@@ -7,7 +7,7 @@ import Footer from '@/components/Footer'
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen bg-white pb-footer">
       <Header />
       <Hero />
       {/* Minimal above-the-fold page: just hero and footer */}

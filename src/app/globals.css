@@ -8,6 +8,11 @@ body {
   font-family: 'Inter', sans-serif;
 }
 
+/* Prevent fixed footer from overlapping page content */
+.pb-footer {
+  padding-bottom: 80px;
+}
+
 @layer utilities {
   .animate-float {
     animation: float 3s ease-in-out infinite;

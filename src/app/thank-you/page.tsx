@@ -14,7 +14,7 @@ export default function ThankYouPage() {
   }
 
   return (
-    <main className="min-h-screen bg-white flex flex-col">
+    <main className="min-h-screen bg-white flex flex-col pb-footer">
       <Header />
       <section className="flex-1 flex items-center">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
