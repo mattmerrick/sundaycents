@@ -11,10 +11,10 @@ export default function Hero() {
           Stay Ahead of the Money Game in Just 5 Minutes
           </h1>
           <p className="text-base sm:text-lg text-gray-600 mb-6">
-          The week's top 10 insights on wealth, investing, and financial freedom, delivered every Sunday
+          A weekly roundup of the 10 most important things you need to know about wealth, investing, and financial freedom
           </p>
           <EmailSignup />
-          <p className="text-sm text-gray-500 mt-3">Become a better investor</p>
+         
         </div>
       </div>
     </section>
