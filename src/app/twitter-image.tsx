@@ -26,7 +26,7 @@ export default function Image() {
           fontFamily: 'Inter, Arial, sans-serif',
         }}
       >
-        <div>Sunday Cents</div>
+        <div>TLDR Money</div>
       </div>
     ),
     { ...size }

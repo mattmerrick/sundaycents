@@ -5,19 +5,19 @@ import './globals.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Sunday Cents - Wealth Building Newsletter for Go-Getters',
-  description: 'A newsletter for go-getters ready to grow wealth, build freedom, and live life on their own terms. Ten insights delivered every Sunday.',
-  keywords: 'newsletter, wealth building, financial freedom, investing, entrepreneurship',
-  authors: [{ name: 'Sunday Cents' }],
+  title: 'TLDR Money - Get Smarter About Money in 5 Minutes',
+  description: 'A Byte sized daily money newsletter. Get smarter about money in 5 minutes.',
+  keywords: 'TLDR Money, financial news, market summaries, personal finance, business news, policy updates, daily newsletter',
+  authors: [{ name: 'TLDR Money' }],
   openGraph: {
-    title: 'Sunday Cents - Wealth Building Newsletter',
-    description: 'Ten actionable insights delivered every Sunday for go-getters ready to build wealth.',
+    title: 'TLDR Money - Get Smarter About Money in 5 Minutes',
+    description: 'A Byte sized daily money newsletter.',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Sunday Cents - Wealth Building Newsletter',
-    description: 'Ten actionable insights delivered every Sunday for go-getters ready to build wealth.',
+    title: 'TLDR Money - Get Smarter About Money in 5 Minutes',
+    description: 'A Byte sized daily money newsletter.',
   },
 }
 
