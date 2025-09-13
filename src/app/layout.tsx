@@ -13,11 +13,20 @@ export const metadata: Metadata = {
     title: 'TLDR Money - Get Smarter About Money in 5 Minutes',
     description: 'A Byte sized daily money newsletter.',
     type: 'website',
+    images: [
+      {
+        url: '/TLDR.png',
+        width: 1200,
+        height: 630,
+        alt: 'TLDR Money Logo',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'TLDR Money - Get Smarter About Money in 5 Minutes',
     description: 'A Byte sized daily money newsletter.',
+    images: ['/TLDR.png'],
   },
 }
 
