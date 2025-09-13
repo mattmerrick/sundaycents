@@ -40,7 +40,7 @@ export default function RootLayout({
         <script
           defer
           data-website-id="68bfba1e9857cbb4de137228"
-          data-domain="sundaycents.com"
+          data-domain="tldrmoney.org"
           src="https://datafa.st/js/script.js">
         </script>
       </head>
