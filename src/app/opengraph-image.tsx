@@ -19,26 +19,14 @@ export default async function Image() {
 
   return new ImageResponse(
     (
-      <div
+      <img
+        src={imageDataUrl}
+        alt="TLDR Money Logo"
         style={{
           width: '100%',
           height: '100%',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-          background: '#ffffff',
         }}
-      >
-        <img
-          src={imageDataUrl}
-          alt="TLDR Money Logo"
-          style={{
-            maxWidth: '100%',
-            maxHeight: '100%',
-            objectFit: 'contain',
-          }}
-        />
-      </div>
+      />
     ),
     { 
       ...size,
