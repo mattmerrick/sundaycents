@@ -1,6 +1,4 @@
 import { ImageResponse } from 'next/og'
-import fs from 'fs'
-import path from 'path'
 
 export const size = {
   width: 1200,
@@ -10,32 +8,16 @@ export const size = {
 export const contentType = 'image/png'
 
 export default async function Image() {
-  // Read the TLDR.png file from the public directory
-  const imagePath = path.join(process.cwd(), 'public', 'TLDR.png')
-  const imageBuffer = fs.readFileSync(imagePath)
-
   return new ImageResponse(
     (
-      <div
+      <img
+        src="/TLDR.png"
+        alt="TLDR Money Logo"
         style={{
           width: '100%',
           height: '100%',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-          background: '#ffffff',
         }}
-      >
-        <img
-          src={imageBuffer}
-          alt="TLDR Money Logo"
-          style={{
-            maxWidth: '100%',
-            maxHeight: '100%',
-            objectFit: 'contain',
-          }}
-        />
-      </div>
+      />
     ),
     { 
       ...size,
