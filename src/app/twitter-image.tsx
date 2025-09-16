@@ -1,6 +1,4 @@
 import { ImageResponse } from 'next/og'
-import fs from 'fs'
-import path from 'path'
 
 export const size = {
   width: 1200,
@@ -10,20 +8,63 @@ export const size = {
 export const contentType = 'image/png'
 
 export default async function Image() {
-  const imagePath = path.join(process.cwd(), 'public', 'TLDR.png')
-  const imageBuffer = fs.readFileSync(imagePath)
-  const imageDataUrl = `data:image/png;base64,${imageBuffer.toString('base64')}`
-
   return new ImageResponse(
     (
-      <img
-        src={imageDataUrl}
-        alt="TLDR Money Logo"
+      <div
         style={{
+          background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
           width: '100%',
           height: '100%',
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+          justifyContent: 'center',
+          fontFamily: 'system-ui, sans-serif',
         }}
-      />
+      >
+        <div
+          style={{
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            justifyContent: 'center',
+            textAlign: 'center',
+            padding: '40px',
+          }}
+        >
+          <h1
+            style={{
+              fontSize: '64px',
+              fontWeight: 'bold',
+              color: 'white',
+              margin: '0 0 20px 0',
+              textShadow: '2px 2px 4px rgba(0,0,0,0.3)',
+            }}
+          >
+            Morning Markets
+          </h1>
+          <p
+            style={{
+              fontSize: '28px',
+              color: 'rgba(255,255,255,0.9)',
+              margin: '0 0 10px 0',
+              fontWeight: '500',
+            }}
+          >
+            Markets made simple — in 5 minutes a day
+          </p>
+          <p
+            style={{
+              fontSize: '20px',
+              color: 'rgba(255,255,255,0.8)',
+              margin: '0',
+              fontWeight: '400',
+            }}
+          >
+            Daily insights on stocks, investing, and what's moving the market
+          </p>
+        </div>
+      </div>
     ),
     { 
       ...size,
@@ -33,5 +74,3 @@ export default async function Image() {
     }
   )
 }
-
-

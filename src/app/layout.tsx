@@ -5,28 +5,34 @@ import './globals.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'TLDR Money - Get Smarter About Money in 5 Minutes',
-  description: 'A Byte sized daily money newsletter. Get smarter about money in 5 minutes.',
-  keywords: 'TLDR Money, financial news, market summaries, personal finance, business news, policy updates, daily newsletter',
-  authors: [{ name: 'TLDR Money' }],
+  title: 'Morning Markets - Markets Made Simple in 5 Minutes',
+  description: 'Markets made simple — in 5 minutes a day. Daily insights on stocks, investing, and what\'s moving the market.',
+  keywords: 'Morning Markets, financial news, market summaries, personal finance, business news, policy updates, daily newsletter',
+  authors: [{ name: 'Morning Markets' }],
+  creator: 'Morning Markets',
+  publisher: 'Morning Markets',
+  robots: 'index, follow',
+  viewport: 'width=device-width, initial-scale=1',
   openGraph: {
-    title: 'TLDR Money - Get Smarter About Money in 5 Minutes',
-    description: 'A Byte sized daily money newsletter.',
+    title: 'Morning Markets - Markets Made Simple in 5 Minutes',
+    description: 'Markets made simple — in 5 minutes a day. Daily insights on stocks, investing, and what\'s moving the market.',
     type: 'website',
+    siteName: 'Morning Markets',
+    url: 'https://tldrmoney.org',
     images: [
       {
-        url: '/TLDR.png',
+        url: '/opengraph-image',
         width: 1200,
         height: 630,
-        alt: 'TLDR Money Logo',
+        alt: 'Morning Markets Logo',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'TLDR Money - Get Smarter About Money in 5 Minutes',
-    description: 'A Byte sized daily money newsletter.',
-    images: ['/TLDR.png'],
+    title: 'Morning Markets - Markets Made Simple in 5 Minutes',
+    description: 'Markets made simple — in 5 minutes a day. Daily insights on stocks, investing, and what\'s moving the market.',
+    images: ['/twitter-image'],
   },
 }
 
