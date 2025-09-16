@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     description: 'Markets made simple — in 5 minutes a day. Daily insights on stocks, investing, and what\'s moving the market.',
     type: 'website',
     siteName: 'Morning Markets',
-    url: 'https://tldrmoney.org',
+    url: 'https://morningmarkets.net',
     images: [
       {
         url: '/opengraph-image',
@@ -55,7 +55,7 @@ export default function RootLayout({
         <script
           defer
           data-website-id="68bfba1e9857cbb4de137228"
-          data-domain="tldrmoney.org"
+          data-domain="morningmarkets.net"
           src="https://datafa.st/js/script.js">
         </script>
       </head>

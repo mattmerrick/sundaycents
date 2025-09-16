@@ -10,7 +10,6 @@ export default function Home() {
     <main className="min-h-screen bg-white pb-footer">
       <Header />
       <Hero />
-      {/* Minimal above-the-fold page: just hero and footer */}
       <Footer />
     </main>
   )

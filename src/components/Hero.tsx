@@ -1,5 +1,6 @@
 'use client'
 
+import Link from 'next/link'
 import EmailSignup from './EmailSignup'
 
 export default function Hero() {
@@ -15,6 +16,9 @@ export default function Hero() {
             Daily insights on stocks, investing, and what's moving the market.
           </p>
           <EmailSignup />
+          <p className="text-sm text-gray-500 mt-4">
+            Join 32 readers for <Link href="/latest-email" className="text-blue-600 hover:text-blue-800 underline">one daily email</Link>
+          </p>
         </div>
       </div>
     </section>
