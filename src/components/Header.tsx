@@ -26,7 +26,7 @@ export default function Header() {
         <div className="flex justify-center items-center h-12">
           <div className="flex-shrink-0">
             <h1 className="text-xl font-bold text-primary-600 tracking-tight">
-              Morning Markets
+              Finly Bot
             </h1>
           </div>
         </div>

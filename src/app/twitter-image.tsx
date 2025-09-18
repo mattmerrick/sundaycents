@@ -41,7 +41,7 @@ export default async function Image() {
               textShadow: '2px 2px 4px rgba(0,0,0,0.3)',
             }}
           >
-            Morning Markets
+            Finly Bot
           </h1>
           <p
             style={{
@@ -51,7 +51,7 @@ export default async function Image() {
               fontWeight: '500',
             }}
           >
-            Markets made simple — in 5 minutes a day
+            Your Complete Financial Content Feed
           </p>
           <p
             style={{
@@ -61,7 +61,7 @@ export default async function Image() {
               fontWeight: '400',
             }}
           >
-            Daily insights on stocks, investing, and what's moving the market
+            Real-time monitoring: Insider trading, crypto, stocks & news
           </p>
         </div>
       </div>

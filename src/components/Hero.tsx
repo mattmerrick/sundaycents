@@ -1,23 +1,16 @@
 'use client'
 
-import Link from 'next/link'
-import EmailSignup from './EmailSignup'
-
 export default function Hero() {
   return (
     <section className="relative bg-white min-h-[80vh] flex items-center">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <div className="text-left lg:max-w-3xl">
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-gray-900 leading-tight">
-            Markets made simple in 5 minutes a day
+            Finly Bot
           </h1>
           
           <p className="text-base sm:text-lg text-gray-600 mb-6">
-            Daily insights on stocks, investing, and what's moving the market.
-          </p>
-          <EmailSignup />
-          <p className="text-sm text-gray-500 mt-4">
-            Join 32 readers for <Link href="/latest-email" className="text-blue-600 hover:text-blue-800 underline">one daily email</Link>
+            Real-time financial monitoring: Insider trading, crypto markets, stock movements, and financial news.
           </p>
         </div>
       </div>
