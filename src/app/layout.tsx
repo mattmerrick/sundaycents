@@ -1,8 +1,8 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Playfair_Display } from 'next/font/google'
 import './globals.css'
 
-const inter = Inter({ subsets: ['latin'] })
+const playfair = Playfair_Display({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Morning Markets - Markets Made Simple in 5 Minutes',
@@ -59,7 +59,7 @@ export default function RootLayout({
           src="https://datafa.st/js/script.js">
         </script>
       </head>
-      <body className={inter.className}>{children}</body>
+      <body className={playfair.className}>{children}</body>
     </html>
   )
 }

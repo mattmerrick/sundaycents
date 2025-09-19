@@ -41,27 +41,17 @@ export default async function Image() {
               textShadow: '2px 2px 4px rgba(0,0,0,0.3)',
             }}
           >
-            Finly Bot
+            Matt Merrick
           </h1>
           <p
             style={{
               fontSize: '32px',
               color: 'rgba(255,255,255,0.9)',
-              margin: '0 0 10px 0',
+              margin: '0',
               fontWeight: '500',
             }}
           >
-            Your Complete Financial Content Feed
-          </p>
-          <p
-            style={{
-              fontSize: '24px',
-              color: 'rgba(255,255,255,0.8)',
-              margin: '0',
-              fontWeight: '400',
-            }}
-          >
-            Real-time monitoring: Insider trading, crypto, stocks & news
+            A daily newsletter
           </p>
         </div>
       </div>
