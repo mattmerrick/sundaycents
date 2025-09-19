@@ -16,7 +16,6 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    url: 'https://www.mattmerrick.com/',
     title: 'Matt Merrick',
     description: 'A daily newsletter',
     images: ['/opengraph.jpg'],
