@@ -57,7 +57,7 @@ export default function EmailSignup({ variant = 'hero' }: EmailSignupProps) {
           })
         }
 
-        // DataFast client-side goal: newsletter_subscribed with source details
+        // DataFast client-side goal: newsletter_sub with source details
         if (typeof window !== 'undefined' && (window as any).datafast) {
           try {
             const url = new URL(window.location.href)
@@ -65,7 +65,7 @@ export default function EmailSignup({ variant = 'hero' }: EmailSignupProps) {
             const utm_medium = url.searchParams.get('utm_medium') || ''
             const utm_campaign = url.searchParams.get('utm_campaign') || ''
             const referrer = document.referrer || ''
-            ;(window as any).datafast('newsletter_subscribed', {
+            ;(window as any).datafast('newsletter_sub', {
               utm_source,
               utm_medium,
               utm_campaign,

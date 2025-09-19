@@ -5,34 +5,34 @@ import './globals.css'
 const playfair = Playfair_Display({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Morning Markets - Markets Made Simple in 5 Minutes',
-  description: 'Markets made simple — in 5 minutes a day. Daily insights on stocks, investing, and what\'s moving the market.',
-  keywords: 'Morning Markets, financial news, market summaries, personal finance, business news, policy updates, daily newsletter',
-  authors: [{ name: 'Morning Markets' }],
-  creator: 'Morning Markets',
-  publisher: 'Morning Markets',
+  title: 'Matt Merrick - Writing a newsletter daily',
+  description: 'Matt Merrick - Writing a newsletter daily',
+  keywords: 'Matt Merrick, newsletter, daily',
+  authors: [{ name: 'Matt Merrick' }],
+  creator: 'Matt Merrick',
+  publisher: 'Matt Merrick',
   robots: 'index, follow',
   viewport: 'width=device-width, initial-scale=1',
   openGraph: {
-    title: 'Morning Markets - Markets Made Simple in 5 Minutes',
-    description: 'Markets made simple — in 5 minutes a day. Daily insights on stocks, investing, and what\'s moving the market.',
+    title: 'Matt Merrick - Writing a newsletter daily',
+    description: 'Matt Merrick - Writing a newsletter daily',
     type: 'website',
-    siteName: 'Morning Markets',
+    siteName: 'Matt Merrick',
     url: 'https://morningmarkets.net',
     images: [
       {
-        url: '/opengraph-image',
+        url: '/opengraph.jpg',
         width: 1200,
         height: 630,
-        alt: 'Morning Markets Logo',
+        alt: 'Matt Merrick',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Morning Markets - Markets Made Simple in 5 Minutes',
-    description: 'Markets made simple — in 5 minutes a day. Daily insights on stocks, investing, and what\'s moving the market.',
-    images: ['/twitter-image'],
+    title: 'Matt Merrick - Writing a newsletter daily',
+    description: 'Matt Merrick - Writing a newsletter daily',
+    images: ['/opengraph.jpg'],
   },
 }
 
@@ -55,7 +55,7 @@ export default function RootLayout({
         <script
           defer
           data-website-id="68bfba1e9857cbb4de137228"
-          data-domain="morningmarkets.net"
+          data-domain="mattmerrick.com"
           src="https://datafa.st/js/script.js">
         </script>
       </head>
