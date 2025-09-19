@@ -5,33 +5,20 @@ import './globals.css'
 const playfair = Playfair_Display({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Matt Merrick - Writing a newsletter daily',
-  description: 'Matt Merrick - Writing a newsletter daily',
-  keywords: 'Matt Merrick, newsletter, daily',
-  authors: [{ name: 'Matt Merrick' }],
-  creator: 'Matt Merrick',
-  publisher: 'Matt Merrick',
-  robots: 'index, follow',
-  viewport: 'width=device-width, initial-scale=1',
+  title: 'Matt Merrick',
+  description: 'A daily newsletter',
   openGraph: {
-    title: 'Matt Merrick - Writing a newsletter daily',
-    description: 'Matt Merrick - Writing a newsletter daily',
     type: 'website',
-    siteName: 'Matt Merrick',
-    url: 'https://morningmarkets.net',
-    images: [
-      {
-        url: '/opengraph.jpg',
-        width: 1200,
-        height: 630,
-        alt: 'Matt Merrick',
-      },
-    ],
+    url: 'https://www.mattmerrick.com/',
+    title: 'Matt Merrick',
+    description: 'A daily newsletter',
+    images: ['/opengraph.jpg'],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Matt Merrick - Writing a newsletter daily',
-    description: 'Matt Merrick - Writing a newsletter daily',
+    url: 'https://www.mattmerrick.com/',
+    title: 'Matt Merrick',
+    description: 'A daily newsletter',
     images: ['/opengraph.jpg'],
   },
 }
