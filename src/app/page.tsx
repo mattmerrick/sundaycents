@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     description: 'Matt Merrick. A daily newsletter',
     type: 'website',
     siteName: 'Matt Merrick',
-    url: 'https://morningmarkets.net',
+    url: 'https://mattmerrick.com',
     images: [
       {
         url: '/opengraph.jpg',
