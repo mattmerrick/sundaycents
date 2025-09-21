@@ -19,10 +19,10 @@ export const metadata: Metadata = {
     url: 'https://mattmerrick.com',
     images: [
       {
-        url: '/opengraph.jpg',
+        url: 'https://www.mattmerrick.com/share.png',
         width: 1200,
         height: 630,
-        alt: 'Matt Merrick',
+        alt: 'Matt Merrick - A daily newsletter',
       },
     ],
   },
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Matt Merrick. A daily newsletter',
     description: 'Matt Merrick. A daily newsletter',
-    images: ['/opengraph.jpg'],
+    images: ['https://www.mattmerrick.com/share.png'],
   },
 }
 
