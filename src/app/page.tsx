@@ -37,20 +37,14 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <main className="min-h-screen bg-gray-900 flex flex-col">
-      <div className="flex-1 flex items-center justify-center px-4">
-        <div className="max-w-2xl mx-auto text-center">
-          <img 
-            src="/share.png" 
-            alt="Matt Merrick - Building a $1M solopreneur business" 
-            className="w-full max-w-md mx-auto mb-8 rounded-lg shadow-2xl"
-          />
-        <p className="text-2xl sm:text-3xl mb-8 text-white leading-relaxed font-light">
-          A daily newsletter about building a $1M solopreneur business. The struggles, the wins, and how I'm doing it.
-        </p>
-        <p className="text-sm mb-12 text-gray-400 font-light">
-          Real stories from someone actually doing it. No fluff, just the truth.
-        </p>
-          <EmailSignup variant="hero" />
+      <div className="flex-1 flex flex-col justify-center px-4 py-8">
+        <div className="max-w-xl mx-auto text-center">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl mb-6 text-white leading-tight font-light">
+            A daily email with practical lessons on starting, growing, and thriving as a solopreneur.
+          </h1>
+          <div className="mb-8">
+            <EmailSignup variant="hero" />
+          </div>
           <DayCounter />
         </div>
       </div>
