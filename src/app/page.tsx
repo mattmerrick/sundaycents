@@ -43,14 +43,7 @@ export default function Home() {
             {/* Left side - Profile picture */}
             <div className="flex justify-center lg:justify-end">
               <div className="relative">
-                <img 
-                  src="/opengraph.jpg" 
-                  alt="Matt Merrick" 
-                  className="w-64 h-64 lg:w-80 lg:h-80 rounded-full object-cover border-4 border-white/20 shadow-2xl"
-                />
-                <div className="absolute -bottom-4 -right-4 bg-primary-500 text-white px-4 py-2 rounded-full text-sm font-semibold shadow-lg">
-                  Solopreneur
-                </div>
+               
               </div>
             </div>
             
