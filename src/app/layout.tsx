@@ -7,12 +7,12 @@ const playfair = Playfair_Display({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Matt Merrick',
-  description: 'Building a $1M solopreneur business - daily newsletter',
+  description: 'Subscribe to My Daily Newsletter | Matt Merrick',
   openGraph: {
     type: 'website',
     url: 'https://www.mattmerrick.com/',
     title: 'Matt Merrick',
-    description: 'Building a $1M solopreneur business - daily newsletter',
+    description: 'Subscribe to My Daily Newsletter | Matt Merrick',
     images: [
       {
         url: 'https://www.mattmerrick.com/share.png',
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Matt Merrick',
-    description: 'Building a $1M solopreneur business - daily newsletter',
+    description: 'Subscribe to My Daily Newsletter | Matt Merrick',
     images: ['https://www.mattmerrick.com/share.png'],
   },
 }
