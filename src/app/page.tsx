@@ -37,15 +37,34 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <main className="min-h-screen bg-gray-900 flex flex-col">
-      <div className="flex-1 flex flex-col justify-center px-4 py-8">
-        <div className="max-w-xl mx-auto text-center">
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl mb-6 text-white leading-tight font-light">
-            A daily email with practical lessons on starting, growing, and thriving as a solopreneur.
-          </h1>
-          <div className="mb-8">
-            <EmailSignup variant="hero" />
+      <div className="flex-1 flex items-center justify-center px-4 py-8">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            {/* Left side - Profile picture */}
+            <div className="flex justify-center lg:justify-end">
+              <div className="relative">
+                <img 
+                  src="/opengraph.jpg" 
+                  alt="Matt Merrick" 
+                  className="w-64 h-64 lg:w-80 lg:h-80 rounded-full object-cover border-4 border-white/20 shadow-2xl"
+                />
+                <div className="absolute -bottom-4 -right-4 bg-primary-500 text-white px-4 py-2 rounded-full text-sm font-semibold shadow-lg">
+                  Solopreneur
+                </div>
+              </div>
+            </div>
+            
+            {/* Right side - Content */}
+            <div className="text-center lg:text-left">
+              <h1 className="text-3xl sm:text-4xl lg:text-5xl mb-6 text-white leading-tight font-light">
+                A daily email with practical lessons on starting, growing, and thriving as a <span className="text-primary-400">solopreneur</span>.
+              </h1>
+              <div className="mb-8">
+                <EmailSignup variant="hero" />
+              </div>
+              <DayCounter />
+            </div>
           </div>
-          <DayCounter />
         </div>
       </div>
       <Footer />
