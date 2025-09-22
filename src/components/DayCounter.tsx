@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
+import Link from 'next/link'
 
 export default function DayCounter() {
   const [dayNumber, setDayNumber] = useState(0)
@@ -42,7 +43,12 @@ export default function DayCounter() {
 
   return (
     <div className="text-sm text-gray-400 mt-8">
-      Day {dayNumber} of 365
+      <Link 
+        href="/365"
+        className="hover:text-white transition-colors underline decoration-primary-400 hover:decoration-primary-300"
+      >
+        Day {dayNumber} of 365
+      </Link>
     </div>
   )
 }
