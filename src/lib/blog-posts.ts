@@ -22,7 +22,7 @@ export const blogPosts: BlogPost[] = [
       
       <p>As an entrepreneur, understanding CBCs is crucial whether you're looking to join one for your own development or create one as a revenue stream for your business.</p>
       
-      <h2>What are Cohort Based Coaching Programs?</h2>
+      <h1>What are Cohort Based Coaching Programs?</h1>
       
       <p>Cohort-based coaching programs are structured learning experiences where a group of students (the cohort) moves through educational content together over a fixed period. They combine the benefits of group learning with personalized coaching and accountability.</p>
       
@@ -168,7 +168,7 @@ export const blogPosts: BlogPost[] = [
       
       <p>Understanding disruptive business models is crucial for entrepreneurs who want to build something truly transformative, not just another "me too" business.</p>
       
-      <h2>What are Disruptive Business Models?</h2>
+      <h1>What are Disruptive Business Models?</h1>
       
       <p>A disruptive business model is an approach that creates a new market and value network, eventually disrupting existing markets and displacing established market leaders.</p>
       
@@ -333,7 +333,7 @@ export const blogPosts: BlogPost[] = [
       
       <p>Whether you're just starting out or looking to scale an existing business, this comprehensive guide will help you navigate the complex world of business financing.</p>
       
-      <h2>What are Funding Options?</h2>
+      <h1>What are Funding Options?</h1>
       
       <p>Funding options are the various ways entrepreneurs can obtain capital to start, operate, or grow their businesses. Each option has different requirements, costs, and implications for your business.</p>
       
@@ -560,7 +560,7 @@ export const blogPosts: BlogPost[] = [
       
       <p>This comprehensive guide will help you identify, calculate, and manage all the costs associated with starting your business.</p>
       
-      <h2>What are Startup Costs?</h2>
+      <h1>What are Startup Costs?</h1>
       
       <p>Startup costs are the expenses incurred when starting a new business before it begins generating revenue. These costs include everything from legal fees and equipment to marketing and initial inventory.</p>
       
@@ -839,7 +839,7 @@ export const blogPosts: BlogPost[] = [
       
       <p>This comprehensive guide will help you understand business coaching, its benefits, and how to find the right coach for your specific needs.</p>
       
-      <h2>What is a Business Coach?</h2>
+      <h1>What is a Business Coach?</h1>
       
       <p>A business coach is a professional who works with entrepreneurs and business owners to help them achieve their business goals, overcome challenges, and accelerate their success. They provide guidance, accountability, and expertise to help you make better decisions and achieve better results.</p>
       
@@ -1087,7 +1087,7 @@ export const blogPosts: BlogPost[] = [
       
       <p>This comprehensive guide will help you understand the different types of business entities and choose the right structure for your specific needs and goals.</p>
       
-      <h2>What is a Business Entity?</h2>
+      <h1>What is a Business Entity?</h1>
       
       <p>A business entity is a legal structure that defines how your business is organized, operated, and taxed. It determines your personal liability, tax obligations, and ability to raise capital.</p>
       
@@ -1347,7 +1347,7 @@ export const blogPosts: BlogPost[] = [
       
       <p>This comprehensive guide will help you understand different exit strategies, how to prepare for an exit, and how to maximize the value of your business when the time comes.</p>
       
-      <h2>What is a Business Exit?</h2>
+      <h1>What is a Business Exit?</h1>
       
       <p>A business exit is the process of leaving your business, typically by selling it, merging with another company, or closing it down. The exit strategy you choose will depend on your goals, timeline, and the current state of your business.</p>
       
@@ -1630,7 +1630,7 @@ export const blogPosts: BlogPost[] = [
       
       <p>This comprehensive guide will help you understand what business incubators are, how they work, and whether they're right for your startup.</p>
       
-      <h2>What is a Business Incubator?</h2>
+      <h1>What is a Business Incubator?</h1>
       
       <p>A business incubator is an organization that provides startups with resources, mentorship, and support to help them grow and succeed. Incubators typically offer office space, business services, networking opportunities, and access to funding.</p>
       
@@ -1887,7 +1887,7 @@ export const blogPosts: BlogPost[] = [
       
       <p>This comprehensive guide will help you understand what business licenses are, the different types available, and how to obtain the licenses you need for your business.</p>
       
-      <h2>What is a Business License?</h2>
+      <h1>What is a Business License?</h1>
       
       <p>A business license is a government-issued permit that allows you to operate a business within a specific jurisdiction. It serves as official authorization to conduct business activities and ensures compliance with local, state, and federal regulations.</p>
       
@@ -2151,7 +2151,7 @@ export const blogPosts: BlogPost[] = [
       
       <p>This comprehensive guide will help you understand what business mentors are, how to find them, and how to build successful mentor-mentee relationships.</p>
       
-      <h2>What is a Business Mentor?</h2>
+      <h1>What is a Business Mentor?</h1>
       
       <p>A business mentor is an experienced entrepreneur or business professional who provides guidance, advice, and support to less experienced entrepreneurs. Mentors share their knowledge, experience, and network to help mentees grow their businesses and develop their skills.</p>
       
@@ -2405,7 +2405,7 @@ export const blogPosts: BlogPost[] = [
       
       <p>This comprehensive guide will help you understand what business models are, the different types available, and how to design the right model for your business.</p>
       
-      <h2>What is a Business Model?</h2>
+      <h1>What is a Business Model?</h1>
       
       <p>A business model is a framework that describes how a business creates, delivers, and captures value. It outlines the key components of your business including your value proposition, target customers, revenue streams, and cost structure.</p>
       
@@ -2653,7 +2653,7 @@ export const blogPosts: BlogPost[] = [
       
       <p>This comprehensive guide will help you understand what the Business Model Canvas is, how to use it effectively, and how to create your own canvas for your business.</p>
       
-      <h2>What is a Business Model Canvas?</h2>
+      <h1>What is a Business Model Canvas?</h1>
       
       <p>The Business Model Canvas is a strategic management tool that allows you to describe, design, challenge, and pivot your business model. It's a one-page document that outlines nine key building blocks of your business model in a visual format.</p>
       
@@ -2911,7 +2911,7 @@ export const blogPosts: BlogPost[] = [
       
       <p>This comprehensive guide will help you understand what a business plan is, why you need one, and how to create a compelling business plan that sets your business up for success.</p>
       
-      <h2>What is a Business Plan?</h2>
+      <h1>What is a Business Plan?</h1>
       
       <p>A business plan is a written document that describes your business, its objectives, strategies, target market, and financial forecasts. It serves as a blueprint for your business and helps you communicate your vision to stakeholders, investors, and team members.</p>
       
@@ -3148,7 +3148,7 @@ export const blogPosts: BlogPost[] = [
       
       <p>This comprehensive guide will help you understand what business strategy is, the different types of strategies, and how to develop a winning strategy for your business.</p>
       
-      <h2>What is a Business Strategy?</h2>
+      <h1>What is a Business Strategy?</h1>
       
       <p>A business strategy is a comprehensive plan that outlines how a business will achieve its goals and objectives. It defines the direction and scope of the business, the resources it will use, and how it will compete in its market.</p>
       
@@ -3360,7 +3360,7 @@ export const blogPosts: BlogPost[] = [
       
       <p>This comprehensive guide will help you understand what business structures are, the different types available, and how to choose the right structure for your specific needs and goals.</p>
       
-      <h2>What is a Business Structure?</h2>
+      <h1>What is a Business Structure?</h1>
       
       <p>A business structure is the legal framework that defines how your business is organized, operated, and taxed. It determines your personal liability, tax obligations, ability to raise capital, and how you can grow your business.</p>
       
@@ -3620,7 +3620,7 @@ export const blogPosts: BlogPost[] = [
       
       <p>This comprehensive guide will help you understand what digital nomads are, how to become one, and how to build a successful digital nomad business.</p>
       
-      <h2>What is a Digital Nomad?</h2>
+      <h1>What is a Digital Nomad?</h1>
       
       <p>A digital nomad is someone who uses technology to work remotely and live a nomadic lifestyle. They typically work from different locations around the world, often changing their base every few months or weeks.</p>
       
@@ -3842,7 +3842,7 @@ export const blogPosts: BlogPost[] = [
       
       <p>This comprehensive guide will help you understand what a growth mindset is, how it differs from a fixed mindset, and how to develop one to accelerate your entrepreneurial success.</p>
       
-      <h2>What is a Growth Mindset?</h2>
+      <h1>What is a Growth Mindset?</h1>
       
       <p>A growth mindset is the belief that your abilities, intelligence, and talents can be developed through effort, learning, and persistence. People with a growth mindset see challenges as opportunities to grow and believe that failure is a stepping stone to success.</p>
       
@@ -4054,7 +4054,7 @@ export const blogPosts: BlogPost[] = [
       
       <p>This comprehensive guide will help you understand what lean startup is, how to apply its principles, and how it can accelerate your entrepreneurial success.</p>
       
-      <h2>What is a Lean Startup?</h2>
+      <h1>What is a Lean Startup?</h1>
       
       <p>A lean startup is a methodology for developing businesses and products that aims to shorten product development cycles and rapidly discover if a proposed business model is viable. It emphasizes validated learning, rapid experimentation, and iterative product releases.</p>
       

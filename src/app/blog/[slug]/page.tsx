@@ -52,6 +52,43 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
 
   return (
     <main className="min-h-screen bg-white">
+      {/* Structured Data for SEO */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": post.title,
+            "description": post.seoDescription || post.excerpt,
+            "author": {
+              "@type": "Person",
+              "name": "Matt Merrick",
+              "url": "https://mattmerrick.com"
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "Matt Merrick",
+              "url": "https://mattmerrick.com",
+              "logo": {
+                "@type": "ImageObject",
+                "url": "https://mattmerrick.com/opengraph-image.png"
+              }
+            },
+            "datePublished": post.date,
+            "dateModified": post.date,
+            "mainEntityOfPage": {
+              "@type": "WebPage",
+              "@id": `https://mattmerrick.com/blog/${post.id}`
+            },
+            "articleSection": post.category,
+            "keywords": post.tags.join(", "),
+            "wordCount": post.content.split(' ').length,
+            "timeRequired": post.readTime,
+            "inLanguage": "en-US"
+          })
+        }}
+      />
       <Header />
       
       {/* Back Button */}

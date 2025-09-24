@@ -3,7 +3,7 @@
   <!-- Homepage -->
   <url>
     <loc>https://mattmerrick.com/</loc>
-    <lastmod>2024-01-20</lastmod>
+    <lastmod>2024-01-21</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -11,7 +11,7 @@
   <!-- 365 Days Page -->
   <url>
     <loc>https://mattmerrick.com/365</loc>
-    <lastmod>2024-01-20</lastmod>
+    <lastmod>2024-01-21</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
@@ -19,167 +19,291 @@
   <!-- Blog Pages -->
   <url>
     <loc>https://mattmerrick.com/blog</loc>
-    <lastmod>2024-01-20</lastmod>
+    <lastmod>2024-01-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <!-- Individual Blog Posts -->
   <url>
+    <loc>https://mattmerrick.com/blog/what-are-cohort-based-coaching-programs</loc>
+    <lastmod>2024-01-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://mattmerrick.com/blog/what-are-disruptive-business-models</loc>
+    <lastmod>2024-01-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://mattmerrick.com/blog/what-are-funding-options</loc>
+    <lastmod>2024-01-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://mattmerrick.com/blog/what-are-startup-costs</loc>
+    <lastmod>2024-01-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://mattmerrick.com/blog/what-is-a-business-coach</loc>
+    <lastmod>2024-01-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://mattmerrick.com/blog/what-is-a-business-entity</loc>
+    <lastmod>2024-01-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://mattmerrick.com/blog/what-is-a-business-exit</loc>
+    <lastmod>2024-01-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://mattmerrick.com/blog/what-is-a-business-incubator</loc>
+    <lastmod>2024-01-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://mattmerrick.com/blog/what-is-a-business-license</loc>
+    <lastmod>2024-01-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://mattmerrick.com/blog/what-is-a-business-mentor</loc>
+    <lastmod>2024-01-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://mattmerrick.com/blog/what-is-a-business-model</loc>
+    <lastmod>2024-01-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://mattmerrick.com/blog/what-is-a-business-model-canvas</loc>
+    <lastmod>2024-01-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://mattmerrick.com/blog/what-is-a-business-plan</loc>
+    <lastmod>2024-01-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://mattmerrick.com/blog/what-is-a-business-strategy</loc>
+    <lastmod>2024-01-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://mattmerrick.com/blog/what-is-a-business-structure</loc>
+    <lastmod>2024-01-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://mattmerrick.com/blog/what-is-a-digital-nomad</loc>
+    <lastmod>2024-01-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://mattmerrick.com/blog/what-is-a-growth-mindset</loc>
+    <lastmod>2024-01-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://mattmerrick.com/blog/what-is-a-lean-startup</loc>
+    <lastmod>2024-01-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
     <loc>https://mattmerrick.com/blog/simplify-your-business</loc>
-    <lastmod>2024-01-20</lastmod>
+    <lastmod>2024-01-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
     <loc>https://mattmerrick.com/blog/streamline-your-business</loc>
-    <lastmod>2024-01-19</lastmod>
+    <lastmod>2024-01-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
     <loc>https://mattmerrick.com/blog/improve-your-business</loc>
-    <lastmod>2024-01-18</lastmod>
+    <lastmod>2024-01-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
     <loc>https://mattmerrick.com/blog/enhance-your-business</loc>
-    <lastmod>2024-01-17</lastmod>
+    <lastmod>2024-01-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
     <loc>https://mattmerrick.com/blog/what-is-a-startup</loc>
-    <lastmod>2024-01-16</lastmod>
+    <lastmod>2024-01-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   
   <url>
     <loc>https://mattmerrick.com/blog/day-1-starting-over</loc>
-    <lastmod>2024-01-15</lastmod>
+    <lastmod>2024-01-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   
   <url>
     <loc>https://mattmerrick.com/blog/the-1m-solopreneur-mindset</loc>
-    <lastmod>2024-01-14</lastmod>
+    <lastmod>2024-01-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   
   <url>
     <loc>https://mattmerrick.com/blog/why-i-ditched-substack</loc>
-    <lastmod>2024-01-13</lastmod>
+    <lastmod>2024-01-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.8</priority>
   </url>
   
   <url>
     <loc>https://mattmerrick.com/blog/daily-discipline-reality</loc>
-    <lastmod>2024-01-12</lastmod>
+    <lastmod>2024-01-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.8</priority>
   </url>
   
   <url>
     <loc>https://mattmerrick.com/blog/building-in-public-mistakes</loc>
-    <lastmod>2024-01-11</lastmod>
+    <lastmod>2024-01-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.8</priority>
   </url>
   
   <!-- Tools Pages -->
   <url>
     <loc>https://mattmerrick.com/tools</loc>
-    <lastmod>2024-01-20</lastmod>
+    <lastmod>2024-01-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>https://mattmerrick.com/budget-calculator</loc>
-    <lastmod>2024-01-20</lastmod>
+    <lastmod>2024-01-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   
   <url>
     <loc>https://mattmerrick.com/compound-interest-calculator</loc>
-    <lastmod>2024-01-20</lastmod>
+    <lastmod>2024-01-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   
   <url>
     <loc>https://mattmerrick.com/investment-calculator</loc>
-    <lastmod>2024-01-20</lastmod>
+    <lastmod>2024-01-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   
   <url>
     <loc>https://mattmerrick.com/retirement-calculator</loc>
-    <lastmod>2024-01-20</lastmod>
+    <lastmod>2024-01-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- Other Pages -->
+  <url>
+    <loc>https://mattmerrick.com/subscribe</loc>
+    <lastmod>2024-01-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
-  <!-- Special Pages -->
   <url>
-    <loc>https://mattmerrick.com/1-million</loc>
-    <lastmod>2024-01-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <loc>https://mattmerrick.com/privacy</loc>
+    <lastmod>2024-01-21</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
   </url>
   
   <url>
     <loc>https://mattmerrick.com/prompts</loc>
-    <lastmod>2024-01-20</lastmod>
+    <lastmod>2024-01-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
-  <!-- Subscription Pages -->
-  <url>
-    <loc>https://mattmerrick.com/subscribe</loc>
-    <lastmod>2024-01-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>https://mattmerrick.com/subscriber-thank-you</loc>
-    <lastmod>2024-01-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://mattmerrick.com/thank-you</loc>
-    <lastmod>2024-01-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
   <url>
     <loc>https://mattmerrick.com/latest-email</loc>
-    <lastmod>2024-01-20</lastmod>
+    <lastmod>2024-01-21</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
   </url>
   
-  <!-- Legal Pages -->
   <url>
-    <loc>https://mattmerrick.com/privacy</loc>
-    <lastmod>2024-01-20</lastmod>
+    <loc>https://mattmerrick.com/subscriber-thank-you</loc>
+    <lastmod>2024-01-21</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
+  </url>
+  
+  <url>
+    <loc>https://mattmerrick.com/thank-you</loc>
+    <lastmod>2024-01-21</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  
+  <url>
+    <loc>https://mattmerrick.com/1-million</loc>
+    <lastmod>2024-01-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
 </urlset>
