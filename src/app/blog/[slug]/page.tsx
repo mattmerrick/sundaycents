@@ -51,28 +51,28 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
   const relatedPosts = getRelatedPosts(post, 3)
 
   return (
-    <main className="min-h-screen bg-gray-900">
+    <main className="min-h-screen bg-white">
       <Header />
       
       {/* Back Button */}
       <div className="max-w-4xl mx-auto px-4 pt-8">
         <Link 
           href="/blog" 
-          className="text-gray-400 hover:text-white transition-colors flex items-center"
+          className="text-gray-600 hover:text-black transition-colors flex items-center"
         >
           ← Back to Blog
         </Link>
       </div>
       
-      {/* Hero Section */}
-      <section className="bg-gray-900 py-20">
+      {/* Article Header */}
+      <section className="py-12">
         <div className="max-w-4xl mx-auto px-4">
           <div className="text-center">
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-8 leading-tight">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-black mb-8 leading-tight">
               {post.title}
             </h1>
-            <div className="flex items-center justify-center space-x-4 text-base text-gray-400 mb-12">
-              <span className="text-blue-400 font-medium">{post.category}</span>
+            <div className="flex items-center justify-center space-x-4 text-base text-gray-600 mb-8">
+              <span className="text-blue-600 font-medium">{post.category}</span>
               <span>•</span>
               <span>{post.date}</span>
               <span>•</span>
@@ -81,67 +81,19 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
           </div>
         </div>
       </section>
-
-      {/* Newsletter Signup */}
-      <section className="bg-gray-800 py-16">
-        <div className="max-w-4xl mx-auto px-4">
-          <div className="text-center">
-            <h2 className="text-3xl font-bold text-white mb-6">
-              Join 100's of others learning about solopreneurship every day
-            </h2>
-            <p className="text-gray-300 mb-10 max-w-2xl mx-auto text-lg leading-relaxed">
-              Get daily insights about building a $1M solopreneur business delivered to your inbox. 
-              Real stories from someone actually doing it.
-            </p>
-            <div className="max-w-md mx-auto">
-              <EmailSignup variant="cta" />
-            </div>
-          </div>
-        </div>
-      </section>
       
       {/* Article Content */}
-      <article className="py-20">
+      <article className="pb-16">
         <div className="max-w-4xl mx-auto px-4">
           <div 
-            className="prose prose-xl prose-invert max-w-none text-white leading-relaxed"
+            className="prose prose-xl max-w-none text-black leading-relaxed"
             dangerouslySetInnerHTML={{ __html: post.content }}
           />
         </div>
       </article>
 
-      {/* Related Posts */}
-      {relatedPosts.length > 0 && (
-        <section className="py-16 bg-gray-800">
-          <div className="max-w-4xl mx-auto px-4">
-            <h3 className="text-2xl font-bold text-white mb-8 text-center">
-              Related Posts
-            </h3>
-            <div className="grid md:grid-cols-3 gap-6">
-              {relatedPosts.map((relatedPost) => (
-                <Link 
-                  key={relatedPost.id}
-                  href={`/blog/${relatedPost.id}`}
-                  className="bg-gray-700 p-6 rounded-lg hover:bg-gray-600 transition-colors"
-                >
-                  <div className="text-blue-400 text-sm font-medium mb-2">
-                    {relatedPost.category}
-                  </div>
-                  <h4 className="text-white font-semibold mb-2 line-clamp-2">
-                    {relatedPost.title}
-                  </h4>
-                  <p className="text-gray-300 text-sm line-clamp-3">
-                    {relatedPost.excerpt}
-                  </p>
-                </Link>
-              ))}
-            </div>
-          </div>
-        </section>
-      )}
-
-      {/* Bottom Newsletter CTA */}
-      <section className="bg-gray-900 py-20">
+      {/* Newsletter CTA */}
+      <section className="bg-gray-900 py-16">
         <div className="max-w-4xl mx-auto px-4">
           <div className="text-center">
             <h3 className="text-3xl font-bold text-white mb-6">
@@ -157,6 +109,36 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
           </div>
         </div>
       </section>
+
+      {/* Related Posts */}
+      {relatedPosts.length > 0 && (
+        <section className="py-16 bg-gray-50">
+          <div className="max-w-4xl mx-auto px-4">
+            <h3 className="text-2xl font-bold text-black mb-8 text-center">
+              Related Posts
+            </h3>
+            <div className="grid md:grid-cols-3 gap-6">
+              {relatedPosts.map((relatedPost) => (
+                <Link 
+                  key={relatedPost.id}
+                  href={`/blog/${relatedPost.id}`}
+                  className="bg-white p-6 rounded-lg hover:shadow-lg transition-shadow border border-gray-200"
+                >
+                  <div className="text-blue-600 text-sm font-medium mb-2">
+                    {relatedPost.category}
+                  </div>
+                  <h4 className="text-black font-semibold mb-2 line-clamp-2">
+                    {relatedPost.title}
+                  </h4>
+                  <p className="text-gray-600 text-sm line-clamp-3">
+                    {relatedPost.excerpt}
+                  </p>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
 
       <Footer />
     </main>
