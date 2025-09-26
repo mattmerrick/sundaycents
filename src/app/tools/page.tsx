@@ -21,7 +21,7 @@ export default function ToolsPage() {
     {
       name: 'Email Octopus',
       description: 'Email marketing platform for sending newsletters and managing subscribers',
-      url: 'https://emailoctopus.com',
+      url: 'https://emailoctopus.com/?urli=6jMWh',
       price: 'Free Plan',
       category: 'Email Marketing',
       icon: '📧',
@@ -35,7 +35,7 @@ export default function ToolsPage() {
     {
       name: 'DataFast',
       description: 'Analytics and tracking platform for website performance and user behavior',
-      url: 'https://datafa.st',
+      url: 'https://datafa.st/?via=matt',
       price: '$9/month',
       category: 'Analytics',
       icon: '📊',
@@ -49,7 +49,7 @@ export default function ToolsPage() {
     {
       name: 'Typefully',
       description: 'Social media management and scheduling platform for Twitter/X',
-      url: 'https://typefully.com',
+      url: 'https://typefully.com/?via=newslettermm',
       price: '$12.50/month',
       category: 'Social Media',
       icon: '🐦',
