@@ -46,14 +46,14 @@ export default function BudgetCalculatorPage() {
   return (
     <>
       <Head>
-        <title>Free Budget Calculator 2024 - Monthly Budget Planner & Calculator</title>
+        <title>Free Budget Calculator 2025 - Monthly Budget Planner & Calculator</title>
         <meta name="description" content="Free budget calculator to create monthly budgets, track expenses, and manage personal finances. Use our budget calculator to plan your spending and save money." />
         <meta name="keywords" content="budget calculator, monthly budget calculator, budget planner, personal budget calculator, household budget calculator, budget tool, budget tracker" />
-        <meta property="og:title" content="Free Budget Calculator 2024 - Monthly Budget Planner" />
+        <meta property="og:title" content="Free Budget Calculator 2025 - Monthly Budget Planner" />
         <meta property="og:description" content="Create and manage your monthly budget with our free budget calculator. Track expenses and plan your spending effectively." />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Free Budget Calculator 2024" />
+        <meta name="twitter:title" content="Free Budget Calculator 2025" />
         <meta name="twitter:description" content="Create and manage your monthly budget with our free budget calculator tool." />
         <link rel="canonical" href="https://sundaycents.com/budget-calculator" />
         <script
@@ -90,7 +90,7 @@ export default function BudgetCalculatorPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h1 className="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-4">
-              Free Budget Calculator 2024 - Monthly Budget Planner & Personal Finance Tool
+              Free Budget Calculator 2025 - Monthly Budget Planner & Personal Finance Tool
             </h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Take control of your finances with our free budget calculator. Create monthly budgets, track your income, 
@@ -280,7 +280,7 @@ export default function BudgetCalculatorPage() {
               <li><strong>20% for Savings:</strong> Emergency fund, retirement, debt payments above minimums - the budget calculator ensures you prioritize savings</li>
             </ul>
 
-            <h3 className="text-2xl font-semibold text-gray-900 mb-4">Best Budget Calculator Tips for 2024</h3>
+            <h3 className="text-2xl font-semibold text-gray-900 mb-4">Best Budget Calculator Tips for 2025</h3>
             <div className="bg-blue-50 border-l-4 border-blue-400 p-6 mb-6">
               <p className="text-gray-700">
                 <strong>Track Every Dollar with Budget Calculator:</strong> Use our budget calculator to see exactly where your money goes. 

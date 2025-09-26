@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
 
-export default function DayCounter() {
+export default function HomepageStats() {
   const [dayNumber, setDayNumber] = useState(0)
   const [isStarted, setIsStarted] = useState(false)
 
@@ -35,20 +35,15 @@ export default function DayCounter() {
 
   if (!isStarted) {
     return (
-      <div className="text-sm text-gray-400 mt-8">
-        Starting September 19, 2025
-      </div>
+      <p className="text-base sm:text-lg text-blue-100">
+        Day 1 of writing <Link href="/365" className="text-white hover:text-blue-200 underline transition-colors">one daily email</Link> to 40 subscribers
+      </p>
     )
   }
 
   return (
-    <div className="text-lg sm:text-xl text-blue-100 mt-8">
-      <Link 
-        href="/365"
-        className="hover:text-white transition-colors underline decoration-blue-300 hover:decoration-white font-semibold"
-      >
-        Day {dayNumber} of 365
-      </Link>
-    </div>
+    <p className="text-base sm:text-lg text-blue-100">
+      <Link href="/profits" className="text-white hover:text-blue-200 underline transition-colors">Day {dayNumber}</Link> of writing <Link href="/365" className="text-white hover:text-blue-200 underline transition-colors">one daily email</Link> to 40 subscribers
+    </p>
   )
 }

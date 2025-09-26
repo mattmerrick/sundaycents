@@ -1,173 +1,171 @@
-'use client'
+import type { Metadata } from 'next'
+import Link from 'next/link'
 
-import Head from 'next/head'
-import Header from '@/components/Header'
-import Footer from '@/components/Footer'
-import EmailSignup from '@/components/EmailSignup'
+export const metadata: Metadata = {
+  title: 'Tools I Use - Matt Merrick',
+  description: 'The tools I use to build my $1M solopreneur business. Email Octopus, DataFast, and Typefully.',
+  keywords: 'Matt Merrick, tools, solopreneur, business tools, email marketing, analytics',
+  authors: [{ name: 'Matt Merrick' }],
+  creator: 'Matt Merrick',
+  publisher: 'Matt Merrick',
+  robots: 'index, follow',
+  openGraph: {
+    title: 'Tools I Use - Matt Merrick',
+    description: 'The tools I use to build my $1M solopreneur business. Email Octopus, DataFast, and Typefully.',
+    type: 'website',
+  },
+}
 
 export default function ToolsPage() {
   const tools = [
     {
-      title: "Investment Calculator",
-      description: "Calculate investment returns, portfolio growth, and see how your money can grow over time with compound interest.",
-      link: "/investment-calculator",
-      keywords: "investment calculator, investment return calculator, portfolio calculator"
+      name: 'Email Octopus',
+      description: 'Email marketing platform for sending newsletters and managing subscribers',
+      url: 'https://emailoctopus.com',
+      price: 'Free Plan',
+      category: 'Email Marketing',
+      icon: '📧',
+      features: [
+        'Newsletter management',
+        'Subscriber analytics',
+        'Email automation',
+        'Template library'
+      ]
     },
     {
-      title: "Compound Interest Calculator", 
-      description: "Discover the power of compound interest. Calculate how your savings and investments grow exponentially over time.",
-      link: "/compound-interest-calculator",
-      keywords: "compound interest calculator, compound interest formula, calculate compound interest"
+      name: 'DataFast',
+      description: 'Analytics and tracking platform for website performance and user behavior',
+      url: 'https://datafa.st',
+      price: '$9/month',
+      category: 'Analytics',
+      icon: '📊',
+      features: [
+        'Website analytics',
+        'User tracking',
+        'Performance metrics',
+        'Real-time data'
+      ]
     },
     {
-      title: "Budget Calculator",
-      description: "Take control of your finances with our budget calculator. Track income, expenses, and create a solid financial plan.",
-      link: "/budget-calculator", 
-      keywords: "budget calculator, monthly budget calculator, budget planner"
-    },
-    {
-      title: "Retirement Calculator",
-      description: "Plan your retirement with confidence. Calculate how much you need to save and what your retirement income could look like.",
-      link: "/retirement-calculator",
-      keywords: "retirement calculator, retirement planning calculator, how much to retire"
+      name: 'Typefully',
+      description: 'Social media management and scheduling platform for Twitter/X',
+      url: 'https://typefully.com',
+      price: '$12.50/month',
+      category: 'Social Media',
+      icon: '🐦',
+      features: [
+        'Tweet scheduling',
+        'Thread creation',
+        'Analytics dashboard',
+        'Content calendar'
+      ]
     }
   ]
 
+  const totalMonthlyCost = 9 + 12.50 // $21.50/month
+
   return (
-    <>
-      <Head>
-        <title>Free Financial Tools & Calculators 2024 - Investment, Budget, Retirement</title>
-        <meta name="description" content="Free financial tools and calculators for investment planning, budgeting, retirement planning, and compound interest. Professional-grade financial calculators at no cost." />
-        <meta name="keywords" content="free financial tools, financial calculators, investment calculator, budget calculator, retirement calculator, compound interest calculator, personal finance tools" />
-        <meta property="og:title" content="Free Financial Tools & Calculators 2024" />
-        <meta property="og:description" content="Professional-grade financial calculators for investment planning, budgeting, and retirement planning. All tools are completely free." />
-        <meta property="og:type" content="website" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Free Financial Tools & Calculators 2024" />
-        <meta name="twitter:description" content="Professional-grade financial calculators for investment planning, budgeting, and retirement planning." />
-        <link rel="canonical" href="https://sundaycents.com/tools" />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "WebApplication",
-              "name": "Free Financial Tools",
-              "description": "Free financial tools and calculators for investment planning, budgeting, retirement planning, and compound interest",
-              "url": "https://sundaycents.com/tools",
-              "applicationCategory": "FinanceApplication",
-              "operatingSystem": "Web Browser",
-              "offers": {
-                "@type": "Offer",
-                "price": "0",
-                "priceCurrency": "USD"
-              },
-              "featureList": [
-                "Investment Calculator",
-                "Compound Interest Calculator", 
-                "Budget Calculator",
-                "Retirement Calculator"
-              ]
-            })
-          }}
-        />
-      </Head>
-      <main className="min-h-screen bg-white pb-footer">
-        <Header />
-        
-        {/* Hero Section */}
-        <section className="pt-20 pb-12">
-          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-12">
-              <h1 className="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-4">
-                Free Financial Tools & Calculators
-              </h1>
-              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                Professional-grade financial calculators to help you plan investments, create budgets, 
-                and build wealth. All tools are completely free and designed to help you make informed financial decisions.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        {/* Tools Grid */}
-        <section className="py-12 bg-gray-50">
-          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              {tools.map((tool, index) => (
-                <div key={index} className="bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
-                  <h2 className="text-2xl font-bold text-gray-900 mb-4">
-                    {tool.title}
-                  </h2>
-                  <p className="text-gray-600 mb-6 leading-relaxed">
-                    {tool.description}
-                  </p>
-                  <div className="mb-6">
-                    <p className="text-sm text-gray-500 mb-2">Keywords:</p>
-                    <p className="text-sm text-gray-600">{tool.keywords}</p>
-                  </div>
-                  <a 
-                    href={tool.link}
-                    className="inline-block bg-gradient-to-r from-blue-600 to-green-500 hover:from-blue-700 hover:to-green-600 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-200 transform hover:scale-105"
-                  >
-                    Use {tool.title}
-                  </a>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Content Section */}
-        <section className="py-16">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="prose prose-lg max-w-none">
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">Why Use Our Free Financial Tools?</h2>
-              <p className="text-gray-600 mb-6">
-                Our collection of free financial tools is designed to help you make informed decisions about your money. 
-                Whether you're planning for retirement, creating a budget, or calculating investment returns, our calculators 
-                provide accurate results to guide your financial planning.
-              </p>
-              
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4">Professional-Grade Calculations</h3>
-              <p className="text-gray-600 mb-6">
-                All our financial calculators use industry-standard formulas and methodologies. From compound interest calculations 
-                to retirement planning projections, you can trust the accuracy of our results.
-              </p>
-
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4">Completely Free</h3>
-              <p className="text-gray-600 mb-6">
-                Unlike many financial tools that require subscriptions or have hidden costs, all our calculators are completely free. 
-                No registration required, no credit card needed - just accurate financial calculations at your fingertips.
-              </p>
-
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4">Easy to Use</h3>
-              <p className="text-gray-600 mb-6">
-                Our financial tools are designed with simplicity in mind. Enter your information, get instant results, 
-                and make informed decisions about your financial future.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        {/* Subscribe Section */}
-        <section className="py-16 bg-gray-50">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Get Weekly Financial Tips & Tool Updates
-            </h2>
-            <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
-              Join thousands of readers who get actionable financial tips, new tool features, 
-              and wealth-building strategies delivered to their inbox every Sunday.
+    <main className="min-h-screen bg-blue-600">
+      {/* Back Button */}
+      <div className="max-w-4xl mx-auto px-4 pt-8">
+        <Link 
+          href="/" 
+          className="text-blue-100 hover:text-white transition-colors flex items-center"
+        >
+          ← Back to Home
+        </Link>
+      </div>
+      
+      <section className="py-20 px-4">
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-16">
+            <h1 className="text-4xl sm:text-5xl font-bold text-white mb-6">
+              Tools I Use to Build This Business
+            </h1>
+            <p className="text-xl text-blue-100 max-w-2xl mx-auto">
+              The complete toolkit for building a $1M solopreneur business. 
+              Total monthly cost: <span className="font-semibold text-white">${totalMonthlyCost}/month</span>
             </p>
-            <div className="max-w-md mx-auto">
-              <EmailSignup variant="cta" />
+          </div>
+          
+          {/* Tools Grid */}
+          <div className="grid md:grid-cols-1 gap-8 mb-16">
+            {tools.map((tool, index) => (
+              <div key={index} className="bg-white/10 backdrop-blur-sm rounded-xl p-8 border border-white/20 shadow-xl">
+                <div className="flex items-start justify-between mb-6">
+                  <div className="flex items-center space-x-4">
+                    <div className="text-4xl">{tool.icon}</div>
+                    <div>
+                      <h2 className="text-2xl font-bold text-white mb-2">{tool.name}</h2>
+                      <span className="text-sm text-blue-100 bg-white/10 px-3 py-1 rounded-full">
+                        {tool.category}
+                      </span>
+                    </div>
+                  </div>
+                  <div className="text-right">
+                    <div className="text-2xl font-bold text-white">{tool.price}</div>
+                    <div className="text-sm text-blue-100">per month</div>
+                  </div>
+                </div>
+                
+                <p className="text-blue-50 leading-relaxed mb-6">
+                  {tool.description}
+                </p>
+                
+                <div className="mb-6">
+                  <h3 className="text-lg font-semibold text-white mb-3">Key Features:</h3>
+                  <ul className="grid grid-cols-2 gap-2">
+                    {tool.features.map((feature, featureIndex) => (
+                      <li key={featureIndex} className="text-blue-50 flex items-center">
+                        <span className="text-green-400 mr-2">✓</span>
+                        {feature}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                
+                <a 
+                  href={tool.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block bg-white/20 hover:bg-white/30 text-white font-semibold px-6 py-3 rounded-lg transition-all duration-200 hover:scale-105"
+                >
+                  Visit {tool.name} →
+                </a>
+              </div>
+            ))}
+          </div>
+          
+          {/* Cost Breakdown */}
+          <div className="bg-white/10 backdrop-blur-sm rounded-xl p-8 border border-white/20 shadow-xl text-center">
+            <h2 className="text-2xl font-bold text-white mb-4">Monthly Cost Breakdown</h2>
+            <div className="grid md:grid-cols-3 gap-6 mb-6">
+              <div className="text-center">
+                <div className="text-3xl font-bold text-white">$0</div>
+                <div className="text-blue-100">Email Octopus</div>
+                <div className="text-sm text-blue-200">Free Plan</div>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl font-bold text-white">$9</div>
+                <div className="text-blue-100">DataFast</div>
+                <div className="text-sm text-blue-200">Analytics</div>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl font-bold text-white">$12.50</div>
+                <div className="text-blue-100">Typefully</div>
+                <div className="text-sm text-blue-200">Social Media</div>
+              </div>
+            </div>
+            <div className="border-t border-white/20 pt-6">
+              <div className="text-4xl font-bold text-white mb-2">$21.50</div>
+              <div className="text-blue-100 text-lg">Total Monthly Cost</div>
+              <div className="text-sm text-blue-200 mt-2">
+                Building a $1M business for less than $22/month
+              </div>
             </div>
           </div>
-        </section>
-
-        <Footer />
-      </main>
-    </>
+        </div>
+      </section>
+    </main>
   )
 }

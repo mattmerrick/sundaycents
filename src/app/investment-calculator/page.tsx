@@ -37,14 +37,14 @@ export default function InvestmentCalculatorPage() {
   return (
     <>
       <Head>
-        <title>Free Investment Calculator 2024 - Calculate Investment Returns & Growth</title>
+        <title>Free Investment Calculator 2025 - Calculate Investment Returns & Growth</title>
         <meta name="description" content="Free investment calculator to calculate investment returns, compound interest, and portfolio growth. Plan your financial future with our advanced investment calculator tool." />
         <meta name="keywords" content="investment calculator, investment return calculator, portfolio calculator, investment growth calculator, compound interest calculator, financial calculator" />
-        <meta property="og:title" content="Free Investment Calculator 2024 - Calculate Investment Returns" />
+        <meta property="og:title" content="Free Investment Calculator 2025 - Calculate Investment Returns" />
         <meta property="og:description" content="Calculate your investment returns and portfolio growth with our free investment calculator. Plan your financial future today." />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Free Investment Calculator 2024" />
+        <meta name="twitter:title" content="Free Investment Calculator 2025" />
         <meta name="twitter:description" content="Calculate investment returns and portfolio growth with our free investment calculator tool." />
         <link rel="canonical" href="https://sundaycents.com/investment-calculator" />
         <script
@@ -81,7 +81,7 @@ export default function InvestmentCalculatorPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h1 className="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-4">
-              Free Investment Calculator 2024 - Calculate Investment Returns & Portfolio Growth
+              Free Investment Calculator 2025 - Calculate Investment Returns & Portfolio Growth
             </h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Use our free investment calculator to calculate investment returns, compound interest, and portfolio growth. 
@@ -192,7 +192,7 @@ export default function InvestmentCalculatorPage() {
               <li>Compare different investment scenarios and contribution amounts</li>
             </ul>
 
-            <h3 className="text-2xl font-semibold text-gray-900 mb-4">Best Investment Calculator Tips for 2024</h3>
+            <h3 className="text-2xl font-semibold text-gray-900 mb-4">Best Investment Calculator Tips for 2025</h3>
             <div className="bg-blue-50 border-l-4 border-blue-400 p-6 mb-6">
               <p className="text-gray-700">
                 <strong>Start Early with Investment Calculator:</strong> The power of compound interest works best over long periods. 

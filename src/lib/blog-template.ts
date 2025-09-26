@@ -32,7 +32,7 @@ export const newBlogPostTemplate = {
     <h2>Conclusion</h2>
     <p>Your concluding paragraph that ties everything together and gives the reader a clear next step.</p>
   `,
-  date: '2024-01-15', // YYYY-MM-DD format
+  date: '2025-01-15', // YYYY-MM-DD format
   readTime: '5 min read', // Estimate based on word count
   category: 'Business', // Choose from: Journey, Business, Tech, Personal, Lessons
   tags: ['tag1', 'tag2', 'tag3'], // 3-5 relevant tags for SEO

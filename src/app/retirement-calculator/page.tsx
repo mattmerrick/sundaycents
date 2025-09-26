@@ -48,14 +48,14 @@ export default function RetirementCalculatorPage() {
   return (
     <>
       <Head>
-        <title>Free Retirement Calculator 2024 - Retirement Planning & Savings Calculator</title>
+        <title>Free Retirement Calculator 2025 - Retirement Planning & Savings Calculator</title>
         <meta name="description" content="Free retirement calculator to plan your retirement savings, calculate retirement income, and determine how much you need to retire. Plan your financial future today." />
         <meta name="keywords" content="retirement calculator, retirement planning calculator, retirement savings calculator, how much to retire, retirement income calculator, 401k calculator, retirement planning" />
-        <meta property="og:title" content="Free Retirement Calculator 2024 - Retirement Planning Calculator" />
+        <meta property="og:title" content="Free Retirement Calculator 2025 - Retirement Planning Calculator" />
         <meta property="og:description" content="Plan your retirement with our free retirement calculator. Calculate retirement savings and income to secure your financial future." />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Free Retirement Calculator 2024" />
+        <meta name="twitter:title" content="Free Retirement Calculator 2025" />
         <meta name="twitter:description" content="Plan your retirement with our free retirement calculator tool." />
         <link rel="canonical" href="https://sundaycents.com/retirement-calculator" />
         <script
@@ -92,7 +92,7 @@ export default function RetirementCalculatorPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h1 className="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-4">
-              Free Retirement Calculator 2024 - Retirement Planning & Savings Calculator
+              Free Retirement Calculator 2025 - Retirement Planning & Savings Calculator
             </h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Plan your retirement with confidence using our free retirement calculator. Calculate how much you need to save, 

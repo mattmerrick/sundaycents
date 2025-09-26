@@ -32,14 +32,14 @@ export default function CompoundInterestCalculatorPage() {
   return (
     <>
       <Head>
-        <title>Free Compound Interest Calculator 2024 - Calculate Compound Interest Online</title>
+        <title>Free Compound Interest Calculator 2025 - Calculate Compound Interest Online</title>
         <meta name="description" content="Free compound interest calculator to calculate compound interest on investments, savings, and loans. See how compound interest grows your money over time with our advanced calculator." />
         <meta name="keywords" content="compound interest calculator, compound interest formula, compound interest calculator online, calculate compound interest, compound interest rate calculator, compound interest investment calculator" />
-        <meta property="og:title" content="Free Compound Interest Calculator 2024 - Calculate Compound Interest" />
+        <meta property="og:title" content="Free Compound Interest Calculator 2025 - Calculate Compound Interest" />
         <meta property="og:description" content="Calculate compound interest on investments and savings with our free compound interest calculator. See how your money grows over time." />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Free Compound Interest Calculator 2024" />
+        <meta name="twitter:title" content="Free Compound Interest Calculator 2025" />
         <meta name="twitter:description" content="Calculate compound interest on investments and savings with our free compound interest calculator tool." />
         <link rel="canonical" href="https://sundaycents.com/compound-interest-calculator" />
         <script
@@ -76,7 +76,7 @@ export default function CompoundInterestCalculatorPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h1 className="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-4">
-              Free Compound Interest Calculator 2024 - Calculate Compound Interest Online
+              Free Compound Interest Calculator 2025 - Calculate Compound Interest Online
             </h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Discover the power of compound interest with our free compound interest calculator. 

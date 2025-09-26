@@ -1,15 +1,24 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import Header from '@/components/Header'
+import CTA from '@/components/CTA'
 import Footer from '@/components/Footer'
-import EmailSignup from '@/components/EmailSignup'
 import { notFound } from 'next/navigation'
-import { getBlogPost, getRelatedPosts, type BlogPost } from '@/lib/blog-posts'
+import { getBlogPost, getRelatedPosts, getAllBlogPosts, type BlogPost } from '@/lib/blog-posts'
 
 interface BlogPostPageProps {
   params: {
     slug: string
   }
+}
+
+// Generate static params for all blog posts
+export async function generateStaticParams() {
+  const posts = getAllBlogPosts()
+  
+  return posts.map((post) => ({
+    slug: post.id,
+  }))
 }
 
 export async function generateMetadata({ params }: BlogPostPageProps): Promise<Metadata> {
@@ -123,29 +132,26 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
       <article className="pb-16">
         <div className="max-w-4xl mx-auto px-4">
           <div 
-            className="prose prose-xl max-w-none text-black leading-relaxed prose-headings:text-black prose-headings:font-bold prose-h1:text-4xl prose-h1:mb-6 prose-h1:mt-8 prose-h2:text-3xl prose-h2:mb-4 prose-h2:mt-8 prose-h3:text-2xl prose-h3:mb-3 prose-h3:mt-6 prose-p:mb-4 prose-strong:text-black prose-strong:font-semibold"
+            className="prose prose-xl prose-gray max-w-none leading-relaxed
+              prose-headings:text-gray-900 prose-headings:font-bold
+              prose-h1:text-4xl prose-h1:mb-6 prose-h1:mt-8 prose-h1:font-extrabold
+              prose-h2:text-3xl prose-h2:mb-4 prose-h2:mt-8 prose-h2:font-bold
+              prose-h3:text-2xl prose-h3:mb-3 prose-h3:mt-6 prose-h3:font-semibold
+              prose-p:text-gray-700 prose-p:mb-6 prose-p:leading-7
+              prose-strong:text-gray-900 prose-strong:font-semibold
+              prose-ul:text-gray-700 prose-ul:mb-6
+              prose-li:text-gray-700 prose-li:mb-2
+              prose-a:text-blue-600 prose-a:no-underline hover:prose-a:underline
+              prose-blockquote:border-l-4 prose-blockquote:border-blue-500 prose-blockquote:pl-6 prose-blockquote:italic prose-blockquote:text-gray-600
+              prose-code:text-gray-800 prose-code:bg-gray-100 prose-code:px-2 prose-code:py-1 prose-code:rounded prose-code:text-sm
+              prose-pre:bg-gray-900 prose-pre:text-gray-100"
             dangerouslySetInnerHTML={{ __html: post.content }}
           />
         </div>
       </article>
 
-      {/* Newsletter CTA */}
-      <section className="bg-gray-900 py-16">
-        <div className="max-w-4xl mx-auto px-4">
-          <div className="text-center">
-            <h3 className="text-3xl font-bold text-white mb-6">
-              Want more content like this?
-            </h3>
-            <p className="text-gray-300 mb-10 text-lg leading-relaxed max-w-2xl mx-auto">
-              Join 100's of others learning about solopreneurship every day. 
-              Get daily insights delivered to your inbox.
-            </p>
-            <div className="max-w-md mx-auto">
-              <EmailSignup variant="cta" />
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* CTA Component */}
+      <CTA />
 
       {/* Related Posts */}
       {relatedPosts.length > 0 && (

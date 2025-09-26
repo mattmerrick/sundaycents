@@ -1,9 +1,8 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import Link from 'next/link'
 
-export default function DayCounter() {
+export default function HeroDayCounter() {
   const [dayNumber, setDayNumber] = useState(0)
   const [isStarted, setIsStarted] = useState(false)
 
@@ -34,21 +33,8 @@ export default function DayCounter() {
   }, [])
 
   if (!isStarted) {
-    return (
-      <div className="text-sm text-gray-400 mt-8">
-        Starting September 19, 2025
-      </div>
-    )
+    return <span className="text-blue-200">Day 1</span>
   }
 
-  return (
-    <div className="text-lg sm:text-xl text-blue-100 mt-8">
-      <Link 
-        href="/365"
-        className="hover:text-white transition-colors underline decoration-blue-300 hover:decoration-white font-semibold"
-      >
-        Day {dayNumber} of 365
-      </Link>
-    </div>
-  )
+  return <span className="text-blue-200">Day {dayNumber}</span>
 }

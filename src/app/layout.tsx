@@ -1,9 +1,9 @@
 import type { Metadata } from 'next'
-import { Playfair_Display } from 'next/font/google'
+import { Inter } from 'next/font/google'
 import Script from 'next/script'
 import './globals.css'
 
-const playfair = Playfair_Display({ subsets: ['latin'] })
+const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Matt Merrick',
@@ -53,7 +53,7 @@ export default function RootLayout({
           src="https://datafa.st/js/script.js">
         </script>
       </head>
-      <body className={playfair.className}>
+      <body className={inter.className}>
         {children}
       </body>
     </html>

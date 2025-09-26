@@ -14,15 +14,15 @@ export default function EmailSignup({ variant = 'hero' }: EmailSignupProps) {
   const inputRef = useRef<HTMLInputElement | null>(null)
   const router = useRouter()
 
-  // Desktop: autofocus and select the input so it's immediately ready to type
+  // Desktop: autofocus and select the input so it's immediately ready to type (only on hero variant)
   useEffect(() => {
     if (typeof window === 'undefined') return
     const isDesktop = window.innerWidth >= 1024
-    if (isDesktop && inputRef.current) {
+    if (isDesktop && inputRef.current && variant === 'hero') {
       inputRef.current.focus()
       inputRef.current.select()
     }
-  }, [])
+  }, [variant])
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
@@ -98,7 +98,7 @@ export default function EmailSignup({ variant = 'hero' }: EmailSignupProps) {
   return (
     <div className={`w-full ${isHero ? 'max-w-lg' : 'max-w-md'} mx-auto lg:mx-0`}>
       <form onSubmit={handleSubmit} className="space-y-4">
-        <div className="flex flex-col gap-3">
+        <div className="flex flex-col sm:flex-row gap-3">
           <input
             type="email"
             value={email}
@@ -126,8 +126,8 @@ export default function EmailSignup({ variant = 'hero' }: EmailSignupProps) {
             className={`${isHero ? 'px-10 py-4 text-lg' : 'px-8 py-3 text-base'} rounded-xl font-semibold transition-all duration-200 ${
               isLoading
                 ? 'bg-gray-400 cursor-not-allowed'
-                : 'bg-gradient-to-r from-primary-600 to-green-500 hover:from-primary-700 hover:to-green-600 transform hover:scale-105 hover:shadow-xl'
-            } text-white focus:outline-none focus:ring-4 focus:ring-primary-500/20 shadow-lg`}
+                : 'bg-blue-800 hover:bg-blue-900 transform hover:scale-105 hover:shadow-xl'
+            } text-white focus:outline-none focus:ring-4 focus:ring-blue-500/20 shadow-lg whitespace-nowrap`}
           >
             {isLoading ? 'Subscribing...' : 'Subscribe'}
           </button>
