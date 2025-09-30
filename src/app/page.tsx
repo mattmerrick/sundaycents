@@ -129,10 +129,24 @@ export default function Home() {
             </Link>
             <span className="text-gray-400">/</span>
             <Link 
+              href="/newsletters"
+              className="text-white hover:text-blue-300 transition-colors font-medium"
+            >
+              Newsletters
+            </Link>
+            <span className="text-gray-400">/</span>
+            <Link 
               href="/tools"
               className="text-white hover:text-blue-300 transition-colors font-medium"
             >
               Tools
+            </Link>
+            <span className="text-gray-400">/</span>
+            <Link 
+              href="/free-tools"
+              className="text-white hover:text-blue-300 transition-colors font-medium"
+            >
+              Free Tools
             </Link>
           </div>
         </div>

@@ -66,14 +66,22 @@ export default function ToolsPage() {
 
   return (
     <main className="min-h-screen bg-blue-600">
-      {/* Back Button */}
+          {/* Back Button */}
       <div className="max-w-4xl mx-auto px-4 pt-8">
-        <Link 
-          href="/" 
-          className="text-blue-100 hover:text-white transition-colors flex items-center"
-        >
-          ← Back to Home
-        </Link>
+        <div className="flex items-center justify-between">
+          <Link 
+            href="/" 
+            className="text-blue-100 hover:text-white transition-colors flex items-center"
+          >
+            ← Back to Home
+          </Link>
+          <Link 
+            href="/free-tools" 
+            className="bg-white/20 hover:bg-white/30 text-white font-semibold px-6 py-3 rounded-lg transition-all duration-200"
+          >
+            Free Tools →
+          </Link>
+        </div>
       </div>
       
       <section className="py-20 px-4">
