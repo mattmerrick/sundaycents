@@ -1,27 +1,3 @@
-import type { Metadata } from 'next'
-
-export const metadata: Metadata = {
-  title: 'Password Generator - Free Secure Password Tool | SundayCents',
-  description: 'Generate strong, secure passwords instantly. Free password generator with customizable options for maximum security.',
-  keywords: 'password generator, secure password, strong password, password security, free password tool, cybersecurity',
-  authors: [{ name: 'Matt Merrick' }],
-  creator: 'Matt Merrick',
-  publisher: 'SundayCents',
-  robots: 'index, follow',
-  openGraph: {
-    title: 'Password Generator - Free Secure Password Tool | SundayCents',
-    description: 'Generate strong, secure passwords instantly with our free password generator.',
-    type: 'website',
-    url: 'https://sundaycents.com/free-tools/password-generator',
-    siteName: 'SundayCents',
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Password Generator - Free Secure Password Tool | SundayCents',
-    description: 'Generate strong, secure passwords instantly with our free password generator.',
-  },
-}
-
 'use client'
 
 import { useState } from 'react'
