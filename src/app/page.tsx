@@ -59,20 +59,21 @@ export default function Home() {
       <section className="bg-gradient-to-r from-purple-600 to-blue-600 py-16 sm:py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
-            Subscribe & Get 25 Prompts FREE
+            Subscribe & Get "Words Sell PDF" FREE
           </h2>
           
           <p className="text-xl text-purple-100 mb-8 max-w-3xl mx-auto leading-relaxed">
-            Discover profitable bite-size digital products you can build in hours and sell instantly. These prompts have helped others generate thousands in revenue.
+            The complete guide to building profitable bite-size digital products. Everything you need to create, price, and sell PDFs that make money from day one.
           </p>
           
           <div className="bg-white bg-opacity-10 rounded-2xl p-8 mb-8 max-w-2xl mx-auto">
             <h3 className="text-xl font-bold text-white mb-4">What's Inside:</h3>
             <ul className="text-purple-100 space-y-2 text-left">
-              <li>• 25 proven product ideas that sell</li>
-              <li>• Step-by-step creation process</li>
-              <li>• Pricing strategies that work</li>
-              <li>• Marketing templates for instant sales</li>
+              <li>• <strong>Step-by-step guide</strong> to build tiny bite-sized PDFs</li>
+              <li>• <strong>Top 100 proven ideas</strong> that are already selling</li>
+              <li>• <strong>25 prompts</strong> to generate unlimited new ideas</li>
+              <li>• <strong>Real examples</strong> of products doing this right now</li>
+              <li>• <strong>Pricing strategies</strong> that maximize profits</li>
             </ul>
           </div>
           
