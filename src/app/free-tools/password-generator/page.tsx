@@ -86,15 +86,6 @@ export default function PasswordGenerator() {
     }
   }
 
-  const generateMultiplePasswords = () => {
-    const passwords = []
-    for (let i = 0; i < 5; i++) {
-      generatePassword()
-      passwords.push(generatedPassword)
-    }
-    return passwords
-  }
-
   return (
     <main className="min-h-screen bg-gradient-to-br from-slate-600 to-gray-700">
       <div className="max-w-4xl mx-auto px-4 py-20">
