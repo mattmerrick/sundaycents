@@ -40,11 +40,11 @@ export default function Home() {
       <main className="min-h-screen bg-blue-600 flex items-center justify-center">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 w-full text-left">
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight mb-6">
-            Words That Sell: My $1M Writing Journey
+            Words That Sell
           </h1>
           
           <p className="text-lg sm:text-xl text-blue-100 mb-8 leading-relaxed">
-            Teaching 64+ people the copywriting secrets that built million-dollar businesses. Follow my real journey to $1M.
+            Learn how to turn words into income. A daily newsletter with strategies, examples, and ideas that turn writing into revenue.
           </p>
           
           <div className="mb-8">

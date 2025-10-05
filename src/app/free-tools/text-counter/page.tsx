@@ -1,27 +1,3 @@
-import type { Metadata } from 'next'
-
-export const metadata: Metadata = {
-  title: 'Text Counter - Character & Word Counter | SundayCents',
-  description: 'Count characters, words, and sentences in your text. Free text counter tool for writers and content creators.',
-  keywords: 'text counter, character counter, word counter, sentence counter, text analysis, writing tools',
-  authors: [{ name: 'Matt Merrick' }],
-  creator: 'Matt Merrick',
-  publisher: 'SundayCents',
-  robots: 'index, follow',
-  openGraph: {
-    title: 'Text Counter - Character & Word Counter | SundayCents',
-    description: 'Count characters, words, and sentences in your text with our free counter tool.',
-    type: 'website',
-    url: 'https://sundaycents.com/free-tools/text-counter',
-    siteName: 'SundayCents',
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Text Counter - Character & Word Counter | SundayCents',
-    description: 'Count characters, words, and sentences in your text with our free counter tool.',
-  },
-}
-
 'use client'
 
 import { useState, useEffect } from 'react'

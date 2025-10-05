@@ -1,27 +1,3 @@
-import type { Metadata } from 'next'
-
-export const metadata: Metadata = {
-  title: 'Email Subject Line Generator - Free Tool | SundayCents',
-  description: 'Generate high-converting email subject lines that increase open rates. Free email marketing tool for entrepreneurs and content creators.',
-  keywords: 'email subject lines, email marketing, open rates, email templates, marketing tools, free tools',
-  authors: [{ name: 'Matt Merrick' }],
-  creator: 'Matt Merrick',
-  publisher: 'SundayCents',
-  robots: 'index, follow',
-  openGraph: {
-    title: 'Email Subject Line Generator - Free Tool | SundayCents',
-    description: 'Generate high-converting email subject lines that increase open rates.',
-    type: 'website',
-    url: 'https://sundaycents.com/free-tools/email-subject-generator',
-    siteName: 'SundayCents',
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Email Subject Line Generator - Free Tool | SundayCents',
-    description: 'Generate high-converting email subject lines that increase open rates.',
-  },
-}
-
 'use client'
 
 import { useState } from 'react'

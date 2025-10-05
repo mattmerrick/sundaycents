@@ -1,27 +1,3 @@
-import type { Metadata } from 'next'
-
-export const metadata: Metadata = {
-  title: 'Time Tracker - Free Productivity Tool | SundayCents',
-  description: 'Track your time and boost productivity. Free time tracking tool for entrepreneurs and freelancers.',
-  keywords: 'time tracker, productivity tool, time management, work tracking, free time tracker, productivity app',
-  authors: [{ name: 'Matt Merrick' }],
-  creator: 'Matt Merrick',
-  publisher: 'SundayCents',
-  robots: 'index, follow',
-  openGraph: {
-    title: 'Time Tracker - Free Productivity Tool | SundayCents',
-    description: 'Track your time and boost productivity with our free time tracking tool.',
-    type: 'website',
-    url: 'https://sundaycents.com/free-tools/time-tracker',
-    siteName: 'SundayCents',
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Time Tracker - Free Productivity Tool | SundayCents',
-    description: 'Track your time and boost productivity with our free time tracking tool.',
-  },
-}
-
 'use client'
 
 import { useState, useEffect } from 'react'

@@ -1,27 +1,3 @@
-import type { Metadata } from 'next'
-
-export const metadata: Metadata = {
-  title: 'SEO Content Optimizer - Free Tool | SundayCents',
-  description: 'Optimize your content for search engines with our free SEO analyzer. Improve rankings, meta tags, and content structure.',
-  keywords: 'SEO optimizer, content optimization, search engine optimization, meta tags, SEO analysis, free SEO tools',
-  authors: [{ name: 'Matt Merrick' }],
-  creator: 'Matt Merrick',
-  publisher: 'SundayCents',
-  robots: 'index, follow',
-  openGraph: {
-    title: 'SEO Content Optimizer - Free Tool | SundayCents',
-    description: 'Optimize your content for search engines with our free SEO analyzer.',
-    type: 'website',
-    url: 'https://sundaycents.com/free-tools/seo-optimizer',
-    siteName: 'SundayCents',
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'SEO Content Optimizer - Free Tool | SundayCents',
-    description: 'Optimize your content for search engines with our free SEO analyzer.',
-  },
-}
-
 'use client'
 
 import { useState } from 'react'

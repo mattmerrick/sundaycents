@@ -1,27 +1,3 @@
-import type { Metadata } from 'next'
-
-export const metadata: Metadata = {
-  title: 'ROI Calculator - Return on Investment Tool | SundayCents',
-  description: 'Calculate return on investment (ROI) for your business investments. Free ROI calculator for entrepreneurs and investors.',
-  keywords: 'ROI calculator, return on investment, investment calculator, business ROI, investment analysis, financial tools',
-  authors: [{ name: 'Matt Merrick' }],
-  creator: 'Matt Merrick',
-  publisher: 'SundayCents',
-  robots: 'index, follow',
-  openGraph: {
-    title: 'ROI Calculator - Return on Investment Tool | SundayCents',
-    description: 'Calculate return on investment (ROI) for your business investments.',
-    type: 'website',
-    url: 'https://sundaycents.com/free-tools/roi-calculator',
-    siteName: 'SundayCents',
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'ROI Calculator - Return on Investment Tool | SundayCents',
-    description: 'Calculate return on investment (ROI) for your business investments.',
-  },
-}
-
 'use client'
 
 import { useState } from 'react'

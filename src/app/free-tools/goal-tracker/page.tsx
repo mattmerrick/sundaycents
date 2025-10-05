@@ -1,27 +1,3 @@
-import type { Metadata } from 'next'
-
-export const metadata: Metadata = {
-  title: 'Goal Tracker - Free Goal Setting Tool | SundayCents',
-  description: 'Track your goals and achieve success. Free goal tracking tool for personal and business goal setting.',
-  keywords: 'goal tracker, goal setting, goal management, personal goals, business goals, achievement tracker',
-  authors: [{ name: 'Matt Merrick' }],
-  creator: 'Matt Merrick',
-  publisher: 'SundayCents',
-  robots: 'index, follow',
-  openGraph: {
-    title: 'Goal Tracker - Free Goal Setting Tool | SundayCents',
-    description: 'Track your goals and achieve success with our free goal tracking tool.',
-    type: 'website',
-    url: 'https://sundaycents.com/free-tools/goal-tracker',
-    siteName: 'SundayCents',
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Goal Tracker - Free Goal Setting Tool | SundayCents',
-    description: 'Track your goals and achieve success with our free goal tracking tool.',
-  },
-}
-
 'use client'
 
 import { useState } from 'react'

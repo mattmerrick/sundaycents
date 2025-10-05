@@ -1,27 +1,3 @@
-import type { Metadata } from 'next'
-
-export const metadata: Metadata = {
-  title: 'Color Palette Generator - Free Design Tool | SundayCents',
-  description: 'Generate beautiful color palettes for your brand and designs. Free color palette generator with hex codes and color schemes.',
-  keywords: 'color palette generator, color scheme, brand colors, design tools, hex colors, color combinations',
-  authors: [{ name: 'Matt Merrick' }],
-  creator: 'Matt Merrick',
-  publisher: 'SundayCents',
-  robots: 'index, follow',
-  openGraph: {
-    title: 'Color Palette Generator - Free Design Tool | SundayCents',
-    description: 'Generate beautiful color palettes for your brand and designs.',
-    type: 'website',
-    url: 'https://sundaycents.com/free-tools/color-palette-generator',
-    siteName: 'SundayCents',
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Color Palette Generator - Free Design Tool | SundayCents',
-    description: 'Generate beautiful color palettes for your brand and designs.',
-  },
-}
-
 'use client'
 
 import { useState } from 'react'

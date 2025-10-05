@@ -1,27 +1,3 @@
-import type { Metadata } from 'next'
-
-export const metadata: Metadata = {
-  title: 'Lorem Ipsum Generator - Free Text Generator | SundayCents',
-  description: 'Generate Lorem Ipsum placeholder text instantly. Free Lorem Ipsum generator for designers and developers.',
-  keywords: 'lorem ipsum generator, placeholder text, dummy text, design tools, developer tools, text generator',
-  authors: [{ name: 'Matt Merrick' }],
-  creator: 'Matt Merrick',
-  publisher: 'SundayCents',
-  robots: 'index, follow',
-  openGraph: {
-    title: 'Lorem Ipsum Generator - Free Text Generator | SundayCents',
-    description: 'Generate Lorem Ipsum placeholder text instantly for your designs and projects.',
-    type: 'website',
-    url: 'https://sundaycents.com/free-tools/lorem-ipsum-generator',
-    siteName: 'SundayCents',
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Lorem Ipsum Generator - Free Text Generator | SundayCents',
-    description: 'Generate Lorem Ipsum placeholder text instantly for your designs and projects.',
-  },
-}
-
 'use client'
 
 import { useState } from 'react'

@@ -1,27 +1,3 @@
-import type { Metadata } from 'next'
-
-export const metadata: Metadata = {
-  title: 'Profit Margin Calculator - Free Tool | SundayCents',
-  description: 'Calculate profit margins for your business. Free profit margin calculator for entrepreneurs and business owners.',
-  keywords: 'profit margin calculator, business calculator, profit analysis, gross profit, net profit, business tools',
-  authors: [{ name: 'Matt Merrick' }],
-  creator: 'Matt Merrick',
-  publisher: 'SundayCents',
-  robots: 'index, follow',
-  openGraph: {
-    title: 'Profit Margin Calculator - Free Tool | SundayCents',
-    description: 'Calculate profit margins for your business with our free calculator.',
-    type: 'website',
-    url: 'https://sundaycents.com/free-tools/profit-margin-calculator',
-    siteName: 'SundayCents',
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Profit Margin Calculator - Free Tool | SundayCents',
-    description: 'Calculate profit margins for your business with our free calculator.',
-  },
-}
-
 'use client'
 
 import { useState } from 'react'
@@ -33,50 +9,65 @@ export default function ProfitMarginCalculator() {
   const [otherExpenses, setOtherExpenses] = useState('')
   const [results, setResults] = useState<{
     grossProfit: number
-    grossMargin: number
+    grossProfitMargin: number
     operatingProfit: number
-    operatingMargin: number
+    operatingProfitMargin: number
     netProfit: number
-    netMargin: number
+    netProfitMargin: number
   } | null>(null)
 
-  const calculateProfitMargins = () => {
-    const rev = parseFloat(revenue) || 0
-    const cogs = parseFloat(costOfGoodsSold) || 0
-    const operating = parseFloat(operatingExpenses) || 0
-    const other = parseFloat(otherExpenses) || 0
+  const calculateProfitMargin = () => {
+    const revenueNum = parseFloat(revenue) || 0
+    const cogsNum = parseFloat(costOfGoodsSold) || 0
+    const opExpNum = parseFloat(operatingExpenses) || 0
+    const otherExpNum = parseFloat(otherExpenses) || 0
 
-    if (rev <= 0) {
-      alert('Revenue must be greater than 0')
+    if (revenueNum === 0) {
+      alert('Please enter a revenue amount')
       return
     }
 
-    const grossProfit = rev - cogs
-    const grossMargin = (grossProfit / rev) * 100
-    
-    const operatingProfit = grossProfit - operating
-    const operatingMargin = (operatingProfit / rev) * 100
-    
-    const netProfit = operatingProfit - other
-    const netMargin = (netProfit / rev) * 100
+    const grossProfit = revenueNum - cogsNum
+    const grossProfitMargin = (grossProfit / revenueNum) * 100
+
+    const operatingProfit = grossProfit - opExpNum
+    const operatingProfitMargin = (operatingProfit / revenueNum) * 100
+
+    const netProfit = operatingProfit - otherExpNum
+    const netProfitMargin = (netProfit / revenueNum) * 100
 
     setResults({
-      grossProfit: Math.round(grossProfit * 100) / 100,
-      grossMargin: Math.round(grossMargin * 100) / 100,
-      operatingProfit: Math.round(operatingProfit * 100) / 100,
-      operatingMargin: Math.round(operatingMargin * 100) / 100,
-      netProfit: Math.round(netProfit * 100) / 100,
-      netMargin: Math.round(netMargin * 100) / 100
+      grossProfit,
+      grossProfitMargin,
+      operatingProfit,
+      operatingProfitMargin,
+      netProfit,
+      netProfitMargin,
     })
   }
 
-  const getMarginColor = (margin: number) => {
-    if (margin >= 20) return 'text-green-500'
-    if (margin >= 10) return 'text-yellow-500'
-    return 'text-red-500'
+  const resetCalculator = () => {
+    setRevenue('')
+    setCostOfGoodsSold('')
+    setOperatingExpenses('')
+    setOtherExpenses('')
+    setResults(null)
   }
 
-  const getMarginLabel = (margin: number) => {
+  const formatCurrency = (amount: number) => {
+    return new Intl.NumberFormat('en-US', {
+      style: 'currency',
+      currency: 'USD',
+    }).format(amount)
+  }
+
+  const getMarginColor = (margin: number) => {
+    if (margin >= 20) return 'text-green-600'
+    if (margin >= 10) return 'text-yellow-600'
+    return 'text-red-600'
+  }
+
+  const getMarginStatus = (margin: number) => {
     if (margin >= 20) return 'Excellent'
     if (margin >= 15) return 'Good'
     if (margin >= 10) return 'Average'
@@ -85,192 +76,167 @@ export default function ProfitMarginCalculator() {
   }
 
   return (
-    <main className="min-h-screen bg-gradient-to-br from-violet-500 to-purple-600">
-      <div className="max-w-4xl mx-auto px-4 py-20">
-        <div className="text-center mb-12">
-          <h1 className="text-4xl sm:text-5xl font-bold text-white mb-6">
+    <div className="min-h-screen bg-gray-100 py-8">
+      <div className="max-w-4xl mx-auto px-4">
+        <div className="text-center mb-8">
+          <h1 className="text-4xl font-bold text-gray-900 mb-4">
             Profit Margin Calculator
           </h1>
-          <p className="text-xl text-white/90 max-w-2xl mx-auto">
-            Calculate your business profit margins and understand your financial performance.
+          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            Calculate your business's profit margins to understand profitability and make better financial decisions.
           </p>
         </div>
 
-        <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20 shadow-xl">
-          <div className="grid md:grid-cols-2 gap-8">
-            <div className="space-y-6">
-              <h2 className="text-2xl font-semibold text-white mb-6">Financial Input</h2>
-              
+        <div className="grid md:grid-cols-2 gap-8">
+          {/* Input Form */}
+          <div className="bg-white rounded-lg shadow-md p-6">
+            <h2 className="text-2xl font-semibold text-gray-900 mb-6">Enter Your Financial Data</h2>
+            
+            <div className="space-y-4">
               <div>
-                <label className="block text-sm font-medium text-white mb-2">
+                <label className="block text-sm font-medium text-gray-700 mb-2">
                   Total Revenue ($)
                 </label>
                 <input
                   type="number"
-                  step="0.01"
                   value={revenue}
                   onChange={(e) => setRevenue(e.target.value)}
-                  placeholder="0.00"
-                  className="w-full px-4 py-3 rounded-lg bg-white/20 border border-white/30 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-white/50"
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  placeholder="Enter total revenue"
                 />
-                <p className="text-white/60 text-xs mt-1">
-                  Total sales or income from all sources
-                </p>
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-white mb-2">
+                <label className="block text-sm font-medium text-gray-700 mb-2">
                   Cost of Goods Sold ($)
                 </label>
                 <input
                   type="number"
-                  step="0.01"
                   value={costOfGoodsSold}
                   onChange={(e) => setCostOfGoodsSold(e.target.value)}
-                  placeholder="0.00"
-                  className="w-full px-4 py-3 rounded-lg bg-white/20 border border-white/30 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-white/50"
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  placeholder="Enter COGS"
                 />
-                <p className="text-white/60 text-xs mt-1">
-                  Direct costs: materials, labor, manufacturing
-                </p>
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-white mb-2">
+                <label className="block text-sm font-medium text-gray-700 mb-2">
                   Operating Expenses ($)
                 </label>
                 <input
                   type="number"
-                  step="0.01"
                   value={operatingExpenses}
                   onChange={(e) => setOperatingExpenses(e.target.value)}
-                  placeholder="0.00"
-                  className="w-full px-4 py-3 rounded-lg bg-white/20 border border-white/30 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-white/50"
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  placeholder="Enter operating expenses"
                 />
-                <p className="text-white/60 text-xs mt-1">
-                  Rent, salaries, utilities, marketing, etc.
-                </p>
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-white mb-2">
+                <label className="block text-sm font-medium text-gray-700 mb-2">
                   Other Expenses ($)
                 </label>
                 <input
                   type="number"
-                  step="0.01"
                   value={otherExpenses}
                   onChange={(e) => setOtherExpenses(e.target.value)}
-                  placeholder="0.00"
-                  className="w-full px-4 py-3 rounded-lg bg-white/20 border border-white/30 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-white/50"
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  placeholder="Enter other expenses"
                 />
-                <p className="text-white/60 text-xs mt-1">
-                  Interest, taxes, one-time expenses
-                </p>
               </div>
 
-              <button
-                onClick={calculateProfitMargins}
-                disabled={!revenue}
-                className="w-full bg-white text-violet-600 font-semibold px-6 py-3 rounded-lg hover:bg-white/90 transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
-              >
-                Calculate Profit Margins
-              </button>
+              <div className="flex space-x-4">
+                <button
+                  onClick={calculateProfitMargin}
+                  className="flex-1 bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 transition-colors"
+                >
+                  Calculate
+                </button>
+                <button
+                  onClick={resetCalculator}
+                  className="flex-1 bg-gray-600 text-white py-2 px-4 rounded-md hover:bg-gray-700 transition-colors"
+                >
+                  Reset
+                </button>
+              </div>
             </div>
+          </div>
 
-            <div>
-              <h2 className="text-2xl font-semibold text-white mb-6">Profit Margin Analysis</h2>
-              
-              {results ? (
-                <div className="space-y-6">
-                  <div className="bg-white/10 rounded-lg p-6">
-                    <h3 className="text-lg font-semibold text-white mb-4">Gross Profit Margin</h3>
-                    <div className="flex items-center justify-between mb-2">
-                      <span className="text-white/80">Gross Profit:</span>
-                      <span className="text-xl font-bold text-green-400">
-                        ${results.grossProfit.toLocaleString()}
-                      </span>
-                    </div>
-                    <div className="flex items-center justify-between">
-                      <span className="text-white/80">Gross Margin:</span>
-                      <span className={`text-xl font-bold ${getMarginColor(results.grossMargin)}`}>
-                        {results.grossMargin}%
-                      </span>
-                    </div>
-                    <p className="text-white/60 text-xs mt-2">
-                      {getMarginLabel(results.grossMargin)} • Revenue minus direct costs
-                    </p>
-                  </div>
-
-                  <div className="bg-white/10 rounded-lg p-6">
-                    <h3 className="text-lg font-semibold text-white mb-4">Operating Profit Margin</h3>
-                    <div className="flex items-center justify-between mb-2">
-                      <span className="text-white/80">Operating Profit:</span>
-                      <span className="text-xl font-bold text-blue-400">
-                        ${results.operatingProfit.toLocaleString()}
-                      </span>
-                    </div>
-                    <div className="flex items-center justify-between">
-                      <span className="text-white/80">Operating Margin:</span>
-                      <span className={`text-xl font-bold ${getMarginColor(results.operatingMargin)}`}>
-                        {results.operatingMargin}%
-                      </span>
-                    </div>
-                    <p className="text-white/60 text-xs mt-2">
-                      {getMarginLabel(results.operatingMargin)} • After operating expenses
-                    </p>
-                  </div>
-
-                  <div className="bg-white/10 rounded-lg p-6">
-                    <h3 className="text-lg font-semibold text-white mb-4">Net Profit Margin</h3>
-                    <div className="flex items-center justify-between mb-2">
-                      <span className="text-white/80">Net Profit:</span>
-                      <span className="text-xl font-bold text-purple-400">
-                        ${results.netProfit.toLocaleString()}
-                      </span>
-                    </div>
-                    <div className="flex items-center justify-between">
-                      <span className="text-white/80">Net Margin:</span>
-                      <span className={`text-xl font-bold ${getMarginColor(results.netMargin)}`}>
-                        {results.netMargin}%
-                      </span>
-                    </div>
-                    <p className="text-white/60 text-xs mt-2">
-                      {getMarginLabel(results.netMargin)} • Final profit after all expenses
-                    </p>
-                  </div>
-
-                  <div className="bg-blue-500/20 border border-blue-500/30 rounded-lg p-4">
-                    <h4 className="text-sm font-semibold text-white mb-2">💡 Industry Benchmarks</h4>
-                    <ul className="text-white/90 text-sm space-y-1">
-                      <li>• Excellent: 20%+ net margin</li>
-                      <li>• Good: 15-20% net margin</li>
-                      <li>• Average: 10-15% net margin</li>
-                      <li>• Below Average: 5-10% net margin</li>
-                      <li>• Poor: Below 5% net margin</li>
-                    </ul>
-                  </div>
-                </div>
-              ) : (
-                <div className="bg-white/10 rounded-lg p-6 text-center">
-                  <p className="text-white/60">
-                    Enter your financial data and click "Calculate Profit Margins" to see results
+          {/* Results */}
+          <div className="bg-white rounded-lg shadow-md p-6">
+            <h2 className="text-2xl font-semibold text-gray-900 mb-6">Profit Margin Results</h2>
+            
+            {results ? (
+              <div className="space-y-6">
+                {/* Gross Profit */}
+                <div className="border-l-4 border-blue-500 pl-4">
+                  <h3 className="text-lg font-semibold text-gray-900">Gross Profit</h3>
+                  <p className="text-2xl font-bold text-blue-600">
+                    {formatCurrency(results.grossProfit)}
+                  </p>
+                  <p className="text-sm text-gray-600">
+                    Gross Profit Margin: 
+                    <span className={`ml-2 font-semibold ${getMarginColor(results.grossProfitMargin)}`}>
+                      {results.grossProfitMargin.toFixed(2)}% ({getMarginStatus(results.grossProfitMargin)})
+                    </span>
                   </p>
                 </div>
-              )}
-            </div>
+
+                {/* Operating Profit */}
+                <div className="border-l-4 border-yellow-500 pl-4">
+                  <h3 className="text-lg font-semibold text-gray-900">Operating Profit</h3>
+                  <p className="text-2xl font-bold text-yellow-600">
+                    {formatCurrency(results.operatingProfit)}
+                  </p>
+                  <p className="text-sm text-gray-600">
+                    Operating Profit Margin: 
+                    <span className={`ml-2 font-semibold ${getMarginColor(results.operatingProfitMargin)}`}>
+                      {results.operatingProfitMargin.toFixed(2)}% ({getMarginStatus(results.operatingProfitMargin)})
+                    </span>
+                  </p>
+                </div>
+
+                {/* Net Profit */}
+                <div className="border-l-4 border-green-500 pl-4">
+                  <h3 className="text-lg font-semibold text-gray-900">Net Profit</h3>
+                  <p className="text-2xl font-bold text-green-600">
+                    {formatCurrency(results.netProfit)}
+                  </p>
+                  <p className="text-sm text-gray-600">
+                    Net Profit Margin: 
+                    <span className={`ml-2 font-semibold ${getMarginColor(results.netProfitMargin)}`}>
+                      {results.netProfitMargin.toFixed(2)}% ({getMarginStatus(results.netProfitMargin)})
+                    </span>
+                  </p>
+                </div>
+
+                {/* Profitability Analysis */}
+                <div className="bg-gray-50 rounded-lg p-4">
+                  <h4 className="font-semibold text-gray-900 mb-2">Profitability Analysis</h4>
+                  <ul className="text-sm text-gray-700 space-y-1">
+                    <li>• Gross margin shows product/service profitability</li>
+                    <li>• Operating margin shows operational efficiency</li>
+                    <li>• Net margin shows overall business profitability</li>
+                    <li>• Industry average is typically 10-20% net margin</li>
+                  </ul>
+                </div>
+              </div>
+            ) : (
+              <div className="text-center py-8">
+                <p className="text-gray-500">
+                  Enter your financial data and click "Calculate" to see your profit margins.
+                </p>
+              </div>
+            )}
           </div>
         </div>
 
-        <div className="mt-12 text-center">
-          <a 
-            href="/free-tools" 
-            className="text-white/80 hover:text-white transition-colors"
-          >
+        <div className="mt-8 text-center">
+          <a href="/free-tools" className="text-blue-600 hover:text-blue-800">
             ← Back to Free Tools
           </a>
         </div>
       </div>
-    </main>
+    </div>
   )
 }
