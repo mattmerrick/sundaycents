@@ -30,14 +30,20 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
     }
   }
 
+  const canonicalUrl = `https://mattmerrick.com/blog/${post.id}`
+
   return {
     title: post.seoTitle || `${post.title} - Matt Merrick`,
     description: post.seoDescription || `Read ${post.title} on Matt Merrick's blog about building a $1M solopreneur business`,
     keywords: post.tags.join(', '),
+    alternates: {
+      canonical: canonicalUrl,
+    },
     openGraph: {
       title: post.seoTitle || `${post.title} - Matt Merrick`,
       description: post.seoDescription || `Read ${post.title} on Matt Merrick's blog about building a $1M solopreneur business`,
       type: 'article',
+      url: canonicalUrl,
       publishedTime: post.date,
       authors: ['Matt Merrick'],
       tags: post.tags,
