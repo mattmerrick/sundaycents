@@ -115,7 +115,7 @@ export default function ContentIdeasGenerator() {
         'The {niche} app that changed everything'
       ]
     }
-  }
+  } as const
 
   const generateIdeas = async () => {
     if (!niche.trim()) return
@@ -130,7 +130,20 @@ export default function ContentIdeasGenerator() {
     // Simulate API call delay
     await new Promise(resolve => setTimeout(resolve, 1200))
     
-    const templates = contentTemplates[platform as keyof typeof contentTemplates]?.[contentType as keyof typeof contentTemplates.instagram] || contentTemplates.instagram.posts
+    // Get templates based on platform and content type
+    let templates: readonly string[] = []
+    
+    if (platform === 'instagram') {
+      templates = contentTemplates.instagram[contentType as 'posts' | 'stories'] || contentTemplates.instagram.posts
+    } else if (platform === 'twitter') {
+      templates = contentTemplates.twitter[contentType as 'posts' | 'threads'] || contentTemplates.twitter.posts
+    } else if (platform === 'linkedin') {
+      templates = contentTemplates.linkedin[contentType as 'posts' | 'articles'] || contentTemplates.linkedin.posts
+    } else if (platform === 'tiktok') {
+      templates = contentTemplates.tiktok[contentType as 'posts' | 'videos'] || contentTemplates.tiktok.posts
+    } else {
+      templates = contentTemplates.instagram.posts
+    }
     
     const generatedIdeas = templates
       .map(template => template.replace(/{niche}/g, niche.toLowerCase()))
