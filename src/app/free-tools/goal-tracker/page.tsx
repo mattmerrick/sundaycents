@@ -83,16 +83,16 @@ export default function GoalTracker() {
       case 'high': return 'text-red-400'
       case 'medium': return 'text-yellow-400'
       case 'low': return 'text-green-400'
-      default: return 'style={{color: '#FFFFFF'}}/60'
+      default: return 'text-white/60'
     }
   }
 
   const getStatusColor = (status: string) => {
     switch (status) {
       case 'completed': return 'text-green-400'
-      case 'in-progress': return 'style={{color: '#0070F3'}}'
-      case 'not-started': return 'style={{color: '#6B7280'}}'
-      default: return 'style={{color: '#FFFFFF'}}/60'
+      case 'in-progress': return 'text-blue-400'
+      case 'not-started': return 'text-gray-400'
+      default: return 'text-white/60'
     }
   }
 
@@ -107,21 +107,21 @@ export default function GoalTracker() {
     <main className="min-h-screen bg-gradient-to-br from-teal-500 to-cyan-600">
       <div className="max-w-4xl mx-auto px-4 py-20">
         <div className="text-center mb-12">
-          <h1 className="text-4xl sm:text-5xl font-bold style={{color: '#FFFFFF'}} mb-6">
+          <h1 className="text-4xl sm:text-5xl font-bold text-white mb-6">
             Goal Tracker
           </h1>
-          <p className="text-xl style={{color: '#FFFFFF'}}/90 max-w-2xl mx-auto">
+          <p className="text-xl text-white/90 max-w-2xl mx-auto">
             Set, track, and achieve your goals. Stay motivated and monitor your progress.
           </p>
         </div>
 
-        <div className="style={{backgroundColor: '#FFFFFF'}}/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20 shadow-xl">
+        <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20 shadow-xl">
           {/* Stats */}
           {totalGoals > 0 && (
             <div className="grid grid-cols-3 gap-4 mb-8">
-              <div className="style={{backgroundColor: '#FFFFFF'}}/10 rounded-lg p-4 text-center">
-                <div className="text-2xl font-bold style={{color: '#FFFFFF'}}">{totalGoals}</div>
-                <div className="style={{color: '#FFFFFF'}}/60 text-sm">Total Goals</div>
+              <div className="bg-white/10 rounded-lg p-4 text-center">
+                <div className="text-2xl font-bold text-white">{totalGoals}</div>
+                <div className="text-white/60 text-sm">Total Goals</div>
               </div>
               <div className="style={{backgroundColor: '#FFFFFF'}}/10 rounded-lg p-4 text-center">
                 <div className="text-2xl font-bold text-green-400">{completedGoals}</div>
