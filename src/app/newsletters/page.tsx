@@ -78,12 +78,12 @@ export default function NewslettersPage() {
   ]
 
   return (
-    <main className='min-h-screen' style={{background: 'linear-gradient(to bottom right, #0070F3, #FF5A5F, #FF5A5F)'}}>
+    <main className='min-h-screen bg-gradient-to-br from-blue-600 via-purple-600 to-pink-600'>
       {/* Back Button */}
       <div className="max-w-6xl mx-auto px-4 pt-8">
         <Link 
           href="/" 
-          className="transition-colors flex items-center hover:text-blue-400" style={{color: '#FFFFFF'}}
+          className="transition-colors flex items-center text-white hover:text-blue-400"
         >
           ← Back to Home
         </Link>
@@ -92,10 +92,10 @@ export default function NewslettersPage() {
       <section className="py-20 px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h1 className="text-4xl sm:text-6xl font-bold mb-6" style={{color: '#FFFFFF'}}>
+            <h1 className="text-4xl sm:text-6xl font-bold text-white mb-6">
               Newsletter Articles
             </h1>
-            <p className="text-xl max-w-3xl mx-auto" style={{color: '#FFFFFF'}}>
+            <p className="text-xl text-white max-w-3xl mx-auto">
               Discover the best newsletters, learn email marketing strategies, and get insights 
               from successful newsletter creators and entrepreneurs.
             </p>
@@ -153,8 +153,8 @@ export default function NewslettersPage() {
                   key={index}
                   className={`px-4 py-2 rounded-lg transition-all duration-200 ${
                     index === 0 
-                      ? 'style={{backgroundColor: '#FFFFFF'}} style={{color: '#0070F3'}}' 
-                      : 'style={{backgroundColor: '#FFFFFF'}}/10 style={{color: '#FFFFFF'}} hover:style={{backgroundColor: '#FFFFFF'}}/20'
+                      ? 'bg-white text-blue-600' 
+                      : 'bg-white/10 text-white hover:bg-white/20'
                   }`}
                 >
                   {category}
@@ -166,9 +166,9 @@ export default function NewslettersPage() {
           {/* Articles Grid */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {articles.map((article, index) => (
-              <div key={index} className="style={{backgroundColor: '#FFFFFF'}}/10 backdrop-blur-sm rounded-xl p-6 border border-white/20 shadow-xl hover:style={{backgroundColor: '#FFFFFF'}}/20 transition-all duration-300 hover:scale-105">
+              <div key={index} className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20 shadow-xl hover:bg-white/20 transition-all duration-300 hover:scale-105">
                 <div className="flex items-center gap-3 mb-4">
-                  <span className="style={{backgroundColor: '#FFFFFF'}}/20 style={{color: '#FFFFFF'}} px-3 py-1 rounded-full text-xs font-medium">
+                  <span className="bg-white/20 text-white px-3 py-1 rounded-full text-xs font-medium">
                     {article.category}
                   </span>
                   {article.featured && (
@@ -178,22 +178,22 @@ export default function NewslettersPage() {
                   )}
                 </div>
                 
-                <h3 className="text-xl font-bold style={{color: '#FFFFFF'}} mb-3 leading-tight">
+                <h3 className="text-xl font-bold text-white mb-3 leading-tight">
                   {article.title}
                 </h3>
                 
-                <p className="style={{color: '#FFFFFF'}}/90 text-sm leading-relaxed mb-4">
+                <p className="text-white/90 text-sm leading-relaxed mb-4">
                   {article.excerpt}
                 </p>
                 
-                <div className="flex items-center justify-between style={{color: '#FFFFFF'}}/60 text-xs mb-4">
+                <div className="flex items-center justify-between text-white/60 text-xs mb-4">
                   <span>{article.date}</span>
                   <span>{article.readTime}</span>
                 </div>
                 
                 <Link
                   href={`/newsletters/${article.slug}`}
-                  className="inline-block style={{backgroundColor: '#FFFFFF'}}/20 hover:style={{backgroundColor: '#FFFFFF'}}/30 style={{color: '#FFFFFF'}} font-semibold px-4 py-2 rounded-lg transition-all duration-200 text-sm"
+                  className="inline-block bg-white/20 hover:bg-white/30 text-white font-semibold px-4 py-2 rounded-lg transition-all duration-200 text-sm"
                 >
                   Read More →
                 </Link>
@@ -203,15 +203,15 @@ export default function NewslettersPage() {
 
           {/* Newsletter CTA */}
           <div className="mt-20 text-center">
-            <div className="style={{backgroundColor: '#FFFFFF'}}/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20 shadow-xl">
-              <h2 className="text-3xl font-bold style={{color: '#FFFFFF'}} mb-4">Want More Newsletter Insights?</h2>
-              <p className="style={{color: '#FFFFFF'}}/90 mb-6 max-w-2xl mx-auto">
+            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20 shadow-xl">
+              <h2 className="text-3xl font-bold text-white mb-4">Want More Newsletter Insights?</h2>
+              <p className="text-white/90 mb-6 max-w-2xl mx-auto">
                 Get weekly insights on newsletter strategies, email marketing tips, and business growth 
                 delivered directly to your inbox.
               </p>
               <Link 
                 href="/subscribe"
-                className="inline-block style={{backgroundColor: '#FFFFFF'}} style={{color: '#0070F3'}} font-bold px-8 py-4 rounded-lg hover:style={{backgroundColor: '#FFFFFF'}}/90 transition-all duration-200 hover:scale-105"
+                className="inline-block bg-white text-blue-600 font-bold px-8 py-4 rounded-lg hover:bg-white/90 transition-all duration-200 hover:scale-105"
               >
                 Subscribe to SundayCents Newsletter
               </Link>
