@@ -83,7 +83,7 @@ export default function NewslettersPage() {
       <div className="max-w-6xl mx-auto px-4 pt-8">
         <Link 
           href="/" 
-          className="transition-colors flex items-center hover:style={{color: '#0070F3'}}" style={{color: '#FFFFFF'}}
+          className="transition-colors flex items-center hover:text-blue-400" style={{color: '#FFFFFF'}}
         >
           ← Back to Home
         </Link>
