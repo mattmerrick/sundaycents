@@ -3,13 +3,13 @@ import EmailSignup from '@/components/EmailSignup'
 
 export default function LatestEmail() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen style={{backgroundColor: '#FFFFFF'}}">
       {/* Header with back button and signup */}
       <div className="max-w-4xl mx-auto px-4 py-8">
         <div className="flex justify-between items-center mb-8">
           <Link 
             href="/" 
-            className="text-blue-600 hover:text-blue-800 underline"
+            className="style={{color: '#0070F3'}} hover:text-blue-800 underline"
           >
             ← Back  Home
           </Link>
@@ -18,7 +18,7 @@ export default function LatestEmail() {
 
         {/* Article Content */}
         <article className="prose prose-lg max-w-none">
-          <h1 className="text-3xl font-bold text-gray-900 mb-6 text-center">
+          <h1 className="text-3xl font-bold style={{color: '#111111'}} mb-6 text-center">
             Today is the day we have been waiting for. Let's see what happens!
           </h1>
 

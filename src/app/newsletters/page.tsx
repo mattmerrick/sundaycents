@@ -78,12 +78,12 @@ export default function NewslettersPage() {
   ]
 
   return (
-    <main className="min-h-screen bg-gradient-to-br from-blue-600 via-purple-600 to-pink-600">
+    <main className='min-h-screen' style={{background: 'linear-gradient(to bottom right, #0070F3, #FF5A5F, #FF5A5F)'}}>
       {/* Back Button */}
       <div className="max-w-6xl mx-auto px-4 pt-8">
         <Link 
           href="/" 
-          className="text-white/80 hover:text-white transition-colors flex items-center"
+          className="transition-colors flex items-center hover:style={{color: '#0070F3'}}" style={{color: '#FFFFFF'}}
         >
           ← Back to Home
         </Link>
@@ -92,10 +92,10 @@ export default function NewslettersPage() {
       <section className="py-20 px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h1 className="text-4xl sm:text-6xl font-bold text-white mb-6">
+            <h1 className="text-4xl sm:text-6xl font-bold mb-6" style={{color: '#FFFFFF'}}>
               Newsletter Articles
             </h1>
-            <p className="text-xl text-white/90 max-w-3xl mx-auto">
+            <p className="text-xl max-w-3xl mx-auto" style={{color: '#FFFFFF'}}>
               Discover the best newsletters, learn email marketing strategies, and get insights 
               from successful newsletter creators and entrepreneurs.
             </p>
@@ -104,39 +104,39 @@ export default function NewslettersPage() {
           {/* Featured Article */}
           {articles.find(article => article.featured) && (
             <div className="mb-16">
-              <h2 className="text-2xl font-bold text-white mb-8">Featured Article</h2>
-              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20 shadow-xl">
+              <h2 className="text-2xl font-bold mb-8" style={{color: '#FFFFFF'}}>Featured Article</h2>
+              <div className='backdrop-blur-sm rounded-2xl p-8 shadow-xl' style={{backgroundColor: 'rgba(255, 255, 255, 0.1)', border: '1px solid rgba(255, 255, 255, 0.2)'}}>
                 {(() => {
                   const featured = articles.find(article => article.featured)!
                   return (
                     <div className="grid md:grid-cols-2 gap-8 items-center">
                       <div>
                         <div className="flex items-center gap-3 mb-4">
-                          <span className="bg-yellow-500 text-black px-3 py-1 rounded-full text-sm font-semibold">
+                          <span className='px-3 py-1 rounded-full text-sm font-semibold' style={{backgroundColor: '#FFFFFF', color: '#111111'}}>
                             Featured
                           </span>
-                          <span className="text-white/80 text-sm">{featured.category}</span>
+                          <span className='text-sm' style={{color: '#FFFFFF'}}>{featured.category}</span>
                         </div>
-                        <h3 className="text-3xl font-bold text-white mb-4">
+                        <h3 className="text-3xl font-bold mb-4" style={{color: '#FFFFFF'}}>
                           {featured.title}
                         </h3>
-                        <p className="text-white/90 leading-relaxed mb-6">
+                        <p className="leading-relaxed mb-6" style={{color: '#FFFFFF'}}>
                           {featured.excerpt}
                         </p>
-                        <div className="flex items-center gap-4 text-white/80 text-sm mb-6">
+                        <div className="flex items-center gap-4 text-sm mb-6" style={{color: '#FFFFFF'}}>
                           <span>{featured.date}</span>
                           <span>•</span>
                           <span>{featured.readTime}</span>
                         </div>
                         <Link
                           href={`/newsletters/${featured.slug}`}
-                          className="inline-block bg-white text-blue-600 font-semibold px-6 py-3 rounded-lg hover:bg-white/90 transition-all duration-200 hover:scale-105"
+                          className='inline-block font-semibold px-6 py-3 rounded-lg transition-all duration-200 hover:scale-105 hover:bg-gray-50' style={{backgroundColor: '#FFFFFF', color: '#0070F3'}}
                         >
                           Read Article →
                         </Link>
                       </div>
-                      <div className="bg-white/10 rounded-lg h-64 flex items-center justify-center">
-                        <span className="text-white/60">Article Image</span>
+                      <div className='rounded-lg h-64 flex items-center justify-center' style={{backgroundColor: 'rgba(255, 255, 255, 0.1)'}}>
+                        <span style={{color: '#FFFFFF'}}>Article Image</span>
                       </div>
                     </div>
                   )
@@ -153,8 +153,8 @@ export default function NewslettersPage() {
                   key={index}
                   className={`px-4 py-2 rounded-lg transition-all duration-200 ${
                     index === 0 
-                      ? 'bg-white text-blue-600' 
-                      : 'bg-white/10 text-white hover:bg-white/20'
+                      ? 'style={{backgroundColor: '#FFFFFF'}} style={{color: '#0070F3'}}' 
+                      : 'style={{backgroundColor: '#FFFFFF'}}/10 style={{color: '#FFFFFF'}} hover:style={{backgroundColor: '#FFFFFF'}}/20'
                   }`}
                 >
                   {category}
@@ -166,9 +166,9 @@ export default function NewslettersPage() {
           {/* Articles Grid */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {articles.map((article, index) => (
-              <div key={index} className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20 shadow-xl hover:bg-white/20 transition-all duration-300 hover:scale-105">
+              <div key={index} className="style={{backgroundColor: '#FFFFFF'}}/10 backdrop-blur-sm rounded-xl p-6 border border-white/20 shadow-xl hover:style={{backgroundColor: '#FFFFFF'}}/20 transition-all duration-300 hover:scale-105">
                 <div className="flex items-center gap-3 mb-4">
-                  <span className="bg-white/20 text-white px-3 py-1 rounded-full text-xs font-medium">
+                  <span className="style={{backgroundColor: '#FFFFFF'}}/20 style={{color: '#FFFFFF'}} px-3 py-1 rounded-full text-xs font-medium">
                     {article.category}
                   </span>
                   {article.featured && (
@@ -178,22 +178,22 @@ export default function NewslettersPage() {
                   )}
                 </div>
                 
-                <h3 className="text-xl font-bold text-white mb-3 leading-tight">
+                <h3 className="text-xl font-bold style={{color: '#FFFFFF'}} mb-3 leading-tight">
                   {article.title}
                 </h3>
                 
-                <p className="text-white/90 text-sm leading-relaxed mb-4">
+                <p className="style={{color: '#FFFFFF'}}/90 text-sm leading-relaxed mb-4">
                   {article.excerpt}
                 </p>
                 
-                <div className="flex items-center justify-between text-white/60 text-xs mb-4">
+                <div className="flex items-center justify-between style={{color: '#FFFFFF'}}/60 text-xs mb-4">
                   <span>{article.date}</span>
                   <span>{article.readTime}</span>
                 </div>
                 
                 <Link
                   href={`/newsletters/${article.slug}`}
-                  className="inline-block bg-white/20 hover:bg-white/30 text-white font-semibold px-4 py-2 rounded-lg transition-all duration-200 text-sm"
+                  className="inline-block style={{backgroundColor: '#FFFFFF'}}/20 hover:style={{backgroundColor: '#FFFFFF'}}/30 style={{color: '#FFFFFF'}} font-semibold px-4 py-2 rounded-lg transition-all duration-200 text-sm"
                 >
                   Read More →
                 </Link>
@@ -203,15 +203,15 @@ export default function NewslettersPage() {
 
           {/* Newsletter CTA */}
           <div className="mt-20 text-center">
-            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20 shadow-xl">
-              <h2 className="text-3xl font-bold text-white mb-4">Want More Newsletter Insights?</h2>
-              <p className="text-white/90 mb-6 max-w-2xl mx-auto">
+            <div className="style={{backgroundColor: '#FFFFFF'}}/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20 shadow-xl">
+              <h2 className="text-3xl font-bold style={{color: '#FFFFFF'}} mb-4">Want More Newsletter Insights?</h2>
+              <p className="style={{color: '#FFFFFF'}}/90 mb-6 max-w-2xl mx-auto">
                 Get weekly insights on newsletter strategies, email marketing tips, and business growth 
                 delivered directly to your inbox.
               </p>
               <Link 
                 href="/subscribe"
-                className="inline-block bg-white text-blue-600 font-bold px-8 py-4 rounded-lg hover:bg-white/90 transition-all duration-200 hover:scale-105"
+                className="inline-block style={{backgroundColor: '#FFFFFF'}} style={{color: '#0070F3'}} font-bold px-8 py-4 rounded-lg hover:style={{backgroundColor: '#FFFFFF'}}/90 transition-all duration-200 hover:scale-105"
               >
                 Subscribe to SundayCents Newsletter
               </Link>

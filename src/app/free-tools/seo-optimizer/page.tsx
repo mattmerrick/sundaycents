@@ -113,21 +113,21 @@ export default function SEOOptimizer() {
     <main className="min-h-screen bg-gradient-to-br from-emerald-500 to-teal-600">
       <div className="max-w-4xl mx-auto px-4 py-20">
         <div className="text-center mb-12">
-          <h1 className="text-4xl sm:text-5xl font-bold text-white mb-6">
+          <h1 className="text-4xl sm:text-5xl font-bold style={{color: '#FFFFFF'}} mb-6">
             SEO Content Optimizer
           </h1>
-          <p className="text-xl text-white/90 max-w-2xl mx-auto">
+          <p className="text-xl style={{color: '#FFFFFF'}}/90 max-w-2xl mx-auto">
             Analyze and optimize your content for search engines. Improve rankings with our free SEO analyzer.
           </p>
         </div>
 
-        <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20 shadow-xl">
+        <div className="style={{backgroundColor: '#FFFFFF'}}/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20 shadow-xl">
           <div className="grid md:grid-cols-2 gap-8">
             <div className="space-y-6">
-              <h2 className="text-2xl font-semibold text-white mb-6">Content Input</h2>
+              <h2 className="text-2xl font-semibold style={{color: '#FFFFFF'}} mb-6">Content Input</h2>
               
               <div>
-                <label className="block text-sm font-medium text-white mb-2">
+                <label className="block text-sm font-medium style={{color: '#FFFFFF'}} mb-2">
                   Target Keyword
                 </label>
                 <input
@@ -135,12 +135,12 @@ export default function SEOOptimizer() {
                   value={targetKeyword}
                   onChange={(e) => setTargetKeyword(e.target.value)}
                   placeholder="e.g., productivity tips, business advice"
-                  className="w-full px-4 py-3 rounded-lg bg-white/20 border border-white/30 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-white/50"
+                  className="w-full px-4 py-3 rounded-lg style={{backgroundColor: '#FFFFFF'}}/20 border border-white/30 style={{color: '#FFFFFF'}} placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-white/50"
                 />
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-white mb-2">
+                <label className="block text-sm font-medium style={{color: '#FFFFFF'}} mb-2">
                   Content to Analyze
                 </label>
                 <textarea
@@ -148,21 +148,21 @@ export default function SEOOptimizer() {
                   onChange={(e) => setContent(e.target.value)}
                   placeholder="Paste your content here for SEO analysis..."
                   rows={12}
-                  className="w-full px-4 py-3 rounded-lg bg-white/20 border border-white/30 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-white/50 resize-none"
+                  className="w-full px-4 py-3 rounded-lg style={{backgroundColor: '#FFFFFF'}}/20 border border-white/30 style={{color: '#FFFFFF'}} placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-white/50 resize-none"
                 />
-                <p className="text-white/60 text-xs mt-1">
+                <p className="style={{color: '#FFFFFF'}}/60 text-xs mt-1">
                   {content.length} characters, {content.split(/\s+/).length} words
                 </p>
               </div>
 
               <div className="flex items-center justify-between">
-                <div className="text-white/80 text-sm">
+                <div className="style={{color: '#FFFFFF'}}/80 text-sm">
                   Free analyses remaining: {3 - usageCount}/3
                 </div>
                 <button
                   onClick={analyzeContent}
                   disabled={!content.trim() || !targetKeyword.trim() || isAnalyzing || usageCount >= 3}
-                  className="bg-white text-emerald-600 font-semibold px-6 py-3 rounded-lg hover:bg-white/90 transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="style={{backgroundColor: '#FFFFFF'}} text-emerald-600 font-semibold px-6 py-3 rounded-lg hover:style={{backgroundColor: '#FFFFFF'}}/90 transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                   {isAnalyzing ? 'Analyzing...' : 'Analyze Content'}
                 </button>
@@ -170,18 +170,18 @@ export default function SEOOptimizer() {
             </div>
 
             <div>
-              <h2 className="text-2xl font-semibold text-white mb-6">SEO Analysis</h2>
+              <h2 className="text-2xl font-semibold style={{color: '#FFFFFF'}} mb-6">SEO Analysis</h2>
               
               {analysis ? (
                 <div className="space-y-6">
-                  <div className="bg-white/10 rounded-lg p-6">
+                  <div className="style={{backgroundColor: '#FFFFFF'}}/10 rounded-lg p-6">
                     <div className="flex items-center justify-between mb-4">
-                      <h3 className="text-lg font-semibold text-white">Overall Score</h3>
+                      <h3 className="text-lg font-semibold style={{color: '#FFFFFF'}}">Overall Score</h3>
                       <span className={`text-2xl font-bold ${getScoreColor(analysis.score)}`}>
                         {analysis.score}/100
                       </span>
                     </div>
-                    <div className="w-full bg-white/20 rounded-full h-3">
+                    <div className="w-full style={{backgroundColor: '#FFFFFF'}}/20 rounded-full h-3">
                       <div 
                         className="bg-gradient-to-r from-emerald-400 to-teal-400 h-3 rounded-full transition-all duration-500"
                         style={{ width: `${analysis.score}%` }}
@@ -193,39 +193,39 @@ export default function SEOOptimizer() {
                   </div>
 
                   <div className="grid grid-cols-2 gap-4">
-                    <div className="bg-white/10 rounded-lg p-4">
-                      <h4 className="text-sm font-medium text-white/80 mb-2">Keyword Density</h4>
-                      <div className="text-xl font-bold text-blue-400">
+                    <div className="style={{backgroundColor: '#FFFFFF'}}/10 rounded-lg p-4">
+                      <h4 className="text-sm font-medium style={{color: '#FFFFFF'}}/80 mb-2">Keyword Density</h4>
+                      <div className="text-xl font-bold style={{color: '#0070F3'}}">
                         {analysis.keywordDensity}%
                       </div>
-                      <p className="text-white/60 text-xs">
+                      <p className="style={{color: '#FFFFFF'}}/60 text-xs">
                         Target: 1-3%
                       </p>
                     </div>
 
-                    <div className="bg-white/10 rounded-lg p-4">
-                      <h4 className="text-sm font-medium text-white/80 mb-2">Readability</h4>
+                    <div className="style={{backgroundColor: '#FFFFFF'}}/10 rounded-lg p-4">
+                      <h4 className="text-sm font-medium style={{color: '#FFFFFF'}}/80 mb-2">Readability</h4>
                       <div className="text-xl font-bold text-purple-400">
                         {analysis.readabilityScore}/100
                       </div>
-                      <p className="text-white/60 text-xs">
+                      <p className="style={{color: '#FFFFFF'}}/60 text-xs">
                         Flesch Reading Ease
                       </p>
                     </div>
                   </div>
 
-                  <div className="bg-white/10 rounded-lg p-4">
-                    <h4 className="text-sm font-medium text-white/80 mb-3">Suggested Meta Tags</h4>
+                  <div className="style={{backgroundColor: '#FFFFFF'}}/10 rounded-lg p-4">
+                    <h4 className="text-sm font-medium style={{color: '#FFFFFF'}}/80 mb-3">Suggested Meta Tags</h4>
                     <div className="space-y-3">
                       <div>
-                        <p className="text-white/60 text-xs mb-1">Title (60 chars)</p>
-                        <p className="text-white/90 text-sm bg-white/10 p-2 rounded">
+                        <p className="style={{color: '#FFFFFF'}}/60 text-xs mb-1">Title (60 chars)</p>
+                        <p className="style={{color: '#FFFFFF'}}/90 text-sm style={{backgroundColor: '#FFFFFF'}}/10 p-2 rounded">
                           {analysis.title}
                         </p>
                       </div>
                       <div>
-                        <p className="text-white/60 text-xs mb-1">Meta Description (155 chars)</p>
-                        <p className="text-white/90 text-sm bg-white/10 p-2 rounded">
+                        <p className="style={{color: '#FFFFFF'}}/60 text-xs mb-1">Meta Description (155 chars)</p>
+                        <p className="style={{color: '#FFFFFF'}}/90 text-sm style={{backgroundColor: '#FFFFFF'}}/10 p-2 rounded">
                           {analysis.metaDescription}
                         </p>
                       </div>
@@ -234,8 +234,8 @@ export default function SEOOptimizer() {
 
                   {analysis.suggestions.length > 0 && (
                     <div className="bg-yellow-500/20 border border-yellow-500/30 rounded-lg p-4">
-                      <h4 className="text-sm font-semibold text-white mb-3">💡 Suggestions for Improvement</h4>
-                      <ul className="text-white/90 text-sm space-y-2">
+                      <h4 className="text-sm font-semibold style={{color: '#FFFFFF'}} mb-3">💡 Suggestions for Improvement</h4>
+                      <ul className="style={{color: '#FFFFFF'}}/90 text-sm space-y-2">
                         {analysis.suggestions.map((suggestion, index) => (
                           <li key={index} className="flex items-start">
                             <span className="text-yellow-400 mr-2">•</span>
@@ -247,8 +247,8 @@ export default function SEOOptimizer() {
                   )}
                 </div>
               ) : (
-                <div className="bg-white/10 rounded-lg p-6 text-center">
-                  <p className="text-white/60">
+                <div className="style={{backgroundColor: '#FFFFFF'}}/10 rounded-lg p-6 text-center">
+                  <p className="style={{color: '#FFFFFF'}}/60">
                     Enter your content and target keyword, then click "Analyze Content" to see SEO insights
                   </p>
                 </div>
@@ -258,26 +258,26 @@ export default function SEOOptimizer() {
 
           {usageCount >= 3 && (
             <div className="mt-8 bg-yellow-500/20 border border-yellow-500/30 rounded-lg p-6">
-              <h3 className="text-lg font-semibold text-white mb-2">Upgrade for Unlimited Access</h3>
-              <p className="text-white/90 mb-4">
+              <h3 className="text-lg font-semibold style={{color: '#FFFFFF'}} mb-2">Upgrade for Unlimited Access</h3>
+              <p className="style={{color: '#FFFFFF'}}/90 mb-4">
                 You've used all your free analyses. Upgrade to continue using this tool unlimited times.
               </p>
-              <button className="bg-yellow-500 hover:bg-yellow-600 text-white font-semibold px-6 py-3 rounded-lg transition-all duration-200">
+              <button className="bg-yellow-500 hover:bg-yellow-600 style={{color: '#FFFFFF'}} font-semibold px-6 py-3 rounded-lg transition-all duration-200">
                 Upgrade Now
               </button>
             </div>
           )}
 
-          <div className="mt-8 bg-blue-500/20 border border-blue-500/30 rounded-lg p-6">
-            <h3 className="text-lg font-semibold text-white mb-4">🎯 SEO Best Practices</h3>
+          <div className="mt-8 bg-blue-500/20 border style={{border: '1px solid #0070F3'}}/30 rounded-lg p-6">
+            <h3 className="text-lg font-semibold style={{color: '#FFFFFF'}} mb-4">🎯 SEO Best Practices</h3>
             <div className="grid md:grid-cols-2 gap-4">
-              <ul className="text-white/90 text-sm space-y-2">
+              <ul className="style={{color: '#FFFFFF'}}/90 text-sm space-y-2">
                 <li>• Use target keyword in title and first paragraph</li>
                 <li>• Maintain 1-3% keyword density</li>
                 <li>• Write 300+ words for better rankings</li>
                 <li>• Use headers (H1, H2, H3) for structure</li>
               </ul>
-              <ul className="text-white/90 text-sm space-y-2">
+              <ul className="style={{color: '#FFFFFF'}}/90 text-sm space-y-2">
                 <li>• Keep title under 60 characters</li>
                 <li>• Meta description should be 150-155 characters</li>
                 <li>• Write for readability (60+ Flesch score)</li>
@@ -290,7 +290,7 @@ export default function SEOOptimizer() {
         <div className="mt-12 text-center">
           <a 
             href="/free-tools" 
-            className="text-white/80 hover:text-white transition-colors"
+            className="style={{color: '#FFFFFF'}}/80 hover:style={{color: '#FFFFFF'}} transition-colors"
           >
             ← Back to Free Tools
           </a>

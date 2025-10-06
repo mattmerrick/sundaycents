@@ -169,21 +169,21 @@ export default function ContentIdeasGenerator() {
     <main className="min-h-screen bg-gradient-to-br from-purple-500 to-pink-600">
       <div className="max-w-4xl mx-auto px-4 py-20">
         <div className="text-center mb-12">
-          <h1 className="text-4xl sm:text-5xl font-bold text-white mb-6">
+          <h1 className="text-4xl sm:text-5xl font-bold style={{color: '#FFFFFF'}} mb-6">
             Content Ideas Generator
           </h1>
-          <p className="text-xl text-white/90 max-w-2xl mx-auto">
+          <p className="text-xl style={{color: '#FFFFFF'}}/90 max-w-2xl mx-auto">
             Never run out of content ideas again. Generate fresh, engaging content ideas tailored to your niche and platform.
           </p>
         </div>
 
-        <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20 shadow-xl">
+        <div className="style={{backgroundColor: '#FFFFFF'}}/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20 shadow-xl">
           <div className="grid md:grid-cols-2 gap-8">
             <div className="space-y-6">
-              <h2 className="text-2xl font-semibold text-white mb-6">Content Preferences</h2>
+              <h2 className="text-2xl font-semibold style={{color: '#FFFFFF'}} mb-6">Content Preferences</h2>
               
               <div>
-                <label className="block text-sm font-medium text-white mb-2">
+                <label className="block text-sm font-medium style={{color: '#FFFFFF'}} mb-2">
                   Your Niche/Topic
                 </label>
                 <input
@@ -191,18 +191,18 @@ export default function ContentIdeasGenerator() {
                   value={niche}
                   onChange={(e) => setNiche(e.target.value)}
                   placeholder="e.g., productivity, fitness, business, cooking"
-                  className="w-full px-4 py-3 rounded-lg bg-white/20 border border-white/30 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-white/50"
+                  className="w-full px-4 py-3 rounded-lg style={{backgroundColor: '#FFFFFF'}}/20 border border-white/30 style={{color: '#FFFFFF'}} placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-white/50"
                 />
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-white mb-2">
+                <label className="block text-sm font-medium style={{color: '#FFFFFF'}} mb-2">
                   Platform
                 </label>
                 <select
                   value={platform}
                   onChange={(e) => setPlatform(e.target.value)}
-                  className="w-full px-4 py-3 rounded-lg bg-white/20 border border-white/30 text-white focus:outline-none focus:ring-2 focus:ring-white/50"
+                  className="w-full px-4 py-3 rounded-lg style={{backgroundColor: '#FFFFFF'}}/20 border border-white/30 style={{color: '#FFFFFF'}} focus:outline-none focus:ring-2 focus:ring-white/50"
                 >
                   <option value="instagram">Instagram</option>
                   <option value="twitter">Twitter/X</option>
@@ -212,13 +212,13 @@ export default function ContentIdeasGenerator() {
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-white mb-2">
+                <label className="block text-sm font-medium style={{color: '#FFFFFF'}} mb-2">
                   Content Type
                 </label>
                 <select
                   value={contentType}
                   onChange={(e) => setContentType(e.target.value)}
-                  className="w-full px-4 py-3 rounded-lg bg-white/20 border border-white/30 text-white focus:outline-none focus:ring-2 focus:ring-white/50"
+                  className="w-full px-4 py-3 rounded-lg style={{backgroundColor: '#FFFFFF'}}/20 border border-white/30 style={{color: '#FFFFFF'}} focus:outline-none focus:ring-2 focus:ring-white/50"
                 >
                   <option value="posts">Posts</option>
                   <option value="stories">Stories</option>
@@ -229,13 +229,13 @@ export default function ContentIdeasGenerator() {
               </div>
 
               <div className="flex items-center justify-between">
-                <div className="text-white/80 text-sm">
+                <div className="style={{color: '#FFFFFF'}}/80 text-sm">
                   Free uses remaining: {3 - usageCount}/3
                 </div>
                 <button
                   onClick={generateIdeas}
                   disabled={!niche.trim() || isGenerating || usageCount >= 3}
-                  className="bg-white text-purple-600 font-semibold px-6 py-3 rounded-lg hover:bg-white/90 transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="style={{backgroundColor: '#FFFFFF'}} text-purple-600 font-semibold px-6 py-3 rounded-lg hover:style={{backgroundColor: '#FFFFFF'}}/90 transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                   {isGenerating ? 'Generating...' : 'Generate Ideas'}
                 </button>
@@ -243,13 +243,13 @@ export default function ContentIdeasGenerator() {
             </div>
 
             <div>
-              <div className="bg-white/10 rounded-lg p-6 h-full">
+              <div className="style={{backgroundColor: '#FFFFFF'}}/10 rounded-lg p-6 h-full">
                 <div className="flex items-center justify-between mb-6">
-                  <h3 className="text-xl font-semibold text-white">Content Ideas</h3>
+                  <h3 className="text-xl font-semibold style={{color: '#FFFFFF'}}">Content Ideas</h3>
                   {ideas.length > 0 && (
                     <button
                       onClick={copyAllIdeas}
-                      className="bg-white/20 hover:bg-white/30 text-white px-4 py-2 rounded-lg transition-all duration-200"
+                      className="style={{backgroundColor: '#FFFFFF'}}/20 hover:style={{backgroundColor: '#FFFFFF'}}/30 style={{color: '#FFFFFF'}} px-4 py-2 rounded-lg transition-all duration-200"
                     >
                       Copy All
                     </button>
@@ -261,22 +261,22 @@ export default function ContentIdeasGenerator() {
                     ideas.map((idea, index) => (
                       <div
                         key={index}
-                        className="bg-white/10 rounded-lg p-4 hover:bg-white/20 transition-all duration-200 cursor-pointer group"
+                        className="style={{backgroundColor: '#FFFFFF'}}/10 rounded-lg p-4 hover:style={{backgroundColor: '#FFFFFF'}}/20 transition-all duration-200 cursor-pointer group"
                         onClick={() => copyIdea(idea)}
                       >
                         <div className="flex items-start justify-between">
-                          <p className="text-white/90 text-sm leading-relaxed flex-1">
+                          <p className="style={{color: '#FFFFFF'}}/90 text-sm leading-relaxed flex-1">
                             {idea}
                           </p>
                           <button className="opacity-0 group-hover:opacity-100 transition-opacity duration-200 ml-2">
-                            <span className="text-white/60 text-xs">Copy</span>
+                            <span className="style={{color: '#FFFFFF'}}/60 text-xs">Copy</span>
                           </button>
                         </div>
                       </div>
                     ))
                   ) : (
                     <div className="text-center py-8">
-                      <p className="text-white/60">
+                      <p className="style={{color: '#FFFFFF'}}/60">
                         Enter your niche and click "Generate Ideas" to see content suggestions
                       </p>
                     </div>
@@ -288,11 +288,11 @@ export default function ContentIdeasGenerator() {
 
           {usageCount >= 3 && (
             <div className="mt-8 bg-yellow-500/20 border border-yellow-500/30 rounded-lg p-6">
-              <h3 className="text-lg font-semibold text-white mb-2">Upgrade for Unlimited Access</h3>
-              <p className="text-white/90 mb-4">
+              <h3 className="text-lg font-semibold style={{color: '#FFFFFF'}} mb-2">Upgrade for Unlimited Access</h3>
+              <p className="style={{color: '#FFFFFF'}}/90 mb-4">
                 You've used all your free generations. Upgrade to continue using this tool unlimited times.
               </p>
-              <button className="bg-yellow-500 hover:bg-yellow-600 text-white font-semibold px-6 py-3 rounded-lg transition-all duration-200">
+              <button className="bg-yellow-500 hover:bg-yellow-600 style={{color: '#FFFFFF'}} font-semibold px-6 py-3 rounded-lg transition-all duration-200">
                 Upgrade Now
               </button>
             </div>
@@ -302,7 +302,7 @@ export default function ContentIdeasGenerator() {
         <div className="mt-12 text-center">
           <a 
             href="/free-tools" 
-            className="text-white/80 hover:text-white transition-colors"
+            className="style={{color: '#FFFFFF'}}/80 hover:style={{color: '#FFFFFF'}} transition-colors"
           >
             ← Back to Free Tools
           </a>

@@ -80,22 +80,22 @@ export default function TimeTracker() {
     <main className="min-h-screen bg-gradient-to-br from-indigo-500 to-purple-600">
       <div className="max-w-4xl mx-auto px-4 py-20">
         <div className="text-center mb-12">
-          <h1 className="text-4xl sm:text-5xl font-bold text-white mb-6">
+          <h1 className="text-4xl sm:text-5xl font-bold style={{color: '#FFFFFF'}} mb-6">
             Time Tracker
           </h1>
-          <p className="text-xl text-white/90 max-w-2xl mx-auto">
+          <p className="text-xl style={{color: '#FFFFFF'}}/90 max-w-2xl mx-auto">
             Track your time and boost productivity. Monitor how you spend your time on different tasks.
           </p>
         </div>
 
-        <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20 shadow-xl">
+        <div className="style={{backgroundColor: '#FFFFFF'}}/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20 shadow-xl">
           {/* Current Timer */}
           <div className="text-center mb-8">
-            <div className="bg-white/10 rounded-2xl p-8 mb-6">
-              <div className="text-6xl font-bold text-white mb-4">
+            <div className="style={{backgroundColor: '#FFFFFF'}}/10 rounded-2xl p-8 mb-6">
+              <div className="text-6xl font-bold style={{color: '#FFFFFF'}} mb-4">
                 {formatTime(elapsedTime)}
               </div>
-              <div className="text-white/80 text-lg">
+              <div className="style={{color: '#FFFFFF'}}/80 text-lg">
                 {currentTimer ? currentTimer.task : 'No active timer'}
               </div>
             </div>
@@ -108,21 +108,21 @@ export default function TimeTracker() {
                 onKeyPress={(e) => e.key === 'Enter' && !currentTimer && startTimer()}
                 placeholder="Enter task name..."
                 disabled={!!currentTimer}
-                className="px-4 py-3 rounded-lg bg-white/20 border border-white/30 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-white/50 disabled:opacity-50"
+                className="px-4 py-3 rounded-lg style={{backgroundColor: '#FFFFFF'}}/20 border border-white/30 style={{color: '#FFFFFF'}} placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-white/50 disabled:opacity-50"
               />
               
               {!currentTimer ? (
                 <button
                   onClick={startTimer}
                   disabled={!currentTask.trim()}
-                  className="bg-green-500 hover:bg-green-600 text-white font-semibold px-6 py-3 rounded-lg transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="bg-green-500 hover:bg-green-600 style={{color: '#FFFFFF'}} font-semibold px-6 py-3 rounded-lg transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                   Start
                 </button>
               ) : (
                 <button
                   onClick={stopTimer}
-                  className="bg-red-500 hover:bg-red-600 text-white font-semibold px-6 py-3 rounded-lg transition-all duration-200"
+                  className="bg-red-500 hover:bg-red-600 style={{color: '#FFFFFF'}} font-semibold px-6 py-3 rounded-lg transition-all duration-200"
                 >
                   Stop
                 </button>
@@ -133,8 +133,8 @@ export default function TimeTracker() {
           {/* Time Entries */}
           <div className="mb-8">
             <div className="flex items-center justify-between mb-6">
-              <h2 className="text-2xl font-semibold text-white">Time Entries</h2>
-              <div className="text-white/80">
+              <h2 className="text-2xl font-semibold style={{color: '#FFFFFF'}}">Time Entries</h2>
+              <div className="style={{color: '#FFFFFF'}}/80">
                 Total: {formatTime(totalTime)}
               </div>
             </div>
@@ -144,12 +144,12 @@ export default function TimeTracker() {
                 {entries.map((entry) => (
                   <div
                     key={entry.id}
-                    className="bg-white/10 rounded-lg p-4 hover:bg-white/20 transition-all duration-200"
+                    className="style={{backgroundColor: '#FFFFFF'}}/10 rounded-lg p-4 hover:style={{backgroundColor: '#FFFFFF'}}/20 transition-all duration-200"
                   >
                     <div className="flex items-center justify-between">
                       <div className="flex-1">
-                        <h3 className="text-white font-semibold mb-1">{entry.task}</h3>
-                        <div className="flex items-center gap-4 text-sm text-white/60">
+                        <h3 className="style={{color: '#FFFFFF'}} font-semibold mb-1">{entry.task}</h3>
+                        <div className="flex items-center gap-4 text-sm style={{color: '#FFFFFF'}}/60">
                           <span>
                             {entry.startTime.toLocaleTimeString()} - {entry.endTime?.toLocaleTimeString()}
                           </span>
@@ -173,8 +173,8 @@ export default function TimeTracker() {
                 ))}
               </div>
             ) : (
-              <div className="bg-white/10 rounded-lg p-8 text-center">
-                <p className="text-white/60">
+              <div className="style={{backgroundColor: '#FFFFFF'}}/10 rounded-lg p-8 text-center">
+                <p className="style={{color: '#FFFFFF'}}/60">
                   No time entries yet. Start tracking your first task!
                 </p>
               </div>
@@ -182,16 +182,16 @@ export default function TimeTracker() {
           </div>
 
           {/* Productivity Tips */}
-          <div className="bg-blue-500/20 border border-blue-500/30 rounded-lg p-6">
-            <h3 className="text-lg font-semibold text-white mb-4">⏰ Time Tracking Tips</h3>
+          <div className="bg-blue-500/20 border style={{border: '1px solid #0070F3'}}/30 rounded-lg p-6">
+            <h3 className="text-lg font-semibold style={{color: '#FFFFFF'}} mb-4">⏰ Time Tracking Tips</h3>
             <div className="grid md:grid-cols-2 gap-4">
-              <ul className="text-white/90 text-sm space-y-2">
+              <ul className="style={{color: '#FFFFFF'}}/90 text-sm space-y-2">
                 <li>• Track time in real-time for accuracy</li>
                 <li>• Use specific task names</li>
                 <li>• Review your time data weekly</li>
                 <li>• Identify time-wasting activities</li>
               </ul>
-              <ul className="text-white/90 text-sm space-y-2">
+              <ul className="style={{color: '#FFFFFF'}}/90 text-sm space-y-2">
                 <li>• Set time goals for tasks</li>
                 <li>• Take breaks between tasks</li>
                 <li>• Batch similar activities together</li>
@@ -204,7 +204,7 @@ export default function TimeTracker() {
         <div className="mt-12 text-center">
           <a 
             href="/free-tools" 
-            className="text-white/80 hover:text-white transition-colors"
+            className="style={{color: '#FFFFFF'}}/80 hover:style={{color: '#FFFFFF'}} transition-colors"
           >
             ← Back to Free Tools
           </a>

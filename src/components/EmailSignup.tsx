@@ -114,20 +114,23 @@ export default function EmailSignup({ variant = 'hero' }: EmailSignupProps) {
             inputMode="email"
             autoComplete="email"
             autoCapitalize="none"
-            className={`flex-1 ${isHero ? 'px-5 py-4 text-lg' : 'px-4 py-3 text-base'} rounded-xl border-2 transition-all duration-200 ${
-              isDark 
-                ? 'bg-white text-gray-900 border-gray-300 focus:border-primary-500' 
-                : 'bg-white text-gray-900 border-gray-300 focus:border-primary-500'
-            } focus:outline-none focus:ring-4 focus:ring-primary-500/20 shadow-sm`}
+            className={`flex-1 ${isHero ? 'px-5 py-4 text-lg' : 'px-4 py-3 text-base'} rounded-xl border-2 transition-all duration-200 focus:outline-none focus:border-blue-500 focus:ring-4 focus:ring-blue-500/20 shadow-sm`}
+            style={{
+              backgroundColor: '#FFFFFF',
+              color: '#111111',
+              borderColor: '#6B7280'
+            }}
           />
           <button
             type="submit"
             disabled={isLoading}
-            className={`${isHero ? 'px-10 py-4 text-lg' : 'px-8 py-3 text-base'} rounded-xl font-semibold transition-all duration-200 ${
-              isLoading
-                ? 'bg-gray-400 cursor-not-allowed'
-                : 'bg-blue-800 hover:bg-blue-900 transform hover:scale-105 hover:shadow-xl'
-            } text-white focus:outline-none focus:ring-4 focus:ring-blue-500/20 shadow-lg whitespace-nowrap`}
+            className={`${isHero ? 'px-10 py-4 text-lg' : 'px-8 py-3 text-base'} rounded-xl font-semibold transition-all duration-200 transform hover:scale-105 hover:shadow-xl focus:outline-none focus:ring-4 focus:ring-blue-500/20 shadow-lg whitespace-nowrap ${
+              isLoading ? 'cursor-not-allowed' : 'cursor-pointer'
+            }`}
+            style={{
+              backgroundColor: isLoading ? '#6B7280' : '#0070F3',
+              color: '#FFFFFF'
+            }}
           >
             {isLoading ? 'Subscribing...' : 'Subscribe'}
           </button>

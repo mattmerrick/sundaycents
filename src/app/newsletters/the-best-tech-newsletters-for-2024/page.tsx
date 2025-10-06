@@ -190,30 +190,30 @@ export default function BestTechNewsletters() {
   ]
 
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen style={{backgroundColor: '#FFFFFF'}}">
       <article className="max-w-4xl mx-auto px-4 py-20">
         {/* Header */}
         <header className="mb-12">
           <div className="mb-6">
             <a 
               href="/newsletters" 
-              className="text-blue-600 hover:text-blue-700 transition-colors flex items-center text-sm font-medium"
+              className="style={{color: '#0070F3'}} hover:text-blue-700 transition-colors flex items-center text-sm font-medium"
             >
               ← Back to Newsletters
             </a>
           </div>
           
-          <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+          <h1 className="text-4xl sm:text-5xl font-bold style={{color: '#111111'}} mb-6 leading-tight">
             The Best Tech Newsletters
           </h1>
           
-          <div className="flex items-center text-gray-600 text-sm mb-6">
+          <div className="flex items-center style={{color: '#555555'}} text-sm mb-6">
             <span>January 25, 2025</span>
             <span className="mx-2">•</span>
             <span>by Matt Merrick</span>
           </div>
           
-          <p className="text-xl text-gray-700 leading-relaxed">
+          <p className="text-xl style={{color: '#555555'}} leading-relaxed">
             The technology industry moves at breakneck speed, with new innovations, startup launches, and market shifts happening daily. 
             Staying informed about tech trends is crucial for professionals, entrepreneurs, and anyone interested in the future of technology.
           </p>
@@ -221,13 +221,13 @@ export default function BestTechNewsletters() {
 
         {/* Introduction */}
         <section className="mb-12">
-          <p className="text-lg text-gray-700 leading-relaxed mb-6">
+          <p className="text-lg style={{color: '#555555'}} leading-relaxed mb-6">
             Whether you're a software engineer, startup founder, investor, or simply tech-curious, the right newsletters can keep you 
             ahead of the curve. We've curated the top tech newsletters that deliver breaking news, deep analysis, and insights that matter 
             in the fast-paced world of technology.
           </p>
           
-          <div className="bg-blue-50 border-l-4 border-blue-500 p-6 rounded-r-lg">
+          <div className="bg-blue-50 border-l-4 style={{border: '1px solid #0070F3'}} p-6 rounded-r-lg">
             <p className="text-blue-800 font-medium mb-2">🚀 Tech Tip</p>
             <p className="text-blue-700">
               The tech industry changes rapidly. Subscribe to a mix of breaking news sources and analytical newsletters 
@@ -238,15 +238,15 @@ export default function BestTechNewsletters() {
 
         {/* Table of Contents */}
         <section className="mb-12">
-          <h2 className="text-2xl font-bold text-gray-900 mb-6">Table of Contents</h2>
+          <h2 className="text-2xl font-bold style={{color: '#111111'}} mb-6">Table of Contents</h2>
           <div className="bg-gray-50 rounded-lg p-6">
-            <ol className="space-y-2 text-gray-700">
+            <ol className="space-y-2 style={{color: '#555555'}}">
               {newsletters.map((newsletter, index) => (
                 <li key={index} className="flex items-center">
                   <span className="font-medium mr-3">{index + 1}.</span>
                   <a 
                     href={`#${newsletter.name.toLowerCase().replace(/\s+/g, '-')}`}
-                    className="hover:text-blue-600 transition-colors"
+                    className="hover:style={{color: '#0070F3'}} transition-colors"
                   >
                     {newsletter.name}
                   </a>
@@ -261,10 +261,10 @@ export default function BestTechNewsletters() {
           {newsletters.map((newsletter, index) => (
             <div key={index} id={newsletter.name.toLowerCase().replace(/\s+/g, '-')} className="border-b border-gray-200 pb-12">
               <div className="flex items-start justify-between mb-6">
-                <h2 className="text-3xl font-bold text-gray-900">
+                <h2 className="text-3xl font-bold style={{color: '#111111'}}">
                   {index + 1}. {newsletter.name}
                 </h2>
-                <div className="text-right text-sm text-gray-600">
+                <div className="text-right text-sm style={{color: '#555555'}}">
                   <div>Founded: {newsletter.founded}</div>
                   <div>{newsletter.subscribers} subscribers</div>
                   <div>{newsletter.schedule}</div>
@@ -273,17 +273,17 @@ export default function BestTechNewsletters() {
 
               <div className="grid md:grid-cols-2 gap-8">
                 <div>
-                  <h3 className="text-xl font-semibold text-gray-900 mb-4">What is this newsletter about?</h3>
-                  <p className="text-gray-700 leading-relaxed mb-6">
+                  <h3 className="text-xl font-semibold style={{color: '#111111'}} mb-4">What is this newsletter about?</h3>
+                  <p className="style={{color: '#555555'}} leading-relaxed mb-6">
                     {newsletter.description}
                   </p>
 
-                  <h4 className="text-lg font-semibold text-gray-900 mb-3">Key Features:</h4>
+                  <h4 className="text-lg font-semibold style={{color: '#111111'}} mb-3">Key Features:</h4>
                   <ul className="space-y-2 mb-6">
                     {newsletter.features.map((feature, featureIndex) => (
                       <li key={featureIndex} className="flex items-start">
-                        <span className="text-blue-600 mr-2">✓</span>
-                        <span className="text-gray-700">{feature}</span>
+                        <span className="style={{color: '#0070F3'}} mr-2">✓</span>
+                        <span className="style={{color: '#555555'}}">{feature}</span>
                       </li>
                     ))}
                   </ul>
@@ -297,23 +297,23 @@ export default function BestTechNewsletters() {
                 </div>
 
                 <div className="bg-gray-50 rounded-lg p-6">
-                  <h4 className="text-lg font-semibold text-gray-900 mb-4">Newsletter Stats</h4>
+                  <h4 className="text-lg font-semibold style={{color: '#111111'}} mb-4">Newsletter Stats</h4>
                   <div className="space-y-3">
                     <div className="flex justify-between">
-                      <span className="text-gray-600">Founded:</span>
+                      <span className="style={{color: '#555555'}}">Founded:</span>
                       <span className="font-medium">{newsletter.founded}</span>
                     </div>
                     <div className="flex justify-between">
-                      <span className="text-gray-600">Subscribers:</span>
+                      <span className="style={{color: '#555555'}}">Subscribers:</span>
                       <span className="font-medium">{newsletter.subscribers}</span>
                     </div>
                     <div className="flex justify-between">
-                      <span className="text-gray-600">Schedule:</span>
+                      <span className="style={{color: '#555555'}}">Schedule:</span>
                       <span className="font-medium">{newsletter.schedule}</span>
                     </div>
                   </div>
                   
-                  <button className="w-full mt-6 bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-4 rounded-lg transition-colors">
+                  <button className="w-full mt-6 style={{backgroundColor: '#0070F3'}} hover:bg-blue-700 style={{color: '#FFFFFF'}} font-semibold py-3 px-4 rounded-lg transition-colors">
                     Subscribe Now
                   </button>
                 </div>
@@ -324,29 +324,29 @@ export default function BestTechNewsletters() {
 
         {/* Conclusion */}
         <section className="mt-16 bg-gray-50 rounded-lg p-8">
-          <h2 className="text-2xl font-bold text-gray-900 mb-6">Staying Ahead in Tech</h2>
-          <p className="text-lg text-gray-700 leading-relaxed mb-6">
+          <h2 className="text-2xl font-bold style={{color: '#111111'}} mb-6">Staying Ahead in Tech</h2>
+          <p className="text-lg style={{color: '#555555'}} leading-relaxed mb-6">
             The technology industry rewards those who stay informed and anticipate trends. These newsletters provide the insights, 
             analysis, and breaking news you need to navigate the ever-changing tech landscape successfully.
           </p>
           
           <div className="grid md:grid-cols-2 gap-6">
-            <div className="bg-white rounded-lg p-6">
-              <h3 className="text-lg font-semibold text-gray-900 mb-3">For Startup Founders</h3>
-              <p className="text-gray-700">
+            <div className="style={{backgroundColor: '#FFFFFF'}} rounded-lg p-6">
+              <h3 className="text-lg font-semibold style={{color: '#111111'}} mb-3">For Startup Founders</h3>
+              <p className="style={{color: '#555555'}}">
                 Focus on "The Hustle," "TechCrunch," and "First Round Review" for startup news, funding updates, and founder insights.
               </p>
             </div>
             
-            <div className="bg-white rounded-lg p-6">
-              <h3 className="text-lg font-semibold text-gray-900 mb-3">For Tech Professionals</h3>
-              <p className="text-gray-700">
+            <div className="style={{backgroundColor: '#FFFFFF'}} rounded-lg p-6">
+              <h3 className="text-lg font-semibold style={{color: '#111111'}} mb-3">For Tech Professionals</h3>
+              <p className="style={{color: '#555555'}}">
                 Consider "The Information," "Protocol," and "Ars Technica" for in-depth technical analysis and industry insights.
               </p>
             </div>
           </div>
 
-          <div className="mt-8 bg-blue-600 rounded-lg p-6 text-white">
+          <div className="mt-8 style={{backgroundColor: '#0070F3'}} rounded-lg p-6 style={{color: '#FFFFFF'}}">
             <h3 className="text-lg font-semibold mb-3">Ready to Build in Tech?</h3>
             <p className="mb-4">
               Whether you're building the next unicorn startup or advancing your tech career, 
@@ -354,7 +354,7 @@ export default function BestTechNewsletters() {
             </p>
             <a 
               href="/free-tools" 
-              className="inline-block bg-white text-blue-600 font-semibold px-6 py-3 rounded-lg hover:bg-gray-100 transition-colors"
+              className="inline-block style={{backgroundColor: '#FFFFFF'}} style={{color: '#0070F3'}} font-semibold px-6 py-3 rounded-lg hover:bg-gray-100 transition-colors"
             >
               Explore Our Tech Tools
             </a>
@@ -363,14 +363,14 @@ export default function BestTechNewsletters() {
 
         {/* CTA Section */}
         <section className="mt-12 text-center">
-          <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg p-8 text-white">
+          <div className="style={{background: 'linear-gradient(to right, #0070F3, #FF5A5F)'}} rounded-lg p-8 style={{color: '#FFFFFF'}}">
             <h2 className="text-2xl font-bold mb-4">Stay Updated with SundayCents</h2>
-            <p className="text-blue-100 mb-6">
+            <p className="style={{color: '#FFFFFF'}} mb-6">
               Get weekly insights on tech trends, entrepreneurship, and innovation delivered to your inbox.
             </p>
             <a 
               href="/subscribe" 
-              className="inline-block bg-white text-blue-600 font-semibold px-8 py-3 rounded-lg hover:bg-gray-100 transition-colors"
+              className="inline-block style={{backgroundColor: '#FFFFFF'}} style={{color: '#0070F3'}} font-semibold px-8 py-3 rounded-lg hover:bg-gray-100 transition-colors"
             >
               Subscribe to SundayCents Newsletter
             </a>

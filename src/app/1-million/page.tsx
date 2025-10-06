@@ -52,16 +52,16 @@ export default function OneMillionPage() {
           <h1 className="text-4xl md:text-6xl font-black bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 bg-clip-text text-transparent mb-4">
             🎯 1 MILLION CHALLENGE
           </h1>
-          <p className="text-xl text-gray-600 mb-2">
+          <p className="text-xl style={{color: '#555555'}} mb-2">
             How close are you to 1 million subscribers?
           </p>
-          <p className="text-lg text-gray-500">
+          <p className="text-lg style={{color: '#6B7280'}}">
             Enter your subscriber count and see your progress!
           </p>
         </div>
 
         {/* Calculator Card */}
-        <div className="bg-white rounded-3xl shadow-2xl p-8 mb-8 border-4 border-purple-100">
+        <div className="style={{backgroundColor: '#FFFFFF'}} rounded-3xl shadow-2xl p-8 mb-8 border-4 border-purple-100">
           <div className="grid md:grid-cols-2 gap-8 items-center">
             {/* Input Section */}
             <div>
@@ -78,7 +78,7 @@ export default function OneMillionPage() {
               <button
                 onClick={handleCalculate}
                 disabled={subscribers <= 0}
-                className="w-full mt-4 py-4 bg-gradient-to-r from-purple-600 to-pink-600 text-white text-xl font-bold rounded-2xl hover:from-purple-700 hover:to-pink-700 disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-300 transform hover:scale-105"
+                className="w-full mt-4 py-4 bg-gradient-to-r from-purple-600 to-pink-600 style={{color: '#FFFFFF'}} text-xl font-bold rounded-2xl hover:from-purple-700 hover:to-pink-700 disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-300 transform hover:scale-105"
               >
                 🚀 CALCULATE MY PROGRESS
               </button>
@@ -92,7 +92,7 @@ export default function OneMillionPage() {
                   <div className="text-5xl font-black text-purple-600 mb-2">
                     {percentage.toFixed(6)}%
                   </div>
-                  <div className="text-xl text-gray-600">
+                  <div className="text-xl style={{color: '#555555'}}">
                     to 1 Million!
                   </div>
                 </div>
@@ -107,12 +107,12 @@ export default function OneMillionPage() {
                       <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent opacity-30 animate-pulse"></div>
                     </div>
                   </div>
-                  <div className="text-sm text-gray-500">
+                  <div className="text-sm style={{color: '#6B7280'}}">
                     {subscribers.toLocaleString()} / 1,000,000 subscribers
                   </div>
                 </div>
 
-                <div className="text-lg font-semibold text-gray-700">
+                <div className="text-lg font-semibold style={{color: '#555555'}}">
                   {getRemainingSubscribers()} subscribers to go!
                 </div>
               </div>
@@ -151,7 +151,7 @@ export default function OneMillionPage() {
               <div className="text-3xl font-black text-blue-700 mb-1">
                 {getRemainingSubscribers()}
               </div>
-              <div className="text-lg font-semibold text-blue-600">
+              <div className="text-lg font-semibold style={{color: '#0070F3'}}">
                 To Go!
               </div>
             </div>
@@ -169,18 +169,18 @@ export default function OneMillionPage() {
 
         {/* Viral Share Section */}
         {hasCalculated && (
-          <div className="bg-white rounded-2xl p-6 text-center border-4 border-green-200 shadow-lg">
+          <div className="style={{backgroundColor: '#FFFFFF'}} rounded-2xl p-6 text-center border-4 border-green-200 shadow-lg">
             <div className="text-3xl mb-4">📱</div>
             <h3 className="text-2xl font-bold text-gray-800 mb-4">
               Share Your Progress!
             </h3>
-            <p className="text-gray-600 mb-4">
+            <p className="style={{color: '#555555'}} mb-4">
               Screenshot this page and share your journey to 1 million subscribers!
             </p>
             <div className="flex justify-center gap-4">
               <button
                 onClick={handleReset}
-                className="px-6 py-3 bg-gray-500 text-white font-semibold rounded-xl hover:bg-gray-600 transition-colors duration-300"
+                className="px-6 py-3 bg-gray-500 style={{color: '#FFFFFF'}} font-semibold rounded-xl hover:style={{backgroundColor: '#6B7280'}} transition-colors duration-300"
               >
                 🔄 Try Another Number
               </button>

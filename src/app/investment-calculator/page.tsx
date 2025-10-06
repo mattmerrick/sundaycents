@@ -73,17 +73,17 @@ export default function InvestmentCalculatorPage() {
           }}
         />
       </Head>
-      <main className="min-h-screen bg-white pb-footer">
+      <main className="min-h-screen style={{backgroundColor: '#FFFFFF'}} pb-footer">
         <Header />
       
       {/* Hero Section */}
       <section className="pt-20 pb-12">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h1 className="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-4">
+            <h1 className="text-4xl sm:text-5xl font-extrabold style={{color: '#111111'}} mb-4">
               Free Investment Calculator 2025 - Calculate Investment Returns & Portfolio Growth
             </h1>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl style={{color: '#555555'}} max-w-3xl mx-auto">
               Use our free investment calculator to calculate investment returns, compound interest, and portfolio growth. 
               Plan your financial future with our advanced investment calculator tool that helps you understand how your money can grow over time.
             </p>
@@ -94,13 +94,13 @@ export default function InvestmentCalculatorPage() {
       {/* Calculator Section */}
       <section className="py-12 bg-gray-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-white rounded-lg shadow-lg p-8">
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">Investment Return Calculator - Calculate Your Portfolio Growth</h2>
+          <div className="style={{backgroundColor: '#FFFFFF'}} rounded-lg shadow-lg p-8">
+            <h2 className="text-2xl font-bold style={{color: '#111111'}} mb-6">Investment Return Calculator - Calculate Your Portfolio Growth</h2>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div className="space-y-6">
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">
+                  <label className="block text-sm font-medium style={{color: '#555555'}} mb-2">
                     Initial Investment ($)
                   </label>
                   <input
@@ -112,7 +112,7 @@ export default function InvestmentCalculatorPage() {
                 </div>
                 
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">
+                  <label className="block text-sm font-medium style={{color: '#555555'}} mb-2">
                     Monthly Contribution ($)
                   </label>
                   <input
@@ -124,7 +124,7 @@ export default function InvestmentCalculatorPage() {
                 </div>
                 
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">
+                  <label className="block text-sm font-medium style={{color: '#555555'}} mb-2">
                     Expected Annual Return (%)
                   </label>
                   <input
@@ -137,7 +137,7 @@ export default function InvestmentCalculatorPage() {
                 </div>
                 
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">
+                  <label className="block text-sm font-medium style={{color: '#555555'}} mb-2">
                     Investment Period (Years)
                   </label>
                   <input
@@ -150,18 +150,18 @@ export default function InvestmentCalculatorPage() {
               </div>
               
               <div className="bg-gray-50 rounded-lg p-6">
-                <h3 className="text-xl font-semibold text-gray-900 mb-4">Investment Results</h3>
+                <h3 className="text-xl font-semibold style={{color: '#111111'}} mb-4">Investment Results</h3>
                 <div className="space-y-3">
                   <div className="flex justify-between items-center py-2 border-b border-gray-200">
-                    <span className="text-gray-600">Total Value:</span>
+                    <span className="style={{color: '#555555'}}">Total Value:</span>
                     <span className="text-2xl font-bold text-green-600">${result.totalValue}</span>
                   </div>
                   <div className="flex justify-between items-center py-2 border-b border-gray-200">
-                    <span className="text-gray-600">Total Invested:</span>
+                    <span className="style={{color: '#555555'}}">Total Invested:</span>
                     <span className="text-lg font-semibold">${result.totalInvested}</span>
                   </div>
                   <div className="flex justify-between items-center py-2">
-                    <span className="text-gray-600">Total Gains:</span>
+                    <span className="style={{color: '#555555'}}">Total Gains:</span>
                     <span className="text-lg font-semibold text-green-600">${result.totalGains}</span>
                   </div>
                 </div>
@@ -175,15 +175,15 @@ export default function InvestmentCalculatorPage() {
       <section className="py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
-            <h2 className="text-3xl font-bold text-gray-900 mb-6">How to Use Our Free Investment Calculator</h2>
-            <p className="text-gray-600 mb-6">
+            <h2 className="text-3xl font-bold style={{color: '#111111'}} mb-6">How to Use Our Free Investment Calculator</h2>
+            <p className="style={{color: '#555555'}} mb-6">
               Our free investment calculator is the best tool to calculate investment returns and understand how your money can grow over time. 
               Whether you're planning for retirement, saving for a house, or building wealth, this investment return calculator 
               gives you a clear picture of your potential returns and portfolio growth.
             </p>
             
-            <h3 className="text-2xl font-semibold text-gray-900 mb-4">Investment Calculator Features</h3>
-            <ul className="list-disc list-inside text-gray-600 mb-6 space-y-2">
+            <h3 className="text-2xl font-semibold style={{color: '#111111'}} mb-4">Investment Calculator Features</h3>
+            <ul className="list-disc list-inside style={{color: '#555555'}} mb-6 space-y-2">
               <li>Calculate compound interest on your investments automatically</li>
               <li>Factor in regular monthly contributions to your portfolio</li>
               <li>See total gains vs. total invested with detailed breakdown</li>
@@ -192,9 +192,9 @@ export default function InvestmentCalculatorPage() {
               <li>Compare different investment scenarios and contribution amounts</li>
             </ul>
 
-            <h3 className="text-2xl font-semibold text-gray-900 mb-4">Best Investment Calculator Tips for 2025</h3>
+            <h3 className="text-2xl font-semibold style={{color: '#111111'}} mb-4">Best Investment Calculator Tips for 2025</h3>
             <div className="bg-blue-50 border-l-4 border-blue-400 p-6 mb-6">
-              <p className="text-gray-700">
+              <p className="style={{color: '#555555'}}">
                 <strong>Start Early with Investment Calculator:</strong> The power of compound interest works best over long periods. 
                 Use our investment calculator to see how even small amounts invested early can grow significantly over time. 
                 Calculate investment returns to understand the impact of time on your portfolio.
@@ -202,38 +202,38 @@ export default function InvestmentCalculatorPage() {
             </div>
             
             <div className="bg-green-50 border-l-4 border-green-400 p-6 mb-6">
-              <p className="text-gray-700">
+              <p className="style={{color: '#555555'}}">
                 <strong>Diversify Your Portfolio:</strong> Don't put all your eggs in one basket. 
                 Use our investment return calculator to model different asset allocations and see how diversification 
                 affects your overall returns. Spread your investments across different asset classes to reduce risk.
               </p>
             </div>
 
-            <h3 className="text-2xl font-semibold text-gray-900 mb-4">Why Choose Our Investment Calculator?</h3>
-            <p className="text-gray-600 mb-6">
+            <h3 className="text-2xl font-semibold style={{color: '#111111'}} mb-4">Why Choose Our Investment Calculator?</h3>
+            <p className="style={{color: '#555555'}} mb-6">
               Our free investment calculator is designed to help you make informed financial decisions. 
               Unlike other investment calculators, ours provides real-time calculations and comprehensive 
               analysis of your investment growth potential. Whether you're a beginner investor or experienced 
               portfolio manager, our investment return calculator gives you the insights you need.
             </p>
 
-            <h3 className="text-2xl font-semibold text-gray-900 mb-4">Investment Calculator vs Other Financial Tools</h3>
-            <p className="text-gray-600 mb-6">
+            <h3 className="text-2xl font-semibold style={{color: '#111111'}} mb-4">Investment Calculator vs Other Financial Tools</h3>
+            <p className="style={{color: '#555555'}} mb-6">
               While there are many financial calculators available, our investment calculator focuses specifically 
               on helping you calculate investment returns and understand portfolio growth. Our tool combines 
               the best features of compound interest calculators, portfolio calculators, and investment growth 
               calculators into one comprehensive solution.
             </p>
 
-            <h3 className="text-2xl font-semibold text-gray-900 mb-4">Related Financial Tools</h3>
-            <p className="text-gray-600 mb-4">
+            <h3 className="text-2xl font-semibold style={{color: '#111111'}} mb-4">Related Financial Tools</h3>
+            <p className="style={{color: '#555555'}} mb-4">
               Explore our other free financial calculators to complete your financial planning toolkit:
             </p>
-            <ul className="list-disc list-inside text-gray-600 mb-6 space-y-2">
-              <li><a href="/compound-interest-calculator" className="text-blue-600 hover:underline">Compound Interest Calculator</a> - See how compound interest affects your investments</li>
-              <li><a href="/budget-calculator" className="text-blue-600 hover:underline">Budget Calculator</a> - Plan your monthly budget and track expenses</li>
-              <li><a href="/retirement-calculator" className="text-blue-600 hover:underline">Retirement Calculator</a> - Plan for your retirement and calculate savings needs</li>
-              <li><a href="/tools" className="text-blue-600 hover:underline">All Free Financial Tools</a> - Browse our complete collection of calculators</li>
+            <ul className="list-disc list-inside style={{color: '#555555'}} mb-6 space-y-2">
+              <li><a href="/compound-interest-calculator" className="style={{color: '#0070F3'}} hover:underline">Compound Interest Calculator</a> - See how compound interest affects your investments</li>
+              <li><a href="/budget-calculator" className="style={{color: '#0070F3'}} hover:underline">Budget Calculator</a> - Plan your monthly budget and track expenses</li>
+              <li><a href="/retirement-calculator" className="style={{color: '#0070F3'}} hover:underline">Retirement Calculator</a> - Plan for your retirement and calculate savings needs</li>
+              <li><a href="/tools" className="style={{color: '#0070F3'}} hover:underline">All Free Financial Tools</a> - Browse our complete collection of calculators</li>
             </ul>
           </div>
         </div>
@@ -242,10 +242,10 @@ export default function InvestmentCalculatorPage() {
       {/* Subscribe Section */}
       <section className="py-16 bg-gray-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl font-bold style={{color: '#111111'}} mb-4">
             Get Weekly Investment Calculator Tips & Market Insights
           </h2>
-          <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
+          <p className="text-lg style={{color: '#555555'}} mb-8 max-w-2xl mx-auto">
             Join thousands of investors who get actionable financial tips every Sunday. 
             Learn about market trends, investment strategies, portfolio management, and wealth-building techniques. 
             Get exclusive access to advanced investment calculator strategies and market analysis.

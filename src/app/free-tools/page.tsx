@@ -90,12 +90,12 @@ export default function FreeToolsPage() {
   ]
 
   return (
-    <main className="min-h-screen bg-gradient-to-br from-blue-600 via-purple-600 to-pink-600">
+    <main className="min-h-screen style={{background: 'linear-gradient(to bottom right, #0070F3, #FF5A5F, #FF5A5F)'}}">
       {/* Back Button */}
       <div className="max-w-6xl mx-auto px-4 pt-8">
         <Link 
           href="/" 
-          className="text-white/80 hover:text-white transition-colors flex items-center"
+          className="style={{color: '#FFFFFF'}}/80 hover:style={{color: '#FFFFFF'}} transition-colors flex items-center"
         >
           ← Back to Home
         </Link>
@@ -104,10 +104,10 @@ export default function FreeToolsPage() {
       <section className="py-20 px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h1 className="text-4xl sm:text-6xl font-bold text-white mb-6">
+            <h1 className="text-4xl sm:text-6xl font-bold style={{color: '#FFFFFF'}} mb-6">
               Free Tools for Entrepreneurs
             </h1>
-            <p className="text-xl text-white/90 max-w-3xl mx-auto">
+            <p className="text-xl style={{color: '#FFFFFF'}}/90 max-w-3xl mx-auto">
               Everything you need to grow your business, create content, and stay productive. 
               All tools are completely free to use.
             </p>
@@ -116,18 +116,18 @@ export default function FreeToolsPage() {
           {/* Tool Categories Grid */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {toolCategories.map((category, index) => (
-              <div key={index} className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20 shadow-xl hover:bg-white/20 transition-all duration-300">
+              <div key={index} className="style={{backgroundColor: '#FFFFFF'}}/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20 shadow-xl hover:style={{backgroundColor: '#FFFFFF'}}/20 transition-all duration-300">
                 <div className="flex items-center mb-6">
-                  <div className={`w-16 h-16 ${category.color} rounded-xl flex items-center justify-center text-2xl text-white mr-4`}>
+                  <div className={`w-16 h-16 ${category.color} rounded-xl flex items-center justify-center text-2xl style={{color: '#FFFFFF'}} mr-4`}>
                     {category.icon}
                   </div>
                   <div>
-                    <h2 className="text-2xl font-bold text-white mb-2">{category.name}</h2>
-                    <p className="text-white/80 text-sm">{category.tools.length} tools</p>
+                    <h2 className="text-2xl font-bold style={{color: '#FFFFFF'}} mb-2">{category.name}</h2>
+                    <p className="style={{color: '#FFFFFF'}}/80 text-sm">{category.tools.length} tools</p>
                   </div>
                 </div>
                 
-                <p className="text-white/90 leading-relaxed mb-6">
+                <p className="style={{color: '#FFFFFF'}}/90 leading-relaxed mb-6">
                   {category.description}
                 </p>
                 
@@ -136,14 +136,14 @@ export default function FreeToolsPage() {
                     <Link
                       key={toolIndex}
                       href={tool.path}
-                      className="block bg-white/10 hover:bg-white/20 rounded-lg p-3 transition-all duration-200 hover:scale-105"
+                      className="block style={{backgroundColor: '#FFFFFF'}}/10 hover:style={{backgroundColor: '#FFFFFF'}}/20 rounded-lg p-3 transition-all duration-200 hover:scale-105"
                     >
                       <div className="flex items-center justify-between">
                         <div>
-                          <h3 className="font-semibold text-white text-sm">{tool.name}</h3>
-                          <p className="text-white/70 text-xs">{tool.description}</p>
+                          <h3 className="font-semibold style={{color: '#FFFFFF'}} text-sm">{tool.name}</h3>
+                          <p className="style={{color: '#FFFFFF'}}/70 text-xs">{tool.description}</p>
                         </div>
-                        <div className="text-white/60">→</div>
+                        <div className="style={{color: '#FFFFFF'}}/60">→</div>
                       </div>
                     </Link>
                   ))}
@@ -154,14 +154,14 @@ export default function FreeToolsPage() {
           
           {/* CTA Section */}
           <div className="mt-20 text-center">
-            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20 shadow-xl">
-              <h2 className="text-3xl font-bold text-white mb-4">Need More Advanced Features?</h2>
-              <p className="text-white/90 mb-6 max-w-2xl mx-auto">
+            <div className="style={{backgroundColor: '#FFFFFF'}}/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20 shadow-xl">
+              <h2 className="text-3xl font-bold style={{color: '#FFFFFF'}} mb-4">Need More Advanced Features?</h2>
+              <p className="style={{color: '#FFFFFF'}}/90 mb-6 max-w-2xl mx-auto">
                 Get unlimited access to all tools plus premium features with our pro plan.
               </p>
               <Link 
                 href="/subscribe"
-                className="inline-block bg-white text-blue-600 font-bold px-8 py-4 rounded-lg hover:bg-white/90 transition-all duration-200 hover:scale-105"
+                className="inline-block style={{backgroundColor: '#FFFFFF'}} style={{color: '#0070F3'}} font-bold px-8 py-4 rounded-lg hover:style={{backgroundColor: '#FFFFFF'}}/90 transition-all duration-200 hover:scale-105"
               >
                 Upgrade to Pro
               </Link>

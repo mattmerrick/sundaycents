@@ -61,21 +61,21 @@ export default function ROICalculator() {
     <main className="min-h-screen bg-gradient-to-br from-rose-500 to-pink-600">
       <div className="max-w-4xl mx-auto px-4 py-20">
         <div className="text-center mb-12">
-          <h1 className="text-4xl sm:text-5xl font-bold text-white mb-6">
+          <h1 className="text-4xl sm:text-5xl font-bold style={{color: '#FFFFFF'}} mb-6">
             ROI Calculator
           </h1>
-          <p className="text-xl text-white/90 max-w-2xl mx-auto">
+          <p className="text-xl style={{color: '#FFFFFF'}}/90 max-w-2xl mx-auto">
             Calculate return on investment (ROI) for your business investments and projects.
           </p>
         </div>
 
-        <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20 shadow-xl">
+        <div className="style={{backgroundColor: '#FFFFFF'}}/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20 shadow-xl">
           <div className="grid md:grid-cols-2 gap-8">
             <div className="space-y-6">
-              <h2 className="text-2xl font-semibold text-white mb-6">Investment Details</h2>
+              <h2 className="text-2xl font-semibold style={{color: '#FFFFFF'}} mb-6">Investment Details</h2>
               
               <div>
-                <label className="block text-sm font-medium text-white mb-2">
+                <label className="block text-sm font-medium style={{color: '#FFFFFF'}} mb-2">
                   Initial Investment ($)
                 </label>
                 <input
@@ -84,15 +84,15 @@ export default function ROICalculator() {
                   value={initialInvestment}
                   onChange={(e) => setInitialInvestment(e.target.value)}
                   placeholder="0.00"
-                  className="w-full px-4 py-3 rounded-lg bg-white/20 border border-white/30 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-white/50"
+                  className="w-full px-4 py-3 rounded-lg style={{backgroundColor: '#FFFFFF'}}/20 border border-white/30 style={{color: '#FFFFFF'}} placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-white/50"
                 />
-                <p className="text-white/60 text-xs mt-1">
+                <p className="style={{color: '#FFFFFF'}}/60 text-xs mt-1">
                   Amount you initially invested
                 </p>
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-white mb-2">
+                <label className="block text-sm font-medium style={{color: '#FFFFFF'}} mb-2">
                   Final Value ($)
                 </label>
                 <input
@@ -101,16 +101,16 @@ export default function ROICalculator() {
                   value={finalValue}
                   onChange={(e) => setFinalValue(e.target.value)}
                   placeholder="0.00"
-                  className="w-full px-4 py-3 rounded-lg bg-white/20 border border-white/30 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-white/50"
+                  className="w-full px-4 py-3 rounded-lg style={{backgroundColor: '#FFFFFF'}}/20 border border-white/30 style={{color: '#FFFFFF'}} placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-white/50"
                 />
-                <p className="text-white/60 text-xs mt-1">
+                <p className="style={{color: '#FFFFFF'}}/60 text-xs mt-1">
                   Current value of your investment
                 </p>
               </div>
 
               <div className="grid grid-cols-2 gap-4">
                 <div>
-                  <label className="block text-sm font-medium text-white mb-2">
+                  <label className="block text-sm font-medium style={{color: '#FFFFFF'}} mb-2">
                     Time Period
                   </label>
                   <input
@@ -119,17 +119,17 @@ export default function ROICalculator() {
                     value={timePeriod}
                     onChange={(e) => setTimePeriod(e.target.value)}
                     placeholder="0"
-                    className="w-full px-4 py-3 rounded-lg bg-white/20 border border-white/30 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-white/50"
+                    className="w-full px-4 py-3 rounded-lg style={{backgroundColor: '#FFFFFF'}}/20 border border-white/30 style={{color: '#FFFFFF'}} placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-white/50"
                   />
                 </div>
                 <div>
-                  <label className="block text-sm font-medium text-white mb-2">
+                  <label className="block text-sm font-medium style={{color: '#FFFFFF'}} mb-2">
                     Time Unit
                   </label>
                   <select
                     value={timeUnit}
                     onChange={(e) => setTimeUnit(e.target.value)}
-                    className="w-full px-4 py-3 rounded-lg bg-white/20 border border-white/30 text-white focus:outline-none focus:ring-2 focus:ring-white/50"
+                    className="w-full px-4 py-3 rounded-lg style={{backgroundColor: '#FFFFFF'}}/20 border border-white/30 style={{color: '#FFFFFF'}} focus:outline-none focus:ring-2 focus:ring-white/50"
                   >
                     <option value="days">Days</option>
                     <option value="months">Months</option>
@@ -141,74 +141,74 @@ export default function ROICalculator() {
               <button
                 onClick={calculateROI}
                 disabled={!initialInvestment || !finalValue}
-                className="w-full bg-white text-rose-600 font-semibold px-6 py-3 rounded-lg hover:bg-white/90 transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
+                className="w-full style={{backgroundColor: '#FFFFFF'}} text-rose-600 font-semibold px-6 py-3 rounded-lg hover:style={{backgroundColor: '#FFFFFF'}}/90 transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 Calculate ROI
               </button>
             </div>
 
             <div>
-              <h2 className="text-2xl font-semibold text-white mb-6">ROI Analysis</h2>
+              <h2 className="text-2xl font-semibold style={{color: '#FFFFFF'}} mb-6">ROI Analysis</h2>
               
               {results ? (
                 <div className="space-y-6">
-                  <div className="bg-white/10 rounded-lg p-6">
-                    <h3 className="text-lg font-semibold text-white mb-4">Return on Investment</h3>
+                  <div className="style={{backgroundColor: '#FFFFFF'}}/10 rounded-lg p-6">
+                    <h3 className="text-lg font-semibold style={{color: '#FFFFFF'}} mb-4">Return on Investment</h3>
                     <div className="flex items-center justify-between mb-4">
-                      <span className="text-white/80">Total ROI:</span>
+                      <span className="style={{color: '#FFFFFF'}}/80">Total ROI:</span>
                       <span className={`text-3xl font-bold ${getROIColor(results.roi)}`}>
                         {results.roi > 0 ? '+' : ''}{results.roi}%
                       </span>
                     </div>
                     <div className="flex items-center justify-between mb-2">
-                      <span className="text-white/80">Total Return:</span>
+                      <span className="style={{color: '#FFFFFF'}}/80">Total Return:</span>
                       <span className={`text-xl font-bold ${getROIColor(results.profitLoss)}`}>
                         {results.profitLoss > 0 ? '+' : ''}${results.totalReturn.toLocaleString()}
                       </span>
                     </div>
-                    <p className="text-white/60 text-xs">
+                    <p className="style={{color: '#FFFFFF'}}/60 text-xs">
                       {getROILabel(results.roi)} • {results.timeInYears} years
                     </p>
                   </div>
 
-                  <div className="bg-white/10 rounded-lg p-6">
-                    <h3 className="text-lg font-semibold text-white mb-4">Annualized ROI</h3>
+                  <div className="style={{backgroundColor: '#FFFFFF'}}/10 rounded-lg p-6">
+                    <h3 className="text-lg font-semibold style={{color: '#FFFFFF'}} mb-4">Annualized ROI</h3>
                     <div className="flex items-center justify-between mb-2">
-                      <span className="text-white/80">Annualized Return:</span>
+                      <span className="style={{color: '#FFFFFF'}}/80">Annualized Return:</span>
                       <span className={`text-xl font-bold ${getROIColor(results.annualizedROI)}`}>
                         {results.annualizedROI > 0 ? '+' : ''}{results.annualizedROI}%
                       </span>
                     </div>
-                    <p className="text-white/60 text-xs">
+                    <p className="style={{color: '#FFFFFF'}}/60 text-xs">
                       Average annual return over {results.timeInYears} years
                     </p>
                   </div>
 
                   <div className="grid grid-cols-2 gap-4">
-                    <div className="bg-white/10 rounded-lg p-4">
-                      <h4 className="text-sm font-medium text-white/80 mb-2">Investment Growth</h4>
-                      <div className="text-lg font-bold text-blue-400">
+                    <div className="style={{backgroundColor: '#FFFFFF'}}/10 rounded-lg p-4">
+                      <h4 className="text-sm font-medium style={{color: '#FFFFFF'}}/80 mb-2">Investment Growth</h4>
+                      <div className="text-lg font-bold style={{color: '#0070F3'}}">
                         {((parseFloat(finalValue) / parseFloat(initialInvestment)) * 100).toFixed(1)}%
                       </div>
-                      <p className="text-white/60 text-xs">
+                      <p className="style={{color: '#FFFFFF'}}/60 text-xs">
                         Total growth
                       </p>
                     </div>
 
-                    <div className="bg-white/10 rounded-lg p-4">
-                      <h4 className="text-sm font-medium text-white/80 mb-2">Time Period</h4>
+                    <div className="style={{backgroundColor: '#FFFFFF'}}/10 rounded-lg p-4">
+                      <h4 className="text-sm font-medium style={{color: '#FFFFFF'}}/80 mb-2">Time Period</h4>
                       <div className="text-lg font-bold text-purple-400">
                         {results.timeInYears}
                       </div>
-                      <p className="text-white/60 text-xs">
+                      <p className="style={{color: '#FFFFFF'}}/60 text-xs">
                         Years invested
                       </p>
                     </div>
                   </div>
 
-                  <div className="bg-blue-500/20 border border-blue-500/30 rounded-lg p-4">
-                    <h4 className="text-sm font-semibold text-white mb-2">💡 ROI Interpretation</h4>
-                    <ul className="text-white/90 text-sm space-y-1">
+                  <div className="bg-blue-500/20 border style={{border: '1px solid #0070F3'}}/30 rounded-lg p-4">
+                    <h4 className="text-sm font-semibold style={{color: '#FFFFFF'}} mb-2">💡 ROI Interpretation</h4>
+                    <ul className="style={{color: '#FFFFFF'}}/90 text-sm space-y-1">
                       <li>• <strong>50%+:</strong> Excellent investment</li>
                       <li>• <strong>20-49%:</strong> Very good return</li>
                       <li>• <strong>10-19%:</strong> Good investment</li>
@@ -218,8 +218,8 @@ export default function ROICalculator() {
                   </div>
                 </div>
               ) : (
-                <div className="bg-white/10 rounded-lg p-6 text-center">
-                  <p className="text-white/60">
+                <div className="style={{backgroundColor: '#FFFFFF'}}/10 rounded-lg p-6 text-center">
+                  <p className="style={{color: '#FFFFFF'}}/60">
                     Enter your investment details and click "Calculate ROI" to see results
                   </p>
                 </div>
@@ -231,7 +231,7 @@ export default function ROICalculator() {
         <div className="mt-12 text-center">
           <a 
             href="/free-tools" 
-            className="text-white/80 hover:text-white transition-colors"
+            className="style={{color: '#FFFFFF'}}/80 hover:style={{color: '#FFFFFF'}} transition-colors"
           >
             ← Back to Free Tools
           </a>

@@ -82,17 +82,17 @@ export default function BudgetCalculatorPage() {
           }}
         />
       </Head>
-      <main className="min-h-screen bg-white pb-footer">
+      <main className="min-h-screen style={{backgroundColor: '#FFFFFF'}} pb-footer">
         <Header />
       
       {/* Hero Section */}
       <section className="pt-20 pb-12">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h1 className="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-4">
+            <h1 className="text-4xl sm:text-5xl font-extrabold style={{color: '#111111'}} mb-4">
               Free Budget Calculator 2025 - Monthly Budget Planner & Personal Finance Tool
             </h1>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl style={{color: '#555555'}} max-w-3xl mx-auto">
               Take control of your finances with our free budget calculator. Create monthly budgets, track your income, 
               expenses, and savings to build a solid financial foundation. Our budget calculator is the best tool for personal finance management.
             </p>
@@ -103,14 +103,14 @@ export default function BudgetCalculatorPage() {
       {/* Calculator Section */}
       <section className="py-12 bg-gray-50">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-white rounded-lg shadow-lg p-8">
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">Monthly Budget Calculator - Personal Budget Planner Tool</h2>
+          <div className="style={{backgroundColor: '#FFFFFF'}} rounded-lg shadow-lg p-8">
+            <h2 className="text-2xl font-bold style={{color: '#111111'}} mb-6">Monthly Budget Calculator - Personal Budget Planner Tool</h2>
             
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
               <div className="lg:col-span-2">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">
+                    <label className="block text-sm font-medium style={{color: '#555555'}} mb-2">
                       Monthly Income ($)
                     </label>
                     <input
@@ -122,7 +122,7 @@ export default function BudgetCalculatorPage() {
                   </div>
                   
                   <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">
+                    <label className="block text-sm font-medium style={{color: '#555555'}} mb-2">
                       Housing/Rent ($)
                     </label>
                     <input
@@ -134,7 +134,7 @@ export default function BudgetCalculatorPage() {
                   </div>
                   
                   <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">
+                    <label className="block text-sm font-medium style={{color: '#555555'}} mb-2">
                       Utilities ($)
                     </label>
                     <input
@@ -146,7 +146,7 @@ export default function BudgetCalculatorPage() {
                   </div>
                   
                   <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">
+                    <label className="block text-sm font-medium style={{color: '#555555'}} mb-2">
                       Groceries ($)
                     </label>
                     <input
@@ -158,7 +158,7 @@ export default function BudgetCalculatorPage() {
                   </div>
                   
                   <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">
+                    <label className="block text-sm font-medium style={{color: '#555555'}} mb-2">
                       Transportation ($)
                     </label>
                     <input
@@ -170,7 +170,7 @@ export default function BudgetCalculatorPage() {
                   </div>
                   
                   <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">
+                    <label className="block text-sm font-medium style={{color: '#555555'}} mb-2">
                       Insurance ($)
                     </label>
                     <input
@@ -182,7 +182,7 @@ export default function BudgetCalculatorPage() {
                   </div>
                   
                   <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">
+                    <label className="block text-sm font-medium style={{color: '#555555'}} mb-2">
                       Debt Payments ($)
                     </label>
                     <input
@@ -194,7 +194,7 @@ export default function BudgetCalculatorPage() {
                   </div>
                   
                   <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">
+                    <label className="block text-sm font-medium style={{color: '#555555'}} mb-2">
                       Savings ($)
                     </label>
                     <input
@@ -206,7 +206,7 @@ export default function BudgetCalculatorPage() {
                   </div>
                   
                   <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">
+                    <label className="block text-sm font-medium style={{color: '#555555'}} mb-2">
                       Entertainment ($)
                     </label>
                     <input
@@ -218,7 +218,7 @@ export default function BudgetCalculatorPage() {
                   </div>
                   
                   <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">
+                    <label className="block text-sm font-medium style={{color: '#555555'}} mb-2">
                       Other Expenses ($)
                     </label>
                     <input
@@ -232,25 +232,25 @@ export default function BudgetCalculatorPage() {
               </div>
               
               <div className="bg-gray-50 rounded-lg p-6">
-                <h3 className="text-xl font-semibold text-gray-900 mb-4">Budget Summary</h3>
+                <h3 className="text-xl font-semibold style={{color: '#111111'}} mb-4">Budget Summary</h3>
                 <div className="space-y-3">
                   <div className="flex justify-between items-center py-2 border-b border-gray-200">
-                    <span className="text-gray-600">Monthly Income:</span>
+                    <span className="style={{color: '#555555'}}">Monthly Income:</span>
                     <span className="text-lg font-semibold text-green-600">${income}</span>
                   </div>
                   <div className="flex justify-between items-center py-2 border-b border-gray-200">
-                    <span className="text-gray-600">Total Expenses:</span>
+                    <span className="style={{color: '#555555'}}">Total Expenses:</span>
                     <span className="text-lg font-semibold">${result.totalExpenses}</span>
                   </div>
                   <div className="flex justify-between items-center py-2 border-b border-gray-200">
-                    <span className="text-gray-600">Remaining:</span>
+                    <span className="style={{color: '#555555'}}">Remaining:</span>
                     <span className={`text-lg font-semibold ${parseFloat(result.remaining) >= 0 ? 'text-green-600' : 'text-red-600'}`}>
                       ${result.remaining}
                     </span>
                   </div>
                   <div className="flex justify-between items-center py-2">
-                    <span className="text-gray-600">Savings Rate:</span>
-                    <span className="text-lg font-semibold text-blue-600">{result.savingsRate}%</span>
+                    <span className="style={{color: '#555555'}}">Savings Rate:</span>
+                    <span className="text-lg font-semibold style={{color: '#0070F3'}}">{result.savingsRate}%</span>
                   </div>
                 </div>
               </div>
@@ -263,26 +263,26 @@ export default function BudgetCalculatorPage() {
       <section className="py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
-            <h2 className="text-3xl font-bold text-gray-900 mb-6">How to Create an Effective Budget with Our Budget Calculator</h2>
-            <p className="text-gray-600 mb-6">
+            <h2 className="text-3xl font-bold style={{color: '#111111'}} mb-6">How to Create an Effective Budget with Our Budget Calculator</h2>
+            <p className="style={{color: '#555555'}} mb-6">
               A budget is your financial roadmap. Our free budget calculator helps you understand where your money goes, 
               identify spending patterns, and make informed decisions about your financial future. Use our budget calculator 
               to create a comprehensive monthly budget that works for your lifestyle.
             </p>
             
-            <h3 className="text-2xl font-semibold text-gray-900 mb-4">The 50/30/20 Budget Rule - Budget Calculator Method</h3>
-            <p className="text-gray-600 mb-4">
+            <h3 className="text-2xl font-semibold style={{color: '#111111'}} mb-4">The 50/30/20 Budget Rule - Budget Calculator Method</h3>
+            <p className="style={{color: '#555555'}} mb-4">
               A popular budgeting method that our budget calculator can help you implement. This rule divides your after-tax income into three categories:
             </p>
-            <ul className="list-disc list-inside text-gray-600 mb-6 space-y-2">
+            <ul className="list-disc list-inside style={{color: '#555555'}} mb-6 space-y-2">
               <li><strong>50% for Needs:</strong> Housing, utilities, groceries, transportation, minimum debt payments - use our budget calculator to track these essential expenses</li>
               <li><strong>30% for Wants:</strong> Entertainment, dining out, hobbies, non-essential purchases - our budget calculator helps you allocate discretionary spending</li>
               <li><strong>20% for Savings:</strong> Emergency fund, retirement, debt payments above minimums - the budget calculator ensures you prioritize savings</li>
             </ul>
 
-            <h3 className="text-2xl font-semibold text-gray-900 mb-4">Best Budget Calculator Tips for 2025</h3>
+            <h3 className="text-2xl font-semibold style={{color: '#111111'}} mb-4">Best Budget Calculator Tips for 2025</h3>
             <div className="bg-blue-50 border-l-4 border-blue-400 p-6 mb-6">
-              <p className="text-gray-700">
+              <p className="style={{color: '#555555'}}">
                 <strong>Track Every Dollar with Budget Calculator:</strong> Use our budget calculator to see exactly where your money goes. 
                 Our monthly budget calculator provides detailed expense tracking and helps you identify spending patterns. 
                 Awareness is the first step to financial control.
@@ -290,35 +290,35 @@ export default function BudgetCalculatorPage() {
             </div>
             
             <div className="bg-green-50 border-l-4 border-green-400 p-6 mb-6">
-              <p className="text-gray-700">
+              <p className="style={{color: '#555555'}}">
                 <strong>Pay Yourself First:</strong> Use our budget calculator to set aside savings before paying other expenses. 
                 Our personal budget calculator ensures you're building wealth consistently by prioritizing savings in your monthly budget.
               </p>
             </div>
 
-            <h3 className="text-2xl font-semibold text-gray-900 mb-4">Why Choose Our Budget Calculator?</h3>
-            <p className="text-gray-600 mb-6">
+            <h3 className="text-2xl font-semibold style={{color: '#111111'}} mb-4">Why Choose Our Budget Calculator?</h3>
+            <p className="style={{color: '#555555'}} mb-6">
               Our free budget calculator is designed to help you take control of your personal finances. Unlike other budget calculators, 
               ours provides real-time calculations, comprehensive expense tracking, and detailed budget analysis. Whether you're creating 
               your first budget or optimizing an existing one, our budget calculator gives you the tools you need for financial success.
             </p>
 
-            <h3 className="text-2xl font-semibold text-gray-900 mb-4">Budget Calculator vs Other Financial Tools</h3>
-            <p className="text-gray-600 mb-6">
+            <h3 className="text-2xl font-semibold style={{color: '#111111'}} mb-4">Budget Calculator vs Other Financial Tools</h3>
+            <p className="style={{color: '#555555'}} mb-6">
               While there are many financial tools available, our budget calculator focuses specifically on helping you create and manage 
               monthly budgets effectively. Our tool combines the best features of budget planners, expense trackers, and personal finance 
               calculators into one comprehensive budget calculator solution.
             </p>
 
-            <h3 className="text-2xl font-semibold text-gray-900 mb-4">Related Financial Tools</h3>
-            <p className="text-gray-600 mb-4">
+            <h3 className="text-2xl font-semibold style={{color: '#111111'}} mb-4">Related Financial Tools</h3>
+            <p className="style={{color: '#555555'}} mb-4">
               Explore our other free financial calculators to complete your financial planning toolkit:
             </p>
-            <ul className="list-disc list-inside text-gray-600 mb-6 space-y-2">
-              <li><a href="/investment-calculator" className="text-blue-600 hover:underline">Investment Calculator</a> - Calculate investment returns and portfolio growth</li>
-              <li><a href="/compound-interest-calculator" className="text-blue-600 hover:underline">Compound Interest Calculator</a> - See how compound interest affects your savings</li>
-              <li><a href="/retirement-calculator" className="text-blue-600 hover:underline">Retirement Calculator</a> - Plan for your retirement and calculate savings needs</li>
-              <li><a href="/tools" className="text-blue-600 hover:underline">All Free Financial Tools</a> - Browse our complete collection of calculators</li>
+            <ul className="list-disc list-inside style={{color: '#555555'}} mb-6 space-y-2">
+              <li><a href="/investment-calculator" className="style={{color: '#0070F3'}} hover:underline">Investment Calculator</a> - Calculate investment returns and portfolio growth</li>
+              <li><a href="/compound-interest-calculator" className="style={{color: '#0070F3'}} hover:underline">Compound Interest Calculator</a> - See how compound interest affects your savings</li>
+              <li><a href="/retirement-calculator" className="style={{color: '#0070F3'}} hover:underline">Retirement Calculator</a> - Plan for your retirement and calculate savings needs</li>
+              <li><a href="/tools" className="style={{color: '#0070F3'}} hover:underline">All Free Financial Tools</a> - Browse our complete collection of calculators</li>
             </ul>
           </div>
         </div>
@@ -327,10 +327,10 @@ export default function BudgetCalculatorPage() {
       {/* Subscribe Section */}
       <section className="py-16 bg-gray-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl font-bold style={{color: '#111111'}} mb-4">
             Master Your Money with Budget Calculator Tips & Weekly Advice
           </h2>
-          <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
+          <p className="text-lg style={{color: '#555555'}} mb-8 max-w-2xl mx-auto">
             Get practical budgeting advice, advanced budget calculator strategies, money-saving techniques, 
             and financial planning tips delivered to your inbox every Sunday. Learn how to use budget calculators effectively.
           </p>

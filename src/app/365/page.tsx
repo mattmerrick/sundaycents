@@ -14,28 +14,28 @@ export const metadata: Metadata = {
 
 export default function ThreeSixtyFivePage() {
   return (
-    <main className="min-h-screen bg-blue-600">
+    <main className="min-h-screen style={{backgroundColor: '#0070F3'}}">
       <div className="max-w-4xl mx-auto px-4 py-12">
         {/* Header */}
         <div className="text-center mb-12">
           <Link 
             href="/"
-            className="inline-block text-blue-100 hover:text-white transition-colors mb-4"
+            className="inline-block style={{color: '#FFFFFF'}} hover:style={{color: '#FFFFFF'}} transition-colors mb-4"
           >
             ← Back to Home
           </Link>
-          <h1 className="text-4xl font-bold text-white mb-4">Why Building an Email List is Important for Making Money Online</h1>
-          <p className="text-blue-100 text-lg">
+          <h1 className="text-4xl font-bold style={{color: '#FFFFFF'}} mb-4">Why Building an Email List is Important for Making Money Online</h1>
+          <p className="style={{color: '#FFFFFF'}} text-lg">
             Proving the power of email marketing through real examples and daily insights from my newsletter journey
           </p>
         </div>
 
         {/* Email 7 */}
         <div className="mb-16">
-          <div className="bg-white/10 backdrop-blur-sm rounded-xl p-8 border border-white/20 shadow-xl">
+          <div className="style={{backgroundColor: '#FFFFFF'}}/10 backdrop-blur-sm rounded-xl p-8 border border-white/20 shadow-xl">
             <div className="flex items-center justify-between mb-6">
-              <h2 className="text-2xl font-bold text-white">Email #7</h2>
-              <span className="text-sm text-blue-100 bg-white/10 px-3 py-1 rounded-full">10.6% to habit formation</span>
+              <h2 className="text-2xl font-bold style={{color: '#FFFFFF'}}">Email #7</h2>
+              <span className="text-sm style={{color: '#FFFFFF'}} style={{backgroundColor: '#FFFFFF'}}/10 px-3 py-1 rounded-full">10.6% to habit formation</span>
             </div>
             
             <div className="prose prose-invert max-w-none">
@@ -79,10 +79,10 @@ export default function ThreeSixtyFivePage() {
 
         {/* Email 6 */}
         <div className="mb-16">
-          <div className="bg-white/10 backdrop-blur-sm rounded-xl p-8 border border-white/20 shadow-xl">
+          <div className="style={{backgroundColor: '#FFFFFF'}}/10 backdrop-blur-sm rounded-xl p-8 border border-white/20 shadow-xl">
             <div className="flex items-center justify-between mb-6">
-              <h2 className="text-2xl font-bold text-white">Email #6</h2>
-              <span className="text-sm text-blue-100 bg-white/10 px-3 py-1 rounded-full">The Big Short mindset</span>
+              <h2 className="text-2xl font-bold style={{color: '#FFFFFF'}}">Email #6</h2>
+              <span className="text-sm style={{color: '#FFFFFF'}} style={{backgroundColor: '#FFFFFF'}}/10 px-3 py-1 rounded-full">The Big Short mindset</span>
             </div>
             
             <div className="prose prose-invert max-w-none">
@@ -139,10 +139,10 @@ export default function ThreeSixtyFivePage() {
 
         {/* Email 5 */}
         <div className="mb-16">
-          <div className="bg-white/10 backdrop-blur-sm rounded-xl p-8 border border-white/20 shadow-xl">
+          <div className="style={{backgroundColor: '#FFFFFF'}}/10 backdrop-blur-sm rounded-xl p-8 border border-white/20 shadow-xl">
             <div className="flex items-center justify-between mb-6">
-              <h2 className="text-2xl font-bold text-white">Email #5</h2>
-              <span className="text-sm text-blue-100 bg-white/10 px-3 py-1 rounded-full">Got the job!</span>
+              <h2 className="text-2xl font-bold style={{color: '#FFFFFF'}}">Email #5</h2>
+              <span className="text-sm style={{color: '#FFFFFF'}} style={{backgroundColor: '#FFFFFF'}}/10 px-3 py-1 rounded-full">Got the job!</span>
             </div>
             
             <div className="prose prose-invert max-w-none">
@@ -204,10 +204,10 @@ export default function ThreeSixtyFivePage() {
 
         {/* Email 4 */}
         <div className="mb-16">
-          <div className="bg-white/10 backdrop-blur-sm rounded-xl p-8 border border-white/20 shadow-xl">
+          <div className="style={{backgroundColor: '#FFFFFF'}}/10 backdrop-blur-sm rounded-xl p-8 border border-white/20 shadow-xl">
             <div className="flex items-center justify-between mb-6">
-              <h2 className="text-2xl font-bold text-white">Email #4</h2>
-              <span className="text-sm text-blue-100 bg-white/10 px-3 py-1 rounded-full">Growing a newsletter</span>
+              <h2 className="text-2xl font-bold style={{color: '#FFFFFF'}}">Email #4</h2>
+              <span className="text-sm style={{color: '#FFFFFF'}} style={{backgroundColor: '#FFFFFF'}}/10 px-3 py-1 rounded-full">Growing a newsletter</span>
             </div>
             
             <div className="prose prose-invert max-w-none">
@@ -269,10 +269,10 @@ export default function ThreeSixtyFivePage() {
 
         {/* Email 3 */}
         <div className="mb-16">
-          <div className="bg-white/10 backdrop-blur-sm rounded-xl p-8 border border-white/20 shadow-xl">
+          <div className="style={{backgroundColor: '#FFFFFF'}}/10 backdrop-blur-sm rounded-xl p-8 border border-white/20 shadow-xl">
             <div className="flex items-center justify-between mb-6">
-              <h2 className="text-2xl font-bold text-white">Email #3</h2>
-              <span className="text-sm text-blue-100 bg-white/10 px-3 py-1 rounded-full">Find your customers</span>
+              <h2 className="text-2xl font-bold style={{color: '#FFFFFF'}}">Email #3</h2>
+              <span className="text-sm style={{color: '#FFFFFF'}} style={{backgroundColor: '#FFFFFF'}}/10 px-3 py-1 rounded-full">Find your customers</span>
             </div>
             
             <div className="prose prose-invert max-w-none">
@@ -300,7 +300,7 @@ export default function ThreeSixtyFivePage() {
                 He said this:
               </p>
               
-              <blockquote className="border-l-4 border-primary-400 pl-6 my-6 italic text-gray-300">
+              <blockquote className="border-l-4 border-primary-400 pl-6 my-6 italic style={{color: '#6B7280'}}">
                 "But now I follow the 5-12-3 rule, which makes my life a heck of a lot easier. Every piece of content must work in 5 seconds (the hook grabs attention), remain relevant 12 months later (try your best for evergreen value), and function across at least three platforms (repurposing)."
               </blockquote>
               
@@ -325,10 +325,10 @@ export default function ThreeSixtyFivePage() {
 
         {/* Email 2 */}
         <div className="mb-16">
-          <div className="bg-white/10 backdrop-blur-sm rounded-xl p-8 border border-white/20 shadow-xl">
+          <div className="style={{backgroundColor: '#FFFFFF'}}/10 backdrop-blur-sm rounded-xl p-8 border border-white/20 shadow-xl">
             <div className="flex items-center justify-between mb-6">
-              <h2 className="text-2xl font-bold text-white">Email #2</h2>
-              <span className="text-sm text-blue-100 bg-white/10 px-3 py-1 rounded-full">Building towards 50k</span>
+              <h2 className="text-2xl font-bold style={{color: '#FFFFFF'}}">Email #2</h2>
+              <span className="text-sm style={{color: '#FFFFFF'}} style={{backgroundColor: '#FFFFFF'}}/10 px-3 py-1 rounded-full">Building towards 50k</span>
             </div>
             
             <div className="prose prose-invert max-w-none">
@@ -377,10 +377,10 @@ export default function ThreeSixtyFivePage() {
 
         {/* Email 1 */}
         <div className="mb-16">
-          <div className="bg-white/10 backdrop-blur-sm rounded-xl p-8 border border-white/20 shadow-xl">
+          <div className="style={{backgroundColor: '#FFFFFF'}}/10 backdrop-blur-sm rounded-xl p-8 border border-white/20 shadow-xl">
             <div className="flex items-center justify-between mb-6">
-              <h2 className="text-2xl font-bold text-white">Email #1</h2>
-              <span className="text-sm text-blue-100 bg-white/10 px-3 py-1 rounded-full">The beginning</span>
+              <h2 className="text-2xl font-bold style={{color: '#FFFFFF'}}">Email #1</h2>
+              <span className="text-sm style={{color: '#FFFFFF'}} style={{backgroundColor: '#FFFFFF'}}/10 px-3 py-1 rounded-full">The beginning</span>
             </div>
             
             <div className="prose prose-invert max-w-none">
@@ -413,9 +413,9 @@ export default function ThreeSixtyFivePage() {
 
         {/* Coming Soon */}
         <div className="text-center py-12">
-          <div className="bg-gray-800 rounded-lg p-8 border border-gray-700 border-dashed">
-            <h3 className="text-xl font-semibold text-white mb-4">More Emails Coming Soon</h3>
-            <p className="text-gray-400">
+          <div className="style={{backgroundColor: '#FFFFFF', border: '1px solid #6B7280'}} rounded-lg p-8 border style={{border: '1px solid #6B7280'}} border-dashed">
+            <h3 className="text-xl font-semibold style={{color: '#FFFFFF'}} mb-4">More Emails Coming Soon</h3>
+            <p className="style={{color: '#6B7280'}}">
               This page will be updated daily with new email entries as the journey continues.
             </p>
           </div>

@@ -66,7 +66,7 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
   const relatedPosts = getRelatedPosts(post, 3)
 
   return (
-    <main className="min-h-screen bg-white">
+    <main className='min-h-screen' style={{backgroundColor: '#FFFFFF'}}>
       {/* Structured Data for SEO */}
       <script
         type="application/ld+json"
@@ -120,11 +120,11 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
       <section className="py-12">
         <div className="max-w-4xl mx-auto px-4">
           <div className="text-center">
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-black mb-8 leading-tight">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-8 leading-tight" style={{color: '#111111'}}>
               {post.title}
             </h1>
-            <div className="flex items-center justify-center space-x-4 text-base text-gray-600 mb-8">
-              <span className="text-blue-600 font-medium">{post.category}</span>
+            <div className="flex items-center justify-center space-x-4 text-base mb-8" style={{color: '#555555'}}>
+              <span className="font-medium" style={{color: '#0070F3'}}>{post.category}</span>
               <span>•</span>
               <span>{post.date}</span>
               <span>•</span>
@@ -161,9 +161,9 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
 
       {/* Related Posts */}
       {relatedPosts.length > 0 && (
-        <section className="py-16 bg-gray-50">
+        <section className='py-16' style={{backgroundColor: '#FFFFFF', border: '1px solid #6B7280'}}>
           <div className="max-w-4xl mx-auto px-4">
-            <h3 className="text-2xl font-bold text-black mb-8 text-center">
+            <h3 className="text-2xl font-bold mb-8 text-center" style={{color: '#111111'}}>
               Related Posts
             </h3>
             <div className="grid md:grid-cols-3 gap-6">
@@ -171,15 +171,15 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
                 <Link 
                   key={relatedPost.id}
                   href={`/blog/${relatedPost.id}`}
-                  className="bg-white p-6 rounded-lg hover:shadow-lg transition-shadow border border-gray-200"
+                  className='p-6 rounded-lg hover:shadow-lg transition-shadow' style={{backgroundColor: '#FFFFFF', border: '1px solid #6B7280'}}
                 >
-                  <div className="text-blue-600 text-sm font-medium mb-2">
+                  <div className="text-sm font-medium mb-2" style={{color: '#0070F3'}}>
                     {relatedPost.category}
                   </div>
-                  <h4 className="text-black font-semibold mb-2 line-clamp-2">
+                  <h4 className="font-semibold mb-2 line-clamp-2" style={{color: '#111111'}}>
                     {relatedPost.title}
                   </h4>
-                  <p className="text-gray-600 text-sm line-clamp-3">
+                  <p className="text-sm line-clamp-3" style={{color: '#555555'}}>
                     {relatedPost.excerpt}
                   </p>
                 </Link>

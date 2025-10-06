@@ -69,19 +69,19 @@ export default function CaptionWriter() {
     <main className="min-h-screen bg-gradient-to-br from-blue-500 to-purple-600">
       <div className="max-w-4xl mx-auto px-4 py-20">
         <div className="text-center mb-12">
-          <h1 className="text-4xl sm:text-5xl font-bold text-white mb-6">
+          <h1 className="text-4xl sm:text-5xl font-bold style={{color: '#FFFFFF'}} mb-6">
             Caption Writer
           </h1>
-          <p className="text-xl text-white/90 max-w-2xl mx-auto">
+          <p className="text-xl style={{color: '#FFFFFF'}}/90 max-w-2xl mx-auto">
             Generate engaging social media captions that drive engagement and build your audience.
           </p>
         </div>
 
-        <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20 shadow-xl">
+        <div className="style={{backgroundColor: '#FFFFFF'}}/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20 shadow-xl">
           <div className="grid md:grid-cols-2 gap-8">
             <div className="space-y-6">
               <div>
-                <label className="block text-sm font-medium text-white mb-2">
+                <label className="block text-sm font-medium style={{color: '#FFFFFF'}} mb-2">
                   What's your post about?
                 </label>
                 <input
@@ -89,18 +89,18 @@ export default function CaptionWriter() {
                   value={topic}
                   onChange={(e) => setTopic(e.target.value)}
                   placeholder="e.g., productivity tips, morning routine, business advice"
-                  className="w-full px-4 py-3 rounded-lg bg-white/20 border border-white/30 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-white/50"
+                  className="w-full px-4 py-3 rounded-lg style={{backgroundColor: '#FFFFFF'}}/20 border border-white/30 style={{color: '#FFFFFF'}} placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-white/50"
                 />
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-white mb-2">
+                <label className="block text-sm font-medium style={{color: '#FFFFFF'}} mb-2">
                   Tone
                 </label>
                 <select
                   value={tone}
                   onChange={(e) => setTone(e.target.value)}
-                  className="w-full px-4 py-3 rounded-lg bg-white/20 border border-white/30 text-white focus:outline-none focus:ring-2 focus:ring-white/50"
+                  className="w-full px-4 py-3 rounded-lg style={{backgroundColor: '#FFFFFF'}}/20 border border-white/30 style={{color: '#FFFFFF'}} focus:outline-none focus:ring-2 focus:ring-white/50"
                 >
                   <option value="professional">Professional</option>
                   <option value="casual">Casual</option>
@@ -109,13 +109,13 @@ export default function CaptionWriter() {
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-white mb-2">
+                <label className="block text-sm font-medium style={{color: '#FFFFFF'}} mb-2">
                   Platform
                 </label>
                 <select
                   value={platform}
                   onChange={(e) => setPlatform(e.target.value)}
-                  className="w-full px-4 py-3 rounded-lg bg-white/20 border border-white/30 text-white focus:outline-none focus:ring-2 focus:ring-white/50"
+                  className="w-full px-4 py-3 rounded-lg style={{backgroundColor: '#FFFFFF'}}/20 border border-white/30 style={{color: '#FFFFFF'}} focus:outline-none focus:ring-2 focus:ring-white/50"
                 >
                   <option value="instagram">Instagram</option>
                   <option value="twitter">Twitter/X</option>
@@ -125,13 +125,13 @@ export default function CaptionWriter() {
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-white mb-2">
+                <label className="block text-sm font-medium style={{color: '#FFFFFF'}} mb-2">
                   Length
                 </label>
                 <select
                   value={length}
                   onChange={(e) => setLength(e.target.value)}
-                  className="w-full px-4 py-3 rounded-lg bg-white/20 border border-white/30 text-white focus:outline-none focus:ring-2 focus:ring-white/50"
+                  className="w-full px-4 py-3 rounded-lg style={{backgroundColor: '#FFFFFF'}}/20 border border-white/30 style={{color: '#FFFFFF'}} focus:outline-none focus:ring-2 focus:ring-white/50"
                 >
                   <option value="short">Short (1-2 sentences)</option>
                   <option value="medium">Medium (3-5 sentences)</option>
@@ -140,13 +140,13 @@ export default function CaptionWriter() {
               </div>
 
               <div className="flex items-center justify-between">
-                <div className="text-white/80 text-sm">
+                <div className="style={{color: '#FFFFFF'}}/80 text-sm">
                   Free uses remaining: {3 - usageCount}/3
                 </div>
                 <button
                   onClick={generateCaption}
                   disabled={!topic.trim() || isGenerating || usageCount >= 3}
-                  className="bg-white text-blue-600 font-semibold px-6 py-3 rounded-lg hover:bg-white/90 transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="style={{backgroundColor: '#FFFFFF'}} style={{color: '#0070F3'}} font-semibold px-6 py-3 rounded-lg hover:style={{backgroundColor: '#FFFFFF'}}/90 transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                   {isGenerating ? 'Generating...' : 'Generate Caption'}
                 </button>
@@ -154,19 +154,19 @@ export default function CaptionWriter() {
             </div>
 
             <div>
-              <div className="bg-white/10 rounded-lg p-6 h-full">
+              <div className="style={{backgroundColor: '#FFFFFF'}}/10 rounded-lg p-6 h-full">
                 <div className="flex items-center justify-between mb-4">
-                  <h3 className="text-xl font-semibold text-white">Generated Caption</h3>
+                  <h3 className="text-xl font-semibold style={{color: '#FFFFFF'}}">Generated Caption</h3>
                   {caption && (
                     <button
                       onClick={copyCaption}
-                      className="bg-white/20 hover:bg-white/30 text-white px-4 py-2 rounded-lg transition-all duration-200"
+                      className="style={{backgroundColor: '#FFFFFF'}}/20 hover:style={{backgroundColor: '#FFFFFF'}}/30 style={{color: '#FFFFFF'}} px-4 py-2 rounded-lg transition-all duration-200"
                     >
                       Copy
                     </button>
                   )}
                 </div>
-                <div className="text-white/90 whitespace-pre-wrap leading-relaxed">
+                <div className="style={{color: '#FFFFFF'}}/90 whitespace-pre-wrap leading-relaxed">
                   {caption || 'Your generated caption will appear here...'}
                 </div>
               </div>
@@ -175,11 +175,11 @@ export default function CaptionWriter() {
 
           {usageCount >= 3 && (
             <div className="mt-8 bg-yellow-500/20 border border-yellow-500/30 rounded-lg p-6">
-              <h3 className="text-lg font-semibold text-white mb-2">Upgrade for Unlimited Access</h3>
-              <p className="text-white/90 mb-4">
+              <h3 className="text-lg font-semibold style={{color: '#FFFFFF'}} mb-2">Upgrade for Unlimited Access</h3>
+              <p className="style={{color: '#FFFFFF'}}/90 mb-4">
                 You've used all your free generations. Upgrade to continue using this tool unlimited times.
               </p>
-              <button className="bg-yellow-500 hover:bg-yellow-600 text-white font-semibold px-6 py-3 rounded-lg transition-all duration-200">
+              <button className="bg-yellow-500 hover:bg-yellow-600 style={{color: '#FFFFFF'}} font-semibold px-6 py-3 rounded-lg transition-all duration-200">
                 Upgrade Now
               </button>
             </div>
@@ -189,7 +189,7 @@ export default function CaptionWriter() {
         <div className="mt-12 text-center">
           <a 
             href="/free-tools" 
-            className="text-white/80 hover:text-white transition-colors"
+            className="style={{color: '#FFFFFF'}}/80 hover:style={{color: '#FFFFFF'}} transition-colors"
           >
             ← Back to Free Tools
           </a>

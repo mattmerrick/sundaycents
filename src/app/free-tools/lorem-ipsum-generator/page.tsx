@@ -95,27 +95,27 @@ export default function LoremIpsumGenerator() {
     <main className="min-h-screen bg-gradient-to-br from-sky-500 to-blue-600">
       <div className="max-w-4xl mx-auto px-4 py-20">
         <div className="text-center mb-12">
-          <h1 className="text-4xl sm:text-5xl font-bold text-white mb-6">
+          <h1 className="text-4xl sm:text-5xl font-bold style={{color: '#FFFFFF'}} mb-6">
             Lorem Ipsum Generator
           </h1>
-          <p className="text-xl text-white/90 max-w-2xl mx-auto">
+          <p className="text-xl style={{color: '#FFFFFF'}}/90 max-w-2xl mx-auto">
             Generate Lorem Ipsum placeholder text instantly. Perfect for designers, developers, and content creators.
           </p>
         </div>
 
-        <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20 shadow-xl">
+        <div className="style={{backgroundColor: '#FFFFFF'}}/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20 shadow-xl">
           <div className="grid md:grid-cols-2 gap-8">
             <div className="space-y-6">
-              <h2 className="text-2xl font-semibold text-white mb-6">Generator Options</h2>
+              <h2 className="text-2xl font-semibold style={{color: '#FFFFFF'}} mb-6">Generator Options</h2>
               
               <div>
-                <label className="block text-sm font-medium text-white mb-2">
+                <label className="block text-sm font-medium style={{color: '#FFFFFF'}} mb-2">
                   Text Type
                 </label>
                 <select
                   value={textType}
                   onChange={(e) => setTextType(e.target.value)}
-                  className="w-full px-4 py-3 rounded-lg bg-white/20 border border-white/30 text-white focus:outline-none focus:ring-2 focus:ring-white/50"
+                  className="w-full px-4 py-3 rounded-lg style={{backgroundColor: '#FFFFFF'}}/20 border border-white/30 style={{color: '#FFFFFF'}} focus:outline-none focus:ring-2 focus:ring-white/50"
                 >
                   <option value="paragraphs">Paragraphs</option>
                   <option value="sentences">Sentences</option>
@@ -125,7 +125,7 @@ export default function LoremIpsumGenerator() {
 
               {textType === 'paragraphs' && (
                 <div>
-                  <label className="block text-sm font-medium text-white mb-2">
+                  <label className="block text-sm font-medium style={{color: '#FFFFFF'}} mb-2">
                     Number of Paragraphs: {paragraphs}
                   </label>
                   <input
@@ -134,9 +134,9 @@ export default function LoremIpsumGenerator() {
                     max="10"
                     value={paragraphs}
                     onChange={(e) => setParagraphs(parseInt(e.target.value))}
-                    className="w-full h-2 bg-white/20 rounded-lg appearance-none cursor-pointer"
+                    className="w-full h-2 style={{backgroundColor: '#FFFFFF'}}/20 rounded-lg appearance-none cursor-pointer"
                   />
-                  <div className="flex justify-between text-xs text-white/60 mt-1">
+                  <div className="flex justify-between text-xs style={{color: '#FFFFFF'}}/60 mt-1">
                     <span>1</span>
                     <span>10</span>
                   </div>
@@ -145,7 +145,7 @@ export default function LoremIpsumGenerator() {
 
               {textType === 'sentences' && (
                 <div>
-                  <label className="block text-sm font-medium text-white mb-2">
+                  <label className="block text-sm font-medium style={{color: '#FFFFFF'}} mb-2">
                     Number of Sentences: {sentences}
                   </label>
                   <input
@@ -154,9 +154,9 @@ export default function LoremIpsumGenerator() {
                     max="20"
                     value={sentences}
                     onChange={(e) => setSentences(parseInt(e.target.value))}
-                    className="w-full h-2 bg-white/20 rounded-lg appearance-none cursor-pointer"
+                    className="w-full h-2 style={{backgroundColor: '#FFFFFF'}}/20 rounded-lg appearance-none cursor-pointer"
                   />
-                  <div className="flex justify-between text-xs text-white/60 mt-1">
+                  <div className="flex justify-between text-xs style={{color: '#FFFFFF'}}/60 mt-1">
                     <span>1</span>
                     <span>20</span>
                   </div>
@@ -165,7 +165,7 @@ export default function LoremIpsumGenerator() {
 
               {textType === 'words' && (
                 <div>
-                  <label className="block text-sm font-medium text-white mb-2">
+                  <label className="block text-sm font-medium style={{color: '#FFFFFF'}} mb-2">
                     Number of Words: {words}
                   </label>
                   <input
@@ -174,9 +174,9 @@ export default function LoremIpsumGenerator() {
                     max="50"
                     value={words}
                     onChange={(e) => setWords(parseInt(e.target.value))}
-                    className="w-full h-2 bg-white/20 rounded-lg appearance-none cursor-pointer"
+                    className="w-full h-2 style={{backgroundColor: '#FFFFFF'}}/20 rounded-lg appearance-none cursor-pointer"
                   />
-                  <div className="flex justify-between text-xs text-white/60 mt-1">
+                  <div className="flex justify-between text-xs style={{color: '#FFFFFF'}}/60 mt-1">
                     <span>1</span>
                     <span>50</span>
                   </div>
@@ -184,13 +184,13 @@ export default function LoremIpsumGenerator() {
               )}
 
               <div className="flex items-center justify-between">
-                <div className="text-white/80 text-sm">
+                <div className="style={{color: '#FFFFFF'}}/80 text-sm">
                   Free generations remaining: {3 - usageCount}/3
                 </div>
                 <button
                   onClick={generateLoremText}
                   disabled={usageCount >= 3}
-                  className="bg-white text-sky-600 font-semibold px-6 py-3 rounded-lg hover:bg-white/90 transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="style={{backgroundColor: '#FFFFFF'}} text-sky-600 font-semibold px-6 py-3 rounded-lg hover:style={{backgroundColor: '#FFFFFF'}}/90 transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                   Generate Lorem Ipsum
                 </button>
@@ -198,20 +198,20 @@ export default function LoremIpsumGenerator() {
             </div>
 
             <div>
-              <div className="bg-white/10 rounded-lg p-6 h-full">
+              <div className="style={{backgroundColor: '#FFFFFF'}}/10 rounded-lg p-6 h-full">
                 <div className="flex items-center justify-between mb-4">
-                  <h3 className="text-xl font-semibold text-white">Generated Text</h3>
+                  <h3 className="text-xl font-semibold style={{color: '#FFFFFF'}}">Generated Text</h3>
                   {generatedText && (
                     <button
                       onClick={copyText}
-                      className="bg-white/20 hover:bg-white/30 text-white px-4 py-2 rounded-lg transition-all duration-200"
+                      className="style={{backgroundColor: '#FFFFFF'}}/20 hover:style={{backgroundColor: '#FFFFFF'}}/30 style={{color: '#FFFFFF'}} px-4 py-2 rounded-lg transition-all duration-200"
                     >
                       Copy Text
                     </button>
                   )}
                 </div>
                 
-                <div className="text-white/90 leading-relaxed whitespace-pre-wrap max-h-96 overflow-y-auto">
+                <div className="style={{color: '#FFFFFF'}}/90 leading-relaxed whitespace-pre-wrap max-h-96 overflow-y-auto">
                   {generatedText || 'Your Lorem Ipsum text will appear here...'}
                 </div>
               </div>
@@ -220,26 +220,26 @@ export default function LoremIpsumGenerator() {
 
           {usageCount >= 3 && (
             <div className="mt-8 bg-yellow-500/20 border border-yellow-500/30 rounded-lg p-6">
-              <h3 className="text-lg font-semibold text-white mb-2">Upgrade for Unlimited Access</h3>
-              <p className="text-white/90 mb-4">
+              <h3 className="text-lg font-semibold style={{color: '#FFFFFF'}} mb-2">Upgrade for Unlimited Access</h3>
+              <p className="style={{color: '#FFFFFF'}}/90 mb-4">
                 You've used all your free generations. Upgrade to continue using this tool unlimited times.
               </p>
-              <button className="bg-yellow-500 hover:bg-yellow-600 text-white font-semibold px-6 py-3 rounded-lg transition-all duration-200">
+              <button className="bg-yellow-500 hover:bg-yellow-600 style={{color: '#FFFFFF'}} font-semibold px-6 py-3 rounded-lg transition-all duration-200">
                 Upgrade Now
               </button>
             </div>
           )}
 
-          <div className="mt-8 bg-blue-500/20 border border-blue-500/30 rounded-lg p-6">
-            <h3 className="text-lg font-semibold text-white mb-4">📝 About Lorem Ipsum</h3>
+          <div className="mt-8 bg-blue-500/20 border style={{border: '1px solid #0070F3'}}/30 rounded-lg p-6">
+            <h3 className="text-lg font-semibold style={{color: '#FFFFFF'}} mb-4">📝 About Lorem Ipsum</h3>
             <div className="grid md:grid-cols-2 gap-4">
-              <ul className="text-white/90 text-sm space-y-2">
+              <ul className="style={{color: '#FFFFFF'}}/90 text-sm space-y-2">
                 <li>• Used as placeholder text in design</li>
                 <li>• Originated from classical Latin literature</li>
                 <li>• Helps focus on layout and typography</li>
                 <li>• Standard in publishing and web design</li>
               </ul>
-              <ul className="text-white/90 text-sm space-y-2">
+              <ul className="style={{color: '#FFFFFF'}}/90 text-sm space-y-2">
                 <li>• Prevents distraction from actual content</li>
                 <li>• Used in mockups and prototypes</li>
                 <li>• Helps test text flow and spacing</li>
@@ -252,7 +252,7 @@ export default function LoremIpsumGenerator() {
         <div className="mt-12 text-center">
           <a 
             href="/free-tools" 
-            className="text-white/80 hover:text-white transition-colors"
+            className="style={{color: '#FFFFFF'}}/80 hover:style={{color: '#FFFFFF'}} transition-colors"
           >
             ← Back to Free Tools
           </a>

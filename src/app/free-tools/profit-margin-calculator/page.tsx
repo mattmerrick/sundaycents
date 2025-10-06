@@ -79,22 +79,22 @@ export default function ProfitMarginCalculator() {
     <div className="min-h-screen bg-gray-100 py-8">
       <div className="max-w-4xl mx-auto px-4">
         <div className="text-center mb-8">
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">
+          <h1 className="text-4xl font-bold style={{color: '#111111'}} mb-4">
             Profit Margin Calculator
           </h1>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+          <p className="text-xl style={{color: '#555555'}} max-w-2xl mx-auto">
             Calculate your business's profit margins to understand profitability and make better financial decisions.
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-8">
           {/* Input Form */}
-          <div className="bg-white rounded-lg shadow-md p-6">
-            <h2 className="text-2xl font-semibold text-gray-900 mb-6">Enter Your Financial Data</h2>
+          <div className="style={{backgroundColor: '#FFFFFF'}} rounded-lg shadow-md p-6">
+            <h2 className="text-2xl font-semibold style={{color: '#111111'}} mb-6">Enter Your Financial Data</h2>
             
             <div className="space-y-4">
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">
+                <label className="block text-sm font-medium style={{color: '#555555'}} mb-2">
                   Total Revenue ($)
                 </label>
                 <input
@@ -107,7 +107,7 @@ export default function ProfitMarginCalculator() {
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">
+                <label className="block text-sm font-medium style={{color: '#555555'}} mb-2">
                   Cost of Goods Sold ($)
                 </label>
                 <input
@@ -120,7 +120,7 @@ export default function ProfitMarginCalculator() {
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">
+                <label className="block text-sm font-medium style={{color: '#555555'}} mb-2">
                   Operating Expenses ($)
                 </label>
                 <input
@@ -133,7 +133,7 @@ export default function ProfitMarginCalculator() {
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">
+                <label className="block text-sm font-medium style={{color: '#555555'}} mb-2">
                   Other Expenses ($)
                 </label>
                 <input
@@ -148,13 +148,13 @@ export default function ProfitMarginCalculator() {
               <div className="flex space-x-4">
                 <button
                   onClick={calculateProfitMargin}
-                  className="flex-1 bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 transition-colors"
+                  className="flex-1 style={{backgroundColor: '#0070F3'}} style={{color: '#FFFFFF'}} py-2 px-4 rounded-md hover:bg-blue-700 transition-colors"
                 >
                   Calculate
                 </button>
                 <button
                   onClick={resetCalculator}
-                  className="flex-1 bg-gray-600 text-white py-2 px-4 rounded-md hover:bg-gray-700 transition-colors"
+                  className="flex-1 style={{backgroundColor: '#6B7280'}} style={{color: '#FFFFFF'}} py-2 px-4 rounded-md hover:style={{backgroundColor: '#FFFFFF', border: '1px solid #6B7280'}} transition-colors"
                 >
                   Reset
                 </button>
@@ -163,18 +163,18 @@ export default function ProfitMarginCalculator() {
           </div>
 
           {/* Results */}
-          <div className="bg-white rounded-lg shadow-md p-6">
-            <h2 className="text-2xl font-semibold text-gray-900 mb-6">Profit Margin Results</h2>
+          <div className="style={{backgroundColor: '#FFFFFF'}} rounded-lg shadow-md p-6">
+            <h2 className="text-2xl font-semibold style={{color: '#111111'}} mb-6">Profit Margin Results</h2>
             
             {results ? (
               <div className="space-y-6">
                 {/* Gross Profit */}
-                <div className="border-l-4 border-blue-500 pl-4">
-                  <h3 className="text-lg font-semibold text-gray-900">Gross Profit</h3>
-                  <p className="text-2xl font-bold text-blue-600">
+                <div className="border-l-4 style={{border: '1px solid #0070F3'}} pl-4">
+                  <h3 className="text-lg font-semibold style={{color: '#111111'}}">Gross Profit</h3>
+                  <p className="text-2xl font-bold style={{color: '#0070F3'}}">
                     {formatCurrency(results.grossProfit)}
                   </p>
-                  <p className="text-sm text-gray-600">
+                  <p className="text-sm style={{color: '#555555'}}">
                     Gross Profit Margin: 
                     <span className={`ml-2 font-semibold ${getMarginColor(results.grossProfitMargin)}`}>
                       {results.grossProfitMargin.toFixed(2)}% ({getMarginStatus(results.grossProfitMargin)})
@@ -184,11 +184,11 @@ export default function ProfitMarginCalculator() {
 
                 {/* Operating Profit */}
                 <div className="border-l-4 border-yellow-500 pl-4">
-                  <h3 className="text-lg font-semibold text-gray-900">Operating Profit</h3>
+                  <h3 className="text-lg font-semibold style={{color: '#111111'}}">Operating Profit</h3>
                   <p className="text-2xl font-bold text-yellow-600">
                     {formatCurrency(results.operatingProfit)}
                   </p>
-                  <p className="text-sm text-gray-600">
+                  <p className="text-sm style={{color: '#555555'}}">
                     Operating Profit Margin: 
                     <span className={`ml-2 font-semibold ${getMarginColor(results.operatingProfitMargin)}`}>
                       {results.operatingProfitMargin.toFixed(2)}% ({getMarginStatus(results.operatingProfitMargin)})
@@ -198,11 +198,11 @@ export default function ProfitMarginCalculator() {
 
                 {/* Net Profit */}
                 <div className="border-l-4 border-green-500 pl-4">
-                  <h3 className="text-lg font-semibold text-gray-900">Net Profit</h3>
+                  <h3 className="text-lg font-semibold style={{color: '#111111'}}">Net Profit</h3>
                   <p className="text-2xl font-bold text-green-600">
                     {formatCurrency(results.netProfit)}
                   </p>
-                  <p className="text-sm text-gray-600">
+                  <p className="text-sm style={{color: '#555555'}}">
                     Net Profit Margin: 
                     <span className={`ml-2 font-semibold ${getMarginColor(results.netProfitMargin)}`}>
                       {results.netProfitMargin.toFixed(2)}% ({getMarginStatus(results.netProfitMargin)})
@@ -212,8 +212,8 @@ export default function ProfitMarginCalculator() {
 
                 {/* Profitability Analysis */}
                 <div className="bg-gray-50 rounded-lg p-4">
-                  <h4 className="font-semibold text-gray-900 mb-2">Profitability Analysis</h4>
-                  <ul className="text-sm text-gray-700 space-y-1">
+                  <h4 className="font-semibold style={{color: '#111111'}} mb-2">Profitability Analysis</h4>
+                  <ul className="text-sm style={{color: '#555555'}} space-y-1">
                     <li>• Gross margin shows product/service profitability</li>
                     <li>• Operating margin shows operational efficiency</li>
                     <li>• Net margin shows overall business profitability</li>
@@ -223,7 +223,7 @@ export default function ProfitMarginCalculator() {
               </div>
             ) : (
               <div className="text-center py-8">
-                <p className="text-gray-500">
+                <p className="style={{color: '#6B7280'}}">
                   Enter your financial data and click "Calculate" to see your profit margins.
                 </p>
               </div>
@@ -232,7 +232,7 @@ export default function ProfitMarginCalculator() {
         </div>
 
         <div className="mt-8 text-center">
-          <a href="/free-tools" className="text-blue-600 hover:text-blue-800">
+          <a href="/free-tools" className="style={{color: '#0070F3'}} hover:text-blue-800">
             ← Back to Free Tools
           </a>
         </div>

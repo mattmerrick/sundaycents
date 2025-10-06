@@ -68,24 +68,24 @@ export default function ColorPaletteGenerator() {
     <main className="min-h-screen bg-gradient-to-br from-pink-500 to-rose-600">
       <div className="max-w-4xl mx-auto px-4 py-20">
         <div className="text-center mb-12">
-          <h1 className="text-4xl sm:text-5xl font-bold text-white mb-6">
+          <h1 className="text-4xl sm:text-5xl font-bold style={{color: '#FFFFFF'}} mb-6">
             Color Palette Generator
           </h1>
-          <p className="text-xl text-white/90 max-w-2xl mx-auto">
+          <p className="text-xl style={{color: '#FFFFFF'}}/90 max-w-2xl mx-auto">
             Generate beautiful color palettes for your brand and designs. Get inspired with random color combinations.
           </p>
         </div>
 
-        <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20 shadow-xl">
+        <div className="style={{backgroundColor: '#FFFFFF'}}/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20 shadow-xl">
           <div className="text-center mb-8">
             <div className="flex items-center justify-center gap-4 mb-6">
-              <div className="text-white/80 text-sm">
+              <div className="style={{color: '#FFFFFF'}}/80 text-sm">
                 Free palettes remaining: {3 - usageCount}/3
               </div>
               <button
                 onClick={generatePalette}
                 disabled={isGenerating || usageCount >= 3}
-                className="bg-white text-pink-600 font-semibold px-6 py-3 rounded-lg hover:bg-white/90 transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
+                className="style={{backgroundColor: '#FFFFFF'}} text-pink-600 font-semibold px-6 py-3 rounded-lg hover:style={{backgroundColor: '#FFFFFF'}}/90 transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 {isGenerating ? 'Generating...' : 'Generate Palette'}
               </button>
@@ -94,11 +94,11 @@ export default function ColorPaletteGenerator() {
 
           {usageCount >= 3 && (
             <div className="mb-8 bg-yellow-500/20 border border-yellow-500/30 rounded-lg p-6">
-              <h3 className="text-lg font-semibold text-white mb-2">Upgrade for Unlimited Access</h3>
-              <p className="text-white/90 mb-4">
+              <h3 className="text-lg font-semibold style={{color: '#FFFFFF'}} mb-2">Upgrade for Unlimited Access</h3>
+              <p className="style={{color: '#FFFFFF'}}/90 mb-4">
                 You've generated all your free palettes. Upgrade to continue using this tool unlimited times.
               </p>
-              <button className="bg-yellow-500 hover:bg-yellow-600 text-white font-semibold px-6 py-3 rounded-lg transition-all duration-200">
+              <button className="bg-yellow-500 hover:bg-yellow-600 style={{color: '#FFFFFF'}} font-semibold px-6 py-3 rounded-lg transition-all duration-200">
                 Upgrade Now
               </button>
             </div>
@@ -107,13 +107,13 @@ export default function ColorPaletteGenerator() {
           <div className="space-y-6">
             {palettes.length > 0 ? (
               palettes.map((palette) => (
-                <div key={palette.id} className="bg-white/10 rounded-lg p-6">
+                <div key={palette.id} className="style={{backgroundColor: '#FFFFFF'}}/10 rounded-lg p-6">
                   <div className="flex items-center justify-between mb-4">
-                    <h3 className="text-lg font-semibold text-white">{palette.name}</h3>
+                    <h3 className="text-lg font-semibold style={{color: '#FFFFFF'}}">{palette.name}</h3>
                     <div className="flex gap-2">
                       <button
                         onClick={() => copyPalette(palette)}
-                        className="bg-white/20 hover:bg-white/30 text-white px-3 py-1 rounded text-sm transition-all duration-200"
+                        className="style={{backgroundColor: '#FFFFFF'}}/20 hover:style={{backgroundColor: '#FFFFFF'}}/30 style={{color: '#FFFFFF'}} px-3 py-1 rounded text-sm transition-all duration-200"
                       >
                         Copy All
                       </button>
@@ -135,7 +135,7 @@ export default function ColorPaletteGenerator() {
                           onClick={() => copyColor(color)}
                           title={`Click to copy ${color}`}
                         ></div>
-                        <div className="text-white/80 text-xs font-mono">
+                        <div className="style={{color: '#FFFFFF'}}/80 text-xs font-mono">
                           {color}
                         </div>
                       </div>
@@ -144,24 +144,24 @@ export default function ColorPaletteGenerator() {
                 </div>
               ))
             ) : (
-              <div className="bg-white/10 rounded-lg p-8 text-center">
-                <p className="text-white/60">
+              <div className="style={{backgroundColor: '#FFFFFF'}}/10 rounded-lg p-8 text-center">
+                <p className="style={{color: '#FFFFFF'}}/60">
                   No palettes generated yet. Click "Generate Palette" to create your first color palette!
                 </p>
               </div>
             )}
           </div>
 
-          <div className="mt-8 bg-blue-500/20 border border-blue-500/30 rounded-lg p-6">
-            <h3 className="text-lg font-semibold text-white mb-4">🎨 Color Theory Tips</h3>
+          <div className="mt-8 bg-blue-500/20 border style={{border: '1px solid #0070F3'}}/30 rounded-lg p-6">
+            <h3 className="text-lg font-semibold style={{color: '#FFFFFF'}} mb-4">🎨 Color Theory Tips</h3>
             <div className="grid md:grid-cols-2 gap-4">
-              <ul className="text-white/90 text-sm space-y-2">
+              <ul className="style={{color: '#FFFFFF'}}/90 text-sm space-y-2">
                 <li>• Use complementary colors for contrast</li>
                 <li>• Analogous colors create harmony</li>
                 <li>• Limit your palette to 3-5 colors</li>
                 <li>• Consider color psychology</li>
               </ul>
-              <ul className="text-white/90 text-sm space-y-2">
+              <ul className="style={{color: '#FFFFFF'}}/90 text-sm space-y-2">
                 <li>• Test colors for accessibility</li>
                 <li>• Use 60-30-10 rule for color distribution</li>
                 <li>• Consider your brand personality</li>
@@ -174,7 +174,7 @@ export default function ColorPaletteGenerator() {
         <div className="mt-12 text-center">
           <a 
             href="/free-tools" 
-            className="text-white/80 hover:text-white transition-colors"
+            className="style={{color: '#FFFFFF'}}/80 hover:style={{color: '#FFFFFF'}} transition-colors"
           >
             ← Back to Free Tools
           </a>

@@ -84,17 +84,17 @@ export default function RetirementCalculatorPage() {
           }}
         />
       </Head>
-      <main className="min-h-screen bg-white pb-footer">
+      <main className="min-h-screen style={{backgroundColor: '#FFFFFF'}} pb-footer">
         <Header />
       
       {/* Hero Section */}
       <section className="pt-20 pb-12">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h1 className="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-4">
+            <h1 className="text-4xl sm:text-5xl font-extrabold style={{color: '#111111'}} mb-4">
               Free Retirement Calculator 2025 - Retirement Planning & Savings Calculator
             </h1>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl style={{color: '#555555'}} max-w-3xl mx-auto">
               Plan your retirement with confidence using our free retirement calculator. Calculate how much you need to save, 
               what your retirement income could look like, and determine if you're on track for retirement. 
               Our retirement planning calculator helps you secure your financial future.
@@ -106,14 +106,14 @@ export default function RetirementCalculatorPage() {
       {/* Calculator Section */}
       <section className="py-12 bg-gray-50">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-white rounded-lg shadow-lg p-8">
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">Retirement Planning Calculator - Calculate Your Retirement Savings</h2>
+          <div className="style={{backgroundColor: '#FFFFFF'}} rounded-lg shadow-lg p-8">
+            <h2 className="text-2xl font-bold style={{color: '#111111'}} mb-6">Retirement Planning Calculator - Calculate Your Retirement Savings</h2>
             
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
               <div className="lg:col-span-2">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">
+                    <label className="block text-sm font-medium style={{color: '#555555'}} mb-2">
                       Current Age
                     </label>
                     <input
@@ -125,7 +125,7 @@ export default function RetirementCalculatorPage() {
                   </div>
                   
                   <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">
+                    <label className="block text-sm font-medium style={{color: '#555555'}} mb-2">
                       Retirement Age
                     </label>
                     <input
@@ -137,7 +137,7 @@ export default function RetirementCalculatorPage() {
                   </div>
                   
                   <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">
+                    <label className="block text-sm font-medium style={{color: '#555555'}} mb-2">
                       Current Retirement Savings ($)
                     </label>
                     <input
@@ -149,7 +149,7 @@ export default function RetirementCalculatorPage() {
                   </div>
                   
                   <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">
+                    <label className="block text-sm font-medium style={{color: '#555555'}} mb-2">
                       Monthly Contribution ($)
                     </label>
                     <input
@@ -161,7 +161,7 @@ export default function RetirementCalculatorPage() {
                   </div>
                   
                   <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">
+                    <label className="block text-sm font-medium style={{color: '#555555'}} mb-2">
                       Expected Annual Return (%)
                     </label>
                     <input
@@ -174,7 +174,7 @@ export default function RetirementCalculatorPage() {
                   </div>
                   
                   <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">
+                    <label className="block text-sm font-medium style={{color: '#555555'}} mb-2">
                       Desired Monthly Income ($)
                     </label>
                     <input
@@ -188,22 +188,22 @@ export default function RetirementCalculatorPage() {
               </div>
               
               <div className="bg-gray-50 rounded-lg p-6">
-                <h3 className="text-xl font-semibold text-gray-900 mb-4">Retirement Projection</h3>
+                <h3 className="text-xl font-semibold style={{color: '#111111'}} mb-4">Retirement Projection</h3>
                 <div className="space-y-3">
                   <div className="flex justify-between items-center py-2 border-b border-gray-200">
-                    <span className="text-gray-600">Years to Retirement:</span>
+                    <span className="style={{color: '#555555'}}">Years to Retirement:</span>
                     <span className="text-lg font-semibold">{result.yearsToRetire}</span>
                   </div>
                   <div className="flex justify-between items-center py-2 border-b border-gray-200">
-                    <span className="text-gray-600">Total Retirement Fund:</span>
+                    <span className="style={{color: '#555555'}}">Total Retirement Fund:</span>
                     <span className="text-2xl font-bold text-green-600">${result.totalFund}</span>
                   </div>
                   <div className="flex justify-between items-center py-2 border-b border-gray-200">
-                    <span className="text-gray-600">Monthly Income (4% rule):</span>
+                    <span className="style={{color: '#555555'}}">Monthly Income (4% rule):</span>
                     <span className="text-lg font-semibold">${result.monthlyIncome}</span>
                   </div>
                   <div className="flex justify-between items-center py-2">
-                    <span className="text-gray-600">Income Gap:</span>
+                    <span className="style={{color: '#555555'}}">Income Gap:</span>
                     <span className={`text-lg font-semibold ${parseFloat(result.shortfall) <= 0 ? 'text-green-600' : 'text-red-600'}`}>
                       ${result.shortfall}
                     </span>
@@ -219,23 +219,23 @@ export default function RetirementCalculatorPage() {
       <section className="py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
-            <h2 className="text-3xl font-bold text-gray-900 mb-6">Retirement Planning Essentials - How Much Do You Need to Retire?</h2>
-            <p className="text-gray-600 mb-6">
+            <h2 className="text-3xl font-bold style={{color: '#111111'}} mb-6">Retirement Planning Essentials - How Much Do You Need to Retire?</h2>
+            <p className="style={{color: '#555555'}} mb-6">
               Retirement planning is one of the most important financial decisions you'll make. 
               Our free retirement calculator helps you understand how much you need to save to maintain 
               your desired lifestyle in retirement. Use our retirement planning calculator to determine 
               your retirement savings goals and track your progress.
             </p>
             
-            <h3 className="text-2xl font-semibold text-gray-900 mb-4">The 4% Rule - Retirement Calculator Method</h3>
-            <p className="text-gray-600 mb-6">
+            <h3 className="text-2xl font-semibold style={{color: '#111111'}} mb-4">The 4% Rule - Retirement Calculator Method</h3>
+            <p className="style={{color: '#555555'}} mb-6">
               The 4% rule suggests you can withdraw 4% of your retirement savings annually without 
               running out of money. Our retirement calculator uses this rule to estimate your retirement income. 
               This is based on historical market returns and is a common benchmark for retirement planning.
             </p>
 
-            <h3 className="text-2xl font-semibold text-gray-900 mb-4">Key Retirement Planning Factors - Retirement Calculator Inputs</h3>
-            <ul className="list-disc list-inside text-gray-600 mb-6 space-y-2">
+            <h3 className="text-2xl font-semibold style={{color: '#111111'}} mb-4">Key Retirement Planning Factors - Retirement Calculator Inputs</h3>
+            <ul className="list-disc list-inside style={{color: '#555555'}} mb-6 space-y-2">
               <li><strong>Start Early:</strong> Time is your greatest asset in retirement planning - use our retirement calculator to see the impact of starting early</li>
               <li><strong>Maximize Employer Matching:</strong> Don't leave free money on the table - factor this into your retirement savings calculator</li>
               <li><strong>Diversify Your Investments:</strong> Spread risk across different asset classes for better retirement planning</li>
@@ -243,36 +243,36 @@ export default function RetirementCalculatorPage() {
               <li><strong>Account for Inflation:</strong> Your purchasing power will decrease over time - our retirement calculator accounts for this</li>
             </ul>
 
-            <h3 className="text-2xl font-semibold text-gray-900 mb-4">Why Choose Our Retirement Calculator?</h3>
-            <p className="text-gray-600 mb-6">
+            <h3 className="text-2xl font-semibold style={{color: '#111111'}} mb-4">Why Choose Our Retirement Calculator?</h3>
+            <p className="style={{color: '#555555'}} mb-6">
               Our free retirement calculator is designed to help you plan for a secure retirement. Unlike other retirement calculators, 
               ours provides comprehensive analysis of your retirement savings, income projections, and gap analysis. 
               Whether you're just starting to save or nearing retirement, our retirement planning calculator gives you the insights you need.
             </p>
 
             <div className="bg-yellow-50 border-l-4 border-yellow-400 p-6 mb-6">
-              <p className="text-gray-700">
+              <p className="style={{color: '#555555'}}">
                 <strong>Pro Tip:</strong> If you're behind on retirement savings, use our retirement calculator to see how increasing 
                 your monthly contributions or working a few extra years can impact your retirement income. Small changes can have big impacts on your retirement planning.
               </p>
             </div>
 
-            <h3 className="text-2xl font-semibold text-gray-900 mb-4">Retirement Calculator vs Other Financial Tools</h3>
-            <p className="text-gray-600 mb-6">
+            <h3 className="text-2xl font-semibold style={{color: '#111111'}} mb-4">Retirement Calculator vs Other Financial Tools</h3>
+            <p className="style={{color: '#555555'}} mb-6">
               While there are many financial calculators available, our retirement calculator focuses specifically on helping you plan for retirement. 
               Our tool combines the best features of 401k calculators, retirement savings calculators, and retirement income calculators 
               into one comprehensive retirement planning solution.
             </p>
 
-            <h3 className="text-2xl font-semibold text-gray-900 mb-4">Related Financial Tools</h3>
-            <p className="text-gray-600 mb-4">
+            <h3 className="text-2xl font-semibold style={{color: '#111111'}} mb-4">Related Financial Tools</h3>
+            <p className="style={{color: '#555555'}} mb-4">
               Explore our other free financial calculators to complete your financial planning toolkit:
             </p>
-            <ul className="list-disc list-inside text-gray-600 mb-6 space-y-2">
-              <li><a href="/investment-calculator" className="text-blue-600 hover:underline">Investment Calculator</a> - Calculate investment returns and portfolio growth</li>
-              <li><a href="/compound-interest-calculator" className="text-blue-600 hover:underline">Compound Interest Calculator</a> - See how compound interest affects your retirement savings</li>
-              <li><a href="/budget-calculator" className="text-blue-600 hover:underline">Budget Calculator</a> - Plan your monthly budget and track expenses</li>
-              <li><a href="/tools" className="text-blue-600 hover:underline">All Free Financial Tools</a> - Browse our complete collection of calculators</li>
+            <ul className="list-disc list-inside style={{color: '#555555'}} mb-6 space-y-2">
+              <li><a href="/investment-calculator" className="style={{color: '#0070F3'}} hover:underline">Investment Calculator</a> - Calculate investment returns and portfolio growth</li>
+              <li><a href="/compound-interest-calculator" className="style={{color: '#0070F3'}} hover:underline">Compound Interest Calculator</a> - See how compound interest affects your retirement savings</li>
+              <li><a href="/budget-calculator" className="style={{color: '#0070F3'}} hover:underline">Budget Calculator</a> - Plan your monthly budget and track expenses</li>
+              <li><a href="/tools" className="style={{color: '#0070F3'}} hover:underline">All Free Financial Tools</a> - Browse our complete collection of calculators</li>
             </ul>
           </div>
         </div>
@@ -281,10 +281,10 @@ export default function RetirementCalculatorPage() {
       {/* Subscribe Section */}
       <section className="py-16 bg-gray-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl font-bold style={{color: '#111111'}} mb-4">
             Secure Your Retirement Future with Expert Planning Tips
           </h2>
-          <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
+          <p className="text-lg style={{color: '#555555'}} mb-8 max-w-2xl mx-auto">
             Get expert retirement planning advice, advanced retirement calculator strategies, investment techniques, 
             and wealth-building tips delivered to your inbox every Sunday. Learn how to use retirement calculators effectively.
           </p>

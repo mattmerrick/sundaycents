@@ -83,24 +83,24 @@ export default function BlogTitleGenerator() {
   }
 
   return (
-    <main className="min-h-screen bg-gradient-to-br from-orange-500 to-red-600">
+    <main className='min-h-screen' style={{background: 'linear-gradient(to bottom right, #0070F3, #FF5A5F)'}}>
       <div className="max-w-4xl mx-auto px-4 py-20">
         <div className="text-center mb-12">
-          <h1 className="text-4xl sm:text-5xl font-bold text-white mb-6">
+          <h1 className="text-4xl sm:text-5xl font-bold mb-6" style={{color: '#FFFFFF'}}>
             Blog Title Generator
           </h1>
-          <p className="text-xl text-white/90 max-w-2xl mx-auto">
+          <p className="text-xl max-w-2xl mx-auto" style={{color: '#FFFFFF'}}>
             Generate compelling blog post titles that grab attention and drive clicks. Perfect for content creators and bloggers.
           </p>
         </div>
 
-        <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20 shadow-xl">
+        <div className='backdrop-blur-sm rounded-2xl p-8 shadow-xl' style={{backgroundColor: 'rgba(255, 255, 255, 0.1)', border: '1px solid rgba(255, 255, 255, 0.2)'}}>
           <div className="grid md:grid-cols-2 gap-8">
             <div className="space-y-6">
-              <h2 className="text-2xl font-semibold text-white mb-6">Title Preferences</h2>
+              <h2 className="text-2xl font-semibold mb-6" style={{color: '#FFFFFF'}}>Title Preferences</h2>
               
               <div>
-                <label className="block text-sm font-medium text-white mb-2">
+                <label className="block text-sm font-medium mb-2" style={{color: '#FFFFFF'}}>
                   Blog Topic
                 </label>
                 <input
@@ -108,18 +108,18 @@ export default function BlogTitleGenerator() {
                   value={topic}
                   onChange={(e) => setTopic(e.target.value)}
                   placeholder="e.g., productivity, digital marketing, personal finance"
-                  className="w-full px-4 py-3 rounded-lg bg-white/20 border border-white/30 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-white/50"
+                  className='w-full px-4 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-white/50' style={{backgroundColor: 'rgba(255, 255, 255, 0.2)', border: '1px solid rgba(255, 255, 255, 0.3)', color: '#FFFFFF'}}
                 />
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-white mb-2">
+                <label className="block text-sm font-medium mb-2" style={{color: '#FFFFFF'}}>
                   Tone
                 </label>
                 <select
                   value={tone}
                   onChange={(e) => setTone(e.target.value)}
-                  className="w-full px-4 py-3 rounded-lg bg-white/20 border border-white/30 text-white focus:outline-none focus:ring-2 focus:ring-white/50"
+                  className='w-full px-4 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-white/50' style={{backgroundColor: 'rgba(255, 255, 255, 0.2)', border: '1px solid rgba(255, 255, 255, 0.3)', color: '#FFFFFF'}}
                 >
                   <option value="professional">Professional</option>
                   <option value="casual">Casual</option>
@@ -127,9 +127,9 @@ export default function BlogTitleGenerator() {
                 </select>
               </div>
 
-              <div className="bg-white/10 rounded-lg p-4">
-                <h3 className="text-lg font-semibold text-white mb-3">Title Types</h3>
-                <ul className="text-white/80 text-sm space-y-2">
+              <div className='rounded-lg p-4' style={{backgroundColor: 'rgba(255, 255, 255, 0.1)'}}>
+                <h3 className="text-lg font-semibold mb-3" style={{color: '#FFFFFF'}}>Title Types</h3>
+                <ul className="text-sm space-y-2" style={{color: '#FFFFFF'}}>
                   <li><strong>Professional:</strong> Authoritative, informative, SEO-friendly</li>
                   <li><strong>Casual:</strong> Personal, relatable, conversational</li>
                   <li><strong>Clickbait:</strong> Attention-grabbing, viral-worthy</li>
@@ -137,13 +137,13 @@ export default function BlogTitleGenerator() {
               </div>
 
               <div className="flex items-center justify-between">
-                <div className="text-white/80 text-sm">
+                <div className="text-sm" style={{color: '#FFFFFF'}}>
                   Free uses remaining: {3 - usageCount}/3
                 </div>
                 <button
                   onClick={generateTitles}
                   disabled={!topic.trim() || isGenerating || usageCount >= 3}
-                  className="bg-white text-orange-600 font-semibold px-6 py-3 rounded-lg hover:bg-white/90 transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
+                   className='font-semibold px-6 py-3 rounded-lg transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed hover:bg-white/90' style={{backgroundColor: '#FFFFFF', color: '#0070F3'}}
                 >
                   {isGenerating ? 'Generating...' : 'Generate Titles'}
                 </button>
@@ -151,13 +151,13 @@ export default function BlogTitleGenerator() {
             </div>
 
             <div>
-              <div className="bg-white/10 rounded-lg p-6 h-full">
+              <div className='rounded-lg p-6 h-full' style={{backgroundColor: 'rgba(255, 255, 255, 0.1)'}}>
                 <div className="flex items-center justify-between mb-6">
-                  <h3 className="text-xl font-semibold text-white">Generated Titles</h3>
+                  <h3 className="text-xl font-semibold" style={{color: '#FFFFFF'}}>Generated Titles</h3>
                   {titles.length > 0 && (
                     <button
                       onClick={copyAllTitles}
-                      className="bg-white/20 hover:bg-white/30 text-white px-4 py-2 rounded-lg transition-all duration-200"
+                       className='hover:bg-white/30 px-4 py-2 rounded-lg transition-all duration-200' style={{backgroundColor: 'rgba(255, 255, 255, 0.2)', color: '#FFFFFF'}}
                     >
                       Copy All
                     </button>
@@ -169,22 +169,22 @@ export default function BlogTitleGenerator() {
                     titles.map((title, index) => (
                       <div
                         key={index}
-                        className="bg-white/10 rounded-lg p-4 hover:bg-white/20 transition-all duration-200 cursor-pointer group"
+                         className='rounded-lg p-4 hover:bg-white/20 transition-all duration-200 cursor-pointer group' style={{backgroundColor: 'rgba(255, 255, 255, 0.1)'}}
                         onClick={() => copyTitle(title)}
                       >
                         <div className="flex items-start justify-between">
-                          <p className="text-white/90 text-sm leading-relaxed flex-1">
+                          <p className="text-sm leading-relaxed flex-1" style={{color: '#FFFFFF'}}>
                             {title}
                           </p>
                           <button className="opacity-0 group-hover:opacity-100 transition-opacity duration-200 ml-2">
-                            <span className="text-white/60 text-xs">Copy</span>
+                            <span className="text-xs" style={{color: '#FFFFFF'}}>Copy</span>
                           </button>
                         </div>
                       </div>
                     ))
                   ) : (
                     <div className="text-center py-8">
-                      <p className="text-white/60">
+                      <p style={{color: '#FFFFFF'}}>
                         Enter your topic and click "Generate Titles" to see blog title suggestions
                       </p>
                     </div>
@@ -195,27 +195,27 @@ export default function BlogTitleGenerator() {
           </div>
 
           {usageCount >= 3 && (
-            <div className="mt-8 bg-yellow-500/20 border border-yellow-500/30 rounded-lg p-6">
-              <h3 className="text-lg font-semibold text-white mb-2">Upgrade for Unlimited Access</h3>
-              <p className="text-white/90 mb-4">
+            <div className='mt-8 border rounded-lg p-6' style={{backgroundColor: 'rgba(255, 255, 255, 0.1)', border: '1px solid rgba(255, 255, 255, 0.3)'}}>
+              <h3 className="text-lg font-semibold mb-2" style={{color: '#FFFFFF'}}>Upgrade for Unlimited Access</h3>
+              <p className="mb-4" style={{color: '#FFFFFF'}}>
                 You've used all your free generations. Upgrade to continue using this tool unlimited times.
               </p>
-              <button className="bg-yellow-500 hover:bg-yellow-600 text-white font-semibold px-6 py-3 rounded-lg transition-all duration-200">
+              <button className='font-semibold px-6 py-3 rounded-lg transition-all duration-200 hover:bg-yellow-600' style={{backgroundColor: '#FF5A5F', color: '#FFFFFF'}}>
                 Upgrade Now
               </button>
             </div>
           )}
 
-          <div className="mt-8 bg-blue-500/20 border border-blue-500/30 rounded-lg p-6">
-            <h3 className="text-lg font-semibold text-white mb-4">💡 Pro Tips for Blog Titles</h3>
+          <div className='mt-8 border rounded-lg p-6' style={{backgroundColor: 'rgba(255, 255, 255, 0.1)', border: '1px solid rgba(255, 255, 255, 0.3)'}}>
+            <h3 className="text-lg font-semibold mb-4" style={{color: '#FFFFFF'}}>💡 Pro Tips for Blog Titles</h3>
             <div className="grid md:grid-cols-2 gap-4">
-              <ul className="text-white/90 text-sm space-y-2">
+              <ul className="text-sm space-y-2" style={{color: '#FFFFFF'}}>
                 <li>• Keep titles between 50-60 characters</li>
                 <li>• Use numbers and power words</li>
                 <li>• Include your target keyword</li>
                 <li>• Test different variations</li>
               </ul>
-              <ul className="text-white/90 text-sm space-y-2">
+              <ul className="text-sm space-y-2" style={{color: '#FFFFFF'}}>
                 <li>• Make it clear what readers will learn</li>
                 <li>• Create curiosity without being misleading</li>
                 <li>• Use emotional triggers</li>
@@ -228,7 +228,7 @@ export default function BlogTitleGenerator() {
         <div className="mt-12 text-center">
           <a 
             href="/free-tools" 
-            className="text-white/80 hover:text-white transition-colors"
+             className="transition-colors hover:text-white" style={{color: '#FFFFFF'}}
           >
             ← Back to Free Tools
           </a>
