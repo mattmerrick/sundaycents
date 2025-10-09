@@ -5,9 +5,14 @@ import { useRouter } from 'next/navigation'
 
 interface EmailSignupProps {
   variant?: 'hero' | 'cta'
+  placeholder?: string
+  buttonLabel?: string
+  note?: string
+  buttonBgColor?: string
+  buttonTextColor?: string
 }
 
-export default function EmailSignup({ variant = 'hero' }: EmailSignupProps) {
+export default function EmailSignup({ variant = 'hero', placeholder, buttonLabel, note, buttonBgColor, buttonTextColor }: EmailSignupProps) {
   const [email, setEmail] = useState('')
   const [isLoading, setIsLoading] = useState(false)
   const [message, setMessage] = useState<{ text: string; type: 'success' | 'error' | 'info' } | null>(null)
@@ -91,9 +96,8 @@ export default function EmailSignup({ variant = 'hero' }: EmailSignupProps) {
     }
   }
 
-  const isDark = variant === 'cta'
-
   const isHero = variant === 'hero'
+  const noteClassName = isHero ? 'text-white/80' : 'text-gray-500'
   
   return (
     <div className={`w-full ${isHero ? 'max-w-lg' : 'max-w-md'} mx-auto lg:mx-0`}>
@@ -103,7 +107,7 @@ export default function EmailSignup({ variant = 'hero' }: EmailSignupProps) {
             type="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            placeholder="Enter your email address"
+            placeholder={placeholder || 'Enter your email address'}
             required
             ref={inputRef}
             onFocus={() => {
@@ -114,7 +118,7 @@ export default function EmailSignup({ variant = 'hero' }: EmailSignupProps) {
             inputMode="email"
             autoComplete="email"
             autoCapitalize="none"
-            className={`flex-1 ${isHero ? 'px-5 py-4 text-lg' : 'px-4 py-3 text-base'} rounded-xl border-2 transition-all duration-200 focus:outline-none focus:border-blue-500 focus:ring-4 focus:ring-blue-500/20 shadow-sm`}
+            className={`flex-1 ${isHero ? 'px-5 py-4 text-lg' : 'px-4 py-3 text-base'} rounded-xl border-2 transition-all duration-200 focus:outline-none focus:border-white focus:ring-4 focus:ring-white/20 shadow-sm`}
             style={{
               backgroundColor: '#FFFFFF',
               color: '#111111',
@@ -124,15 +128,15 @@ export default function EmailSignup({ variant = 'hero' }: EmailSignupProps) {
           <button
             type="submit"
             disabled={isLoading}
-            className={`${isHero ? 'px-10 py-4 text-lg' : 'px-8 py-3 text-base'} rounded-xl font-semibold transition-all duration-200 transform hover:scale-105 hover:shadow-xl focus:outline-none focus:ring-4 focus:ring-blue-500/20 shadow-lg whitespace-nowrap ${
+            className={`${isHero ? 'px-10 py-4 text-lg' : 'px-8 py-3 text-base'} rounded-xl font-semibold transition-all duration-200 transform hover:scale-105 hover:shadow-xl focus:outline-none focus:ring-4 focus:ring-white/20 shadow-lg whitespace-nowrap ${
               isLoading ? 'cursor-not-allowed' : 'cursor-pointer'
             }`}
             style={{
-              backgroundColor: isLoading ? '#6B7280' : '#0070F3',
-              color: '#FFFFFF'
+              backgroundColor: isLoading ? '#6B7280' : (buttonBgColor || '#FFFFFF'),
+              color: buttonTextColor || '#111111'
             }}
           >
-            {isLoading ? 'Subscribing...' : 'Subscribe'}
+            {isLoading ? 'Subscribing...' : (buttonLabel || 'Subscribe')}
           </button>
         </div>
         
@@ -150,6 +154,9 @@ export default function EmailSignup({ variant = 'hero' }: EmailSignupProps) {
           </div>
         )}
       </form>
+      {note && (
+        <p className={`${noteClassName} ${isHero ? 'text-xs sm:text-sm' : 'text-xs'} mt-2`}>{note}</p>
+      )}
     </div>
   )
 }
