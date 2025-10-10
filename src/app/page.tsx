@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     url: 'https://mattmerrick.com',
     images: [
       {
-        url: 'https://www.mattmerrick.com/share.png',
+        url: 'https://mattmerrick.com/opengraph-image.png',
         width: 1200,
         height: 630,
         alt: 'Matt Merrick - Learn to Write Words That Sell',
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Learn to Write Words That Sell | Matt Merrick',
     description: 'Master the art of persuasive writing and build a $1M business through words. Join thousands learning to write copy that converts and scales.',
-    images: ['https://www.mattmerrick.com/share.png'],
+    images: ['https://mattmerrick.com/twitter-image.png'],
   },
 }
 

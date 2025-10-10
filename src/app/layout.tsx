@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     description: 'Subscribe to My Daily Newsletter | Matt Merrick',
     images: [
       {
-        url: 'https://www.mattmerrick.com/share.png',
+        url: 'https://mattmerrick.com/opengraph-image.png',
         width: 1200,
         height: 630,
         alt: 'Matt Merrick - Building a $1M solopreneur business',
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Matt Merrick',
     description: 'Subscribe to My Daily Newsletter | Matt Merrick',
-    images: ['https://www.mattmerrick.com/share.png'],
+    images: ['https://mattmerrick.com/twitter-image.png'],
   },
 }
 
