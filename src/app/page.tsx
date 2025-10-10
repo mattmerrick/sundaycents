@@ -67,28 +67,28 @@ export default function Home() {
         <section className="mt-10">
           <div className="space-y-5 text-neutral-300 text-base sm:text-lg leading-relaxed">
             <p>
-              You may be wondering <strong>why on earth is this guy writing a newsletter every single day</strong>. <strong>The answer may suprise you</strong> or it may not.
+              You may be wondering why on earth is this guy writing a newsletter every single day. The answer may surprise you or it may not.
             </p>
             <p>
-              You see we have to go back to when i was born......<strong>Naw i'm just kidding</strong> who has time to learn how me taking my first step, going to my first basketball game, going on my first date to the MOVIES without cell phones. Hello AIM (anyone). <strong>Yea we don't got time for that.</strong>
+              You see we have to go back to when i was born......Naw, I'm just kidding. Who has time to learn how to take my first step, go to my first basketball game, and go on my first date to the MOVIES without cell phones? Hello AIM (anyone). Yeah, we don't have time for that.
             </p>
             <p>
-              You see what I have done my entire life is <strong>jump from idea to idea</strong>. I've made some money while doing it over the years. I killed it during the <strong>affiliate link rush</strong> and build a website on streaming PC's that was netting me good money. I got accepted into <strong>Amazon's merch by amazon</strong> early on and killed it while out of college. I <strong>build and sold newsletters</strong> to famous/not famous people(3 in total to be exact). I bought and sold <strong>NFTs like Crypto Punks, Kongz</strong>, and others while trading ETH to just lose it all and cash out to early. To most recently <strong>losing my job twice in 2 years</strong> while building my side businesses with AI.
+              You see what I have done my entire life is jump from idea to idea. I've made some money while doing it over the years. I killed it during the affiliate link rush and build a website on streaming PC's that was netting me good money. I got accepted into Amazon's Merch by Amazon early on and killed it while out of college. I build and sold newsletters to famous/not famous people(3 in total to be exact). I bought and sold NFTs like Crypto Punks, Kongz, and others while trading ETH to just lose it all and cash out to early. To most recently losing my job twice in 2 years while building my side businesses with AI.
             </p>
             <p>
-              All of which netted me over <strong>$50,000 in just 1 year</strong> of running them. Ran out of money had to <strong>sell my 401k , retirement, take out 2 loans and max my credit cards + Sell all 10 of my side hustles and 140+ of my domain names</strong> all just to stay afloat.
+              All of which netted me over $50,000 in just 1 year of running them. Ran out of money, had to sell my 401k , retirement, take out 2 loans, and max my credit cards + sell all 10 of my side hustles and 140+ of my domain names, all just to stay afloat.
             </p>
             <p>
-              So you see I am all over the place. So for me <strong>this newsletter is my next chapter. My fresh start.</strong>
+              So you see I am all over the place. So for me, this newsletter is my next chapter. My fresh start.
             </p>
             <p>
-              I have learned alot of the years and i've bought into the guru's(experts) and everything in between. <strong>The truth is the only thing that matters is conisenty.</strong> I always would jump project to project and then i'd ask myself could I have done better with just <strong>focus on one</strong>. I think so and people would message me saying Matt you switch to much what you working on now.
+              I have learned a lot over the years and I've bought into the guru's(experts) and everything in between. The truth is the only thing that matters is consistency. I would always jump from project to project, and then I'd ask myself, Could I have done better if I had just focused on one? I think so, and people would message me saying Matt, you switch too much what you're working on now.
             </p>
             <p>
-              If you have read every single line of this then I feel like you <strong>have to subscribe</strong> because now we are blood. I wrote my entire life story on the interwebs and have been building in public about it. So if you were wondering why the hero of the page says what it does.
+              If you have read every single line of this, then I feel like you have to subscribe because now we are blood. I wrote my entire life story on the interwebs and have been building it up publicly. So if you were wondering why the hero of the page says what it does.
             </p>
             <p>
-              <strong>Now you know....</strong>
+              Now you know....
             </p>
           </div>
         </section>
