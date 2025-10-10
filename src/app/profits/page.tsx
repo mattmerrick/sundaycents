@@ -74,7 +74,7 @@ export default function ConsistencyMilestonesPage() {
                 <li><strong>Early days</strong>: High friction, high variance. Focus on tiny wins and fixed time blocks.</li>
                 <li><strong>Weeks 2–4</strong>: Routine stabilizes. Track streaks; reduce decision fatigue with checklists.</li>
                 <li><strong>Days 30–66</strong>: Results compound. Expect plateaus; avoid overfitting to motivation.</li>
-                <li><strong>Post‑66</strong>: Behavior feels more automatic. Systems > goals; consistency survives low‑energy days.</li>
+                <li><strong>Post‑66</strong>: Behavior feels more automatic. Systems &gt; goals; consistency survives low‑energy days.</li>
               </ul>
             </div>
 
