@@ -36,14 +36,14 @@ export default function HomepageStats() {
   if (!isStarted) {
     return (
       <p className="text-base sm:text-lg" style={{color: '#FFFFFF'}}>
-        Day 1 of writing <Link href="/365" className="underline transition-colors hover:text-blue-400" style={{color: '#FFFFFF'}}>one daily email</Link> to 64 subscribers
+        Day 1 of writing <Link href="/365" className="underline transition-colors hover:text-blue-400" style={{color: '#FFFFFF'}}>one daily email</Link> to 73 subscribers
       </p>
     )
   }
 
   return (
     <p className="text-base sm:text-lg" style={{color: '#FFFFFF'}}>
-      <Link href="/profits" className="underline transition-colors hover:text-blue-400" style={{color: '#FFFFFF'}}>Day {dayNumber}</Link> of writing <Link href="/365" className="underline transition-colors hover:text-blue-400" style={{color: '#FFFFFF'}}>one daily email</Link> to 64 subscribers
+      <Link href="/profits" className="underline transition-colors hover:text-blue-400" style={{color: '#FFFFFF'}}>Day {dayNumber}</Link> of writing <Link href="/365" className="underline transition-colors hover:text-blue-400" style={{color: '#FFFFFF'}}>one daily email</Link> to 73 subscribers
     </p>
   )
 }
