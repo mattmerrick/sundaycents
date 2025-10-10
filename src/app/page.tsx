@@ -88,7 +88,7 @@ export default function Home() {
               If you have read every single line of this, then I feel like you have to subscribe because now we are blood. I wrote my entire life story on the interwebs and have been building it up publicly. So if you were wondering why the hero of the page says what it does.
             </p>
             <p>
-              Now you know....
+              Now you know....I wanna be consistent while also being different. AI is taking over as i mentioned before and honestly storytelling I think will be big. You need to feel you are reading from a human not AI. I wanna become that person you read. 
             </p>
           </div>
         </section>
