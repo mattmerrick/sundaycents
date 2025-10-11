@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     url: 'https://mattmerrick.com',
     images: [
       {
-        url: 'https://mattmerrick.com/opengraph-image.png',
+        url: '/share.png',
         width: 1200,
         height: 630,
         alt: 'Matt Merrick - 5‑Day Solopreneur Crash Course',
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: '5‑Day Solopreneur Crash Course + Daily Newsletter | Matt Merrick',
     description: 'Turn one idea into a real business. Free 5‑day course + daily newsletter.',
-    images: ['https://mattmerrick.com/twitter-image.png'],
+    images: ['/share.png'],
   },
 }
 
@@ -110,7 +110,6 @@ export default function Home() {
               <li className="flex gap-3"><span>✅</span><span>Daily Solopreneur Newsletter</span></li>
               <li className="flex gap-3"><span>✅</span><span>Access to tools, templates, and community insights</span></li>
             </ul>
-            <p className="text-neutral-400 italic mt-4">“Every email feels like a playbook for creators.” – Subscriber Review</p>
             <p className="text-neutral-300 text-base sm:text-lg leading-relaxed mt-4">
               📩 Enter your email below and start Day 1 instantly.
             </p>
