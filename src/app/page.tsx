@@ -46,14 +46,17 @@ export default function Home() {
             <h2 className="text-white text-xl sm:text-2xl font-semibold mb-3">✉️ What You’ll Get</h2>
             <div className="text-neutral-300 text-base sm:text-lg leading-relaxed space-y-4">
               <p>
-                Join 10,000+ creators, builders, and dreamers getting my free 5‑Day Crash Course in Solopreneurship, plus my daily newsletter that teaches you how to:
+                Join 74 creators, builders, and dreamers getting my free 5‑Day Crash Course in Solopreneurship, plus my daily newsletter that teaches you how to:
               </p>
               <ul className="space-y-2">
-                <li className="flex gap-3"><span>💰</span><span>Build something that actually makes money</span></li>
+                <li className="flex gap-3"><span>💰</span><span>Build something that actually makes money right away</span></li>
                 <li className="flex gap-3"><span>📈</span><span>Grow your audience from scratch</span></li>
                 <li className="flex gap-3"><span>⚙️</span><span>Automate and scale without losing your mind</span></li>
                 <li className="flex gap-3"><span>🧠</span><span>Learn the real lessons from doing it solo</span></li>
               </ul>
+              <p>
+                It’s based on my personal experience — 3+ years of learning, studying, and building — focused on helping you make money right away with simple, proven steps.
+              </p>
               <p>
                 Every day for 5 days, you’ll get one short, powerful email that helps you go from idea → launch → first customer.
               </p>
@@ -79,10 +82,10 @@ export default function Home() {
             <h2 className="text-white text-xl sm:text-2xl font-semibold mb-3">💡 Why I Built This</h2>
             <div className="text-neutral-300 text-base sm:text-lg leading-relaxed space-y-4">
               <p>
-                I’m a solopreneur just like you — learning, building, and sharing every day. I don’t sell theories. I share what’s actually working as I build real products.
+                I’m a solopreneur just like you — learning, building, and sharing every day. Everything here comes from my personal experience shipping real products to real customers.
               </p>
               <p>
-                This crash course is everything I wish I had when I started — no fluff, no funnels, just clarity and action.
+                It’s the distilled playbook from 3+ years of learning, studying, and testing ideas — focused on helping you get to revenue fast. No fluff, no funnels, just clarity and action.
               </p>
             </div>
           </section>
