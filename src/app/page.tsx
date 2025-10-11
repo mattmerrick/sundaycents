@@ -64,17 +64,17 @@ export default function Home() {
           </section>
 
           <section className="mt-10">
-            <h2 className="text-white text-xl sm:text-2xl font-semibold mb-3">🗓️ Here’s What’s Inside the 5 Days</h2>
+            <h2 className="text-white text-xl sm:text-2xl font-semibold mb-3">🗓️ 5‑Day Solopreneur Email Course</h2>
             <ul className="text-neutral-300 text-base sm:text-lg leading-relaxed space-y-2">
-              <li><span className="text-white">Day 1:</span> The Solopreneur Mindset — Stop waiting for perfect. Start building momentum.</li>
-              <li><span className="text-white">Day 2:</span> Finding Your Niche — Pick a small problem that pays big.</li>
-              <li><span className="text-white">Day 3:</span> Building Your First Offer — Make something simple people actually want.</li>
-              <li><span className="text-white">Day 4:</span> Getting Your First Users — Learn how to get attention without ads.</li>
-              <li><span className="text-white">Day 5:</span> Scaling Solo — Systems and pricing that keep you sane (and profitable).
+              <li><span className="text-white">Day 1:</span> Picking the Idea — Stop overthinking. Choose one problem you know and validate fast.</li>
+              <li><span className="text-white">Day 2:</span> Marketing Your Idea — Attention first. Share in public on X, Reddit, and LinkedIn.</li>
+              <li><span className="text-white">Day 3:</span> Automations & Tools — Set up simple automations so one person works like a team.</li>
+              <li><span className="text-white">Day 4:</span> Building a Routine — Design a weekly cadence to stay consistent without burnout.</li>
+              <li><span className="text-white">Day 5:</span> Scaling Solo — Price, systemize, and reinvest to grow without hiring.
               </li>
             </ul>
             <p className="text-neutral-300 text-base sm:text-lg leading-relaxed mt-4">
-              Each lesson takes 5 minutes to read and includes real tools, templates, and examples you can use instantly.
+              Each lesson is ~5 minutes, actionable, and includes real tools, templates, and examples you can use instantly.
             </p>
           </section>
 

@@ -13,6 +13,20 @@ export const metadata: Metadata = {
     title: 'Tools I Use - Matt Merrick',
     description: 'The tools I use to build my $1M solopreneur business. Email Octopus, DataFast, and Typefully.',
     type: 'website',
+    images: [
+      {
+        url: '/share.png',
+        width: 1200,
+        height: 630,
+        alt: 'Tools I Use - Matt Merrick',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Tools I Use - Matt Merrick',
+    description: 'The tools I use to build my $1M solopreneur business. Email Octopus, DataFast, and Typefully.',
+    images: ['/share.png'],
   },
 }
 

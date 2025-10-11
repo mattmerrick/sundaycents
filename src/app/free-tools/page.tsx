@@ -13,6 +13,20 @@ export const metadata: Metadata = {
     title: 'Free Tools - SundayCents',
     description: 'Free tools for entrepreneurs, content creators, and business owners.',
     type: 'website',
+    images: [
+      {
+        url: '/share.png',
+        width: 1200,
+        height: 630,
+        alt: 'Free Tools - SundayCents',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Free Tools - SundayCents',
+    description: 'Free tools for entrepreneurs, content creators, and business owners.',
+    images: ['/share.png'],
   },
 }
 

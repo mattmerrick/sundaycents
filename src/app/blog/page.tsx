@@ -12,6 +12,20 @@ export const metadata: Metadata = {
     title: 'Blog - Matt Merrick',
     description: 'Blog posts about building a $1M solopreneur business. Real stories, real struggles, real wins.',
     type: 'website',
+    images: [
+      {
+        url: '/share.png',
+        width: 1200,
+        height: 630,
+        alt: 'Blog - Matt Merrick',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Blog - Matt Merrick',
+    description: 'Blog posts about building a $1M solopreneur business. Real stories, real struggles, real wins.',
+    images: ['/share.png'],
   },
 }
 

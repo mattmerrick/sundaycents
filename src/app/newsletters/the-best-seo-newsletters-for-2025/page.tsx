@@ -17,11 +17,20 @@ export const metadata: Metadata = {
     siteName: 'SundayCents',
     publishedTime: '2025-01-25T00:00:00.000Z',
     authors: ['Matt Merrick'],
+    images: [
+      {
+        url: '/share.png',
+        width: 1200,
+        height: 630,
+        alt: 'The Best SEO Newsletters - SundayCents',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'The Best SEO Newsletters - SundayCents',
     description: 'Discover the best SEO newsletters to stay updated with search engine optimization trends and ranking strategies.',
+    images: ['/share.png'],
   },
 }
 

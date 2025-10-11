@@ -8,11 +8,20 @@ export const metadata: Metadata = {
     title: 'Prompt Ideas — Find Your Next Product Idea | Matt Merrick',
     description: '10 copy-ready prompts for discovering and validating profitable ideas.',
     type: 'website',
+    images: [
+      {
+        url: '/share.png',
+        width: 1200,
+        height: 630,
+        alt: 'Prompt Ideas — Matt Merrick',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Prompt Ideas — Find Your Next Product Idea | Matt Merrick',
     description: '10 copy-ready prompts for discovering and validating profitable ideas.',
+    images: ['/share.png'],
   },
 }
 

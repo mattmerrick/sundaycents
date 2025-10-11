@@ -15,11 +15,20 @@ export const metadata: Metadata = {
     type: 'website',
     url: 'https://sundaycents.com/newsletters',
     siteName: 'SundayCents',
+    images: [
+      {
+        url: '/share.png',
+        width: 1200,
+        height: 630,
+        alt: 'Newsletter Articles - SundayCents',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Newsletter Articles - SundayCents',
     description: 'Discover the best newsletters and learn how to create successful email marketing campaigns.',
+    images: ['/share.png'],
   },
 }
 

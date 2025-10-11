@@ -17,11 +17,20 @@ export const metadata: Metadata = {
     siteName: 'SundayCents',
     publishedTime: '2024-01-25T00:00:00.000Z',
     authors: ['Matt Merrick'],
+    images: [
+      {
+        url: '/share.png',
+        width: 1200,
+        height: 630,
+        alt: 'The Best Tech Newsletters - SundayCents',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'The Best Tech Newsletters - SundayCents',
     description: 'Discover the best tech newsletters to stay updated with technology trends, startup news, and innovation.',
+    images: ['/share.png'],
   },
 }
 
