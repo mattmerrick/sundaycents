@@ -1,19 +1,18 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import EmailSignup from '@/components/EmailSignup'
-import HomepageStats from '@/components/HomepageStats'
 
 export const metadata: Metadata = {
-  title: 'Learn to Write Words That Sell | Matt Merrick',
-  description: 'Master the art of persuasive writing and build a $1M business through words. Join thousands learning to write copy that converts and scales.',
-  keywords: 'copywriting, persuasive writing, sales copy, newsletter business, writing to sell, Matt Merrick',
+  title: '5‑Day Solopreneur Crash Course + Daily Newsletter | Matt Merrick',
+  description: 'Learn how to turn one idea into a real business — without investors, employees, or burnout. Get the free 5‑Day Crash Course in Solopreneurship plus the daily newsletter.',
+  keywords: 'solopreneur, solo business, side hustle, audience building, newsletter, Matt Merrick, 5-day course',
   authors: [{ name: 'Matt Merrick' }],
   creator: 'Matt Merrick',
   publisher: 'Matt Merrick',
   robots: 'index, follow',
   openGraph: {
-    title: 'Learn to Write Words That Sell | Matt Merrick',
-    description: 'Master the art of persuasive writing and build a $1M business through words. Join thousands learning to write copy that converts and scales.',
+    title: '5‑Day Solopreneur Crash Course + Daily Newsletter | Matt Merrick',
+    description: 'Turn one idea into a real business. Free 5‑day course + daily newsletter.',
     type: 'website',
     siteName: 'Matt Merrick',
     url: 'https://mattmerrick.com',
@@ -22,14 +21,14 @@ export const metadata: Metadata = {
         url: 'https://mattmerrick.com/opengraph-image.png',
         width: 1200,
         height: 630,
-        alt: 'Matt Merrick - Learn to Write Words That Sell',
+        alt: 'Matt Merrick - 5‑Day Solopreneur Crash Course',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Learn to Write Words That Sell | Matt Merrick',
-    description: 'Master the art of persuasive writing and build a $1M business through words. Join thousands learning to write copy that converts and scales.',
+    title: '5‑Day Solopreneur Crash Course + Daily Newsletter | Matt Merrick',
+    description: 'Turn one idea into a real business. Free 5‑day course + daily newsletter.',
     images: ['https://mattmerrick.com/twitter-image.png'],
   },
 }
@@ -40,58 +39,89 @@ export default function Home() {
       <main className="min-h-screen bg-neutral-950">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white leading-tight mb-4">
-            I’m writing a daily newsletter to prove you can build an audience with consistency
+            Learn how to turn one idea into a real business — without investors, employees, or burnout.
           </h1>
 
-          <div className="text-neutral-300 text-lg sm:text-xl leading-relaxed">
-            <p>
-              I share everything I learn — each day is different. The concept is simple.
-            </p>
-          </div>
+          <section className="mt-6">
+            <h2 className="text-white text-xl sm:text-2xl font-semibold mb-3">✉️ What You’ll Get</h2>
+            <div className="text-neutral-300 text-base sm:text-lg leading-relaxed space-y-4">
+              <p>
+                Join 10,000+ creators, builders, and dreamers getting my free 5‑Day Crash Course in Solopreneurship, plus my daily newsletter that teaches you how to:
+              </p>
+              <ul className="space-y-2">
+                <li className="flex gap-3"><span>💰</span><span>Build something that actually makes money</span></li>
+                <li className="flex gap-3"><span>📈</span><span>Grow your audience from scratch</span></li>
+                <li className="flex gap-3"><span>⚙️</span><span>Automate and scale without losing your mind</span></li>
+                <li className="flex gap-3"><span>🧠</span><span>Learn the real lessons from doing it solo</span></li>
+              </ul>
+              <p>
+                Every day for 5 days, you’ll get one short, powerful email that helps you go from idea → launch → first customer.
+              </p>
+            </div>
+          </section>
 
-          <div className="mt-6">
-            <EmailSignup 
-              variant="hero" 
-              placeholder="Enter your email"
-              buttonLabel="Sign me up"
-              note="No fluff. No spam. Unsubscribe anytime."
-              buttonBgColor="#FFFFFF"
-              buttonTextColor="#111111"
-            />
-          </div>
+          <section className="mt-10">
+            <h2 className="text-white text-xl sm:text-2xl font-semibold mb-3">🗓️ Here’s What’s Inside the 5 Days</h2>
+            <ul className="text-neutral-300 text-base sm:text-lg leading-relaxed space-y-2">
+              <li><span className="text-white">Day 1:</span> The Solopreneur Mindset — Stop waiting for perfect. Start building momentum.</li>
+              <li><span className="text-white">Day 2:</span> Finding Your Niche — Pick a small problem that pays big.</li>
+              <li><span className="text-white">Day 3:</span> Building Your First Offer — Make something simple people actually want.</li>
+              <li><span className="text-white">Day 4:</span> Getting Your First Users — Learn how to get attention without ads.</li>
+              <li><span className="text-white">Day 5:</span> Scaling Solo — Systems and pricing that keep you sane (and profitable).
+              </li>
+            </ul>
+            <p className="text-neutral-300 text-base sm:text-lg leading-relaxed mt-4">
+              Each lesson takes 5 minutes to read and includes real tools, templates, and examples you can use instantly.
+            </p>
+          </section>
 
-          <div className="mt-6">
-            <HomepageStats />
-          </div>
+          <section className="mt-10">
+            <h2 className="text-white text-xl sm:text-2xl font-semibold mb-3">💡 Why I Built This</h2>
+            <div className="text-neutral-300 text-base sm:text-lg leading-relaxed space-y-4">
+              <p>
+                I’m a solopreneur just like you — learning, building, and sharing every day. I don’t sell theories. I share what’s actually working as I build real products.
+              </p>
+              <p>
+                This crash course is everything I wish I had when I started — no fluff, no funnels, just clarity and action.
+              </p>
+            </div>
+          </section>
 
-        <section className="mt-10">
-          <div className="space-y-5 text-neutral-300 text-base sm:text-lg leading-relaxed">
-            <p>
-              You may be wondering why on earth is this guy writing a newsletter every single day. The answer may surprise you or it may not.
+          <section className="mt-10">
+            <h2 className="text-white text-xl sm:text-2xl font-semibold mb-3">📬 Plus: My Daily Newsletter</h2>
+            <ul className="text-neutral-300 text-base sm:text-lg leading-relaxed space-y-2">
+              <li className="flex gap-3"><span>🧰</span><span>Building products that run on autopilot</span></li>
+              <li className="flex gap-3"><span>✍️</span><span>Writing content that sells</span></li>
+              <li className="flex gap-3"><span>🌱</span><span>Growing an audience organically</span></li>
+              <li className="flex gap-3"><span>⏱️</span><span>Staying consistent even when motivation dies</span></li>
+            </ul>
+            <p className="text-neutral-300 text-base sm:text-lg leading-relaxed mt-4">
+              Short, practical, and made to help you win solo.
             </p>
-            <p>
-              You see we have to go back to when i was born......Naw, I'm just kidding. Who has time to learn how to take my first step, go to my first basketball game, and go on my first date to the MOVIES without cell phones? Hello AIM (anyone). Yeah, we don't have time for that.
+          </section>
+
+          <section className="mt-10">
+            <h2 className="text-white text-xl sm:text-2xl font-semibold mb-3">🔑 Get Instant Access</h2>
+            <ul className="text-neutral-300 text-base sm:text-lg leading-relaxed space-y-2">
+              <li className="flex gap-3"><span>✅</span><span>Free 5‑Day Crash Course</span></li>
+              <li className="flex gap-3"><span>✅</span><span>Daily Solopreneur Newsletter</span></li>
+              <li className="flex gap-3"><span>✅</span><span>Access to tools, templates, and community insights</span></li>
+            </ul>
+            <p className="text-neutral-400 italic mt-4">“Every email feels like a playbook for creators.” – Subscriber Review</p>
+            <p className="text-neutral-300 text-base sm:text-lg leading-relaxed mt-4">
+              📩 Enter your email below and start Day 1 instantly.
             </p>
-            <p>
-              You see what I have done my entire life is jump from idea to idea. I've made some money while doing it over the years. I killed it during the affiliate link rush and build a website on streaming PC's that was netting me good money. I got accepted into Amazon's Merch by Amazon early on and killed it while out of college. I build and sold newsletters to famous/not famous people(3 in total to be exact). I bought and sold NFTs like Crypto Punks, Kongz, and others while trading ETH to just lose it all and cash out to early. To most recently losing my job twice in 2 years while building my side businesses with AI.
-            </p>
-            <p>
-              All of which netted me over $50,000 in just 1 year of running them. Ran out of money, had to sell my 401k , retirement, take out 2 loans, and max my credit cards + sell all 10 of my side hustles and 140+ of my domain names, all just to stay afloat.
-            </p>
-            <p>
-              So you see I am all over the place. So for me, this newsletter is my next chapter. My fresh start.
-            </p>
-            <p>
-              I have learned a lot over the years and I've bought into the guru's(experts) and everything in between. The truth is the only thing that matters is consistency. I would always jump from project to project, and then I'd ask myself, Could I have done better if I had just focused on one? I think so, and people would message me saying Matt, you switch too much what you're working on now.
-            </p>
-            <p>
-              If you have read every single line of this, then I feel like you have to subscribe because now we are blood. I wrote my entire life story on the interwebs and have been building it up publicly. So if you were wondering why the hero of the page says what it does.
-            </p>
-            <p>
-              Now you know....I wanna be consistent while also being different. AI is taking over as i mentioned before and honestly storytelling I think will be big. You need to feel you are reading from a human not AI. I wanna become that person you read. 
-            </p>
-          </div>
-        </section>
+            <div className="mt-6">
+              <EmailSignup
+                variant="hero"
+                placeholder="Enter your email"
+                buttonLabel="→ Get the Free Course + Newsletter"
+                note="No spam. Unsubscribe anytime."
+                buttonBgColor="#FFFFFF"
+                buttonTextColor="#111111"
+              />
+            </div>
+          </section>
         </div>
       </main>
 
