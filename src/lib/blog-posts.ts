@@ -14,6 +14,85 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 'how-to-build-a-one-person-business-from-scratch',
+    title: 'How to Build a One-Person Business From Scratch (Step-by-Step)',
+    excerpt: 'A step-by-step guide to picking a problem, validating it, building the smallest version, showing up daily, and automating as you grow.',
+    content: `
+      <p><strong>I’ve built and launched multiple projects completely solo — no team, no investors, no ads.</strong></p>
+      <p>If you’ve ever wanted to build something on your own, but felt overwhelmed, this guide is for you.</p>
+      <p>Let’s break down how to start and grow a one-person business from scratch — step by step 👇</p>
+      <h2>1️⃣ Pick a Problem People Pay to Solve</h2>
+      <p>Every great one-person business starts with one thing: a problem worth solving.</p>
+      <p>Forget chasing trends or copying what’s popular. Look around.</p>
+      <ul>
+        <li>What frustrates you daily?</li>
+        <li>What do people constantly ask you for help with?</li>
+        <li>What’s something you’ve already solved for yourself that others might need?</li>
+      </ul>
+      <p>The best ideas come from pain points you’ve lived — not from brainstorming sessions or AI tools.</p>
+      <p>People don’t buy “ideas.” They buy solutions that save time, make money, or reduce pain.</p>
+      <h2>2️⃣ Validate It With Real People (Not Surveys)</h2>
+      <p>Validation is where most people fail.</p>
+      <p>They build something for months and hope it’ll sell. Spoiler: it usually doesn’t.</p>
+      <p>Instead, do this:</p>
+      <ul>
+        <li>Talk to 5–10 people who fit your target audience.</li>
+        <li>Ask them what they’ve already tried.</li>
+        <li>Ask what they’d pay for a faster or easier solution.</li>
+      </ul>
+      <p>If you get people saying “I need this now” or “Can I pay you to help me?” — that’s real validation.</p>
+      <p>If all you hear is “cool idea,” you’re not there yet.</p>
+      <h2>3️⃣ Build the Smallest Version Possible</h2>
+      <p>Once you’ve validated your idea, don’t overbuild. Start with the MVP — the Minimum Viable Product.</p>
+      <ul>
+        <li>If it’s a tool → build a simple prototype.</li>
+        <li>If it’s a service → offer it manually to your first few clients.</li>
+        <li>If it’s content-based → write or record just enough to test demand.</li>
+      </ul>
+      <p>Your goal isn’t perfection. It’s traction.</p>
+      <p>Get your first few users or customers as fast as possible — feedback will guide your next move better than planning ever will.</p>
+      <h2>4️⃣ Talk About It Every Day</h2>
+      <p>This is the biggest unlock. You don’t need ads. You need attention.</p>
+      <p>Share your journey daily on social platforms (LinkedIn, X, TikTok, anywhere your audience lives).</p>
+      <ul>
+        <li>Show what you’re building</li>
+        <li>Share lessons learned</li>
+        <li>Post insights about the problem you’re solving</li>
+      </ul>
+      <p>The more you show up, the more people trust you. You’ll attract an audience that grows with you — and those followers will become your first customers, advocates, and collaborators.</p>
+      <h2>5️⃣ Automate One Thing Per Week</h2>
+      <p>Once your one-person business starts rolling, things can get messy fast. Your time is your biggest bottleneck. So every week, pick one thing to automate:</p>
+      <ul>
+        <li>Emails → use sequences</li>
+        <li>Payments → set up Stripe automations</li>
+        <li>Scheduling → use tools like Calendly</li>
+        <li>Marketing → queue posts with Buffer or Typefully</li>
+      </ul>
+      <p>Over time, you’ll replace manual work with systems that run 24/7 — freeing you up to build, create, and grow.</p>
+      <h2>The Solopreneur Blueprint</h2>
+      <p>Building a one-person business isn’t about doing everything. It’s about doing the right things, consistently.</p>
+      <p>Here’s the simple roadmap:</p>
+      <ul>
+        <li>Find a problem people care about</li>
+        <li>Validate it in the real world</li>
+        <li>Build the smallest version possible</li>
+        <li>Talk about it relentlessly</li>
+        <li>Automate as you grow</li>
+      </ul>
+      <p>Simple. Sustainable. Scalable.</p>
+      <h2>💌 Want to go deeper?</h2>
+      <p>Take my <strong>FREE 5-day email crash course</strong> — and learn how to build, launch, and scale your own solopreneur business from scratch.</p>
+      <p>👉 <a href="https://mattmerrick.com" target="_blank" rel="noopener noreferrer">mattmerrick.com</a></p>
+    `,
+    date: 'October 12, 2025',
+    readTime: '8 min read',
+    category: 'Solopreneurship',
+    tags: ['solopreneurship', 'one-person business', 'validation', 'MVP', 'audience building', 'automation'],
+    seoTitle: 'How to Build a One-Person Business From Scratch (Step-by-Step)',
+    seoDescription: 'A practical, step-by-step blueprint to pick a problem, validate it, ship an MVP, build audience daily, and automate as you grow — the solopreneur way.',
+    featured: true
+  },
+  {
     id: '10-ai-powered-tools-every-solopreneur-needs-2025',
     title: '10 AI-Powered Tools Every Solopreneur Needs to Scale in 2025 (Without Burning Out)',
     excerpt: 'Running a solo business in 2025 without AI is like trying to win a Formula 1 race on a bicycle. Discover the 10 essential AI-powered products that deliver the highest ROI for solopreneurs.',

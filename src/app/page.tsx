@@ -3,16 +3,16 @@ import Link from 'next/link'
 import EmailSignup from '@/components/EmailSignup'
 
 export const metadata: Metadata = {
-  title: '5‑Day Solopreneur Crash Course + Daily Newsletter | Matt Merrick',
-  description: 'Learn how to turn one idea into a real business — without investors, employees, or burnout. Get the free 5‑Day Crash Course in Solopreneurship plus the daily newsletter.',
+  title: 'A Free 5‑Day Crash Course on Solopreneurship | Matt Merrick',
+  description: 'A free 5‑day crash course on solopreneurship. Learn to turn one idea into a real business — without investors, employees, or burnout. Plus, get the daily newsletter.',
   keywords: 'solopreneur, solo business, side hustle, audience building, newsletter, Matt Merrick, 5-day course',
   authors: [{ name: 'Matt Merrick' }],
   creator: 'Matt Merrick',
   publisher: 'Matt Merrick',
   robots: 'index, follow',
   openGraph: {
-    title: '5‑Day Solopreneur Crash Course + Daily Newsletter | Matt Merrick',
-    description: 'Turn one idea into a real business. Free 5‑day course + daily newsletter.',
+    title: 'A Free 5‑Day Crash Course on Solopreneurship | Matt Merrick',
+    description: 'A free 5‑day crash course on solopreneurship. Start today and get the daily newsletter.',
     type: 'website',
     siteName: 'Matt Merrick',
     url: 'https://mattmerrick.com',
@@ -21,14 +21,14 @@ export const metadata: Metadata = {
         url: '/share.png',
         width: 1200,
         height: 630,
-        alt: 'Matt Merrick - 5‑Day Solopreneur Crash Course',
+        alt: 'Matt Merrick - Free 5‑Day Solopreneurship Crash Course',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: '5‑Day Solopreneur Crash Course + Daily Newsletter | Matt Merrick',
-    description: 'Turn one idea into a real business. Free 5‑day course + daily newsletter.',
+    title: 'A Free 5‑Day Crash Course on Solopreneurship | Matt Merrick',
+    description: 'A free 5‑day crash course on solopreneurship. Start today and get the daily newsletter.',
     images: ['/share.png'],
   },
 }
@@ -39,7 +39,7 @@ export default function Home() {
       <main className="min-h-screen bg-neutral-950">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white leading-tight mb-4">
-            Learn how to turn one idea into a real business — without investors, employees, or burnout.
+            A Free 5‑Day Crash Course on Solopreneurship
           </h1>
 
           <section className="mt-6">
