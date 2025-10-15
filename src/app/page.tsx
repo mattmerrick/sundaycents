@@ -10,12 +10,15 @@ export const metadata: Metadata = {
   creator: 'Matt Merrick',
   publisher: 'Matt Merrick',
   robots: 'index, follow',
+  alternates: {
+    canonical: 'https://www.mattmerrick.com/'
+  },
   openGraph: {
     title: 'A Free 5‑Day Crash Course on Solopreneurship | Matt Merrick',
     description: 'A free 5‑day crash course on solopreneurship. Start today and get the daily newsletter.',
     type: 'website',
     siteName: 'Matt Merrick',
-    url: 'https://mattmerrick.com',
+    url: 'https://www.mattmerrick.com/',
     images: [
       {
         url: '/share.png',

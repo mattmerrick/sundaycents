@@ -2,19 +2,22 @@ import type { Metadata } from 'next'
 import CTA from '@/components/CTA'
 
 export const metadata: Metadata = {
-  title: 'The Best SEO Newsletters - SundayCents',
+  title: 'The Best SEO Newsletters - Matt Merrick',
   description: 'Discover the best SEO newsletters to stay updated with search engine optimization trends, Google algorithm updates, and ranking strategies. Our curated list of top SEO newsletters.',
   keywords: 'best SEO newsletters, SEO newsletter, search engine optimization newsletter, Google SEO updates, SEO tips, digital marketing newsletter',
   authors: [{ name: 'Matt Merrick' }],
   creator: 'Matt Merrick',
-  publisher: 'SundayCents',
+  publisher: 'Matt Merrick',
   robots: 'index, follow',
+  alternates: {
+    canonical: 'https://www.mattmerrick.com/newsletters/the-best-seo-newsletters-for-2025'
+  },
   openGraph: {
-    title: 'The Best SEO Newsletters - SundayCents',
+    title: 'The Best SEO Newsletters - Matt Merrick',
     description: 'Discover the best SEO newsletters to stay updated with search engine optimization trends and ranking strategies.',
     type: 'article',
-    url: 'https://sundaycents.com/newsletters/the-best-seo-newsletters',
-    siteName: 'SundayCents',
+    url: 'https://www.mattmerrick.com/newsletters/the-best-seo-newsletters-for-2025',
+    siteName: 'Matt Merrick',
     publishedTime: '2025-01-25T00:00:00.000Z',
     authors: ['Matt Merrick'],
     images: [
@@ -22,13 +25,13 @@ export const metadata: Metadata = {
         url: '/share.png',
         width: 1200,
         height: 630,
-        alt: 'The Best SEO Newsletters - SundayCents',
+        alt: 'The Best SEO Newsletters - Matt Merrick',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'The Best SEO Newsletters - SundayCents',
+    title: 'The Best SEO Newsletters - Matt Merrick',
     description: 'Discover the best SEO newsletters to stay updated with search engine optimization trends and ranking strategies.',
     images: ['/share.png'],
   },

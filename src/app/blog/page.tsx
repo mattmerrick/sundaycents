@@ -8,10 +8,14 @@ import { getAllBlogPosts, getFeaturedPosts } from '@/lib/blog-posts'
 export const metadata: Metadata = {
   title: 'Blog - Matt Merrick',
   description: 'Blog posts about building a $1M solopreneur business. Real stories, real struggles, real wins.',
+  alternates: {
+    canonical: 'https://www.mattmerrick.com/blog'
+  },
   openGraph: {
     title: 'Blog - Matt Merrick',
     description: 'Blog posts about building a $1M solopreneur business. Real stories, real struggles, real wins.',
     type: 'website',
+    url: 'https://www.mattmerrick.com/blog',
     images: [
       {
         url: '/share.png',

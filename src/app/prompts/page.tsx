@@ -17,7 +17,7 @@ export default function PromptsPage() {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Ultimate Finance Prompts Pack - 1,000 Prompts" />
         <meta name="twitter:description" content="1,000 professional AI prompts across 10 categories for personal finance, investing, and wealth building." />
-        <link rel="canonical" href="https://sundaycents.com/prompts" />
+        <link rel="canonical" href="https://www.mattmerrick.com/prompts" />
       </Head>
       <main className="min-h-screen style={{backgroundColor: '#FFFFFF'}} pb-footer">
         <Header />

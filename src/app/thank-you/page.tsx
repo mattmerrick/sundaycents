@@ -1,20 +1,19 @@
-'use client'
+import type { Metadata } from 'next'
+import ThankYouTracker from '@/components/ThankYouTracker'
 
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 
-export default function ThankYouPage() {
-  if (typeof window !== 'undefined' && (window as any).datafast) {
-    try {
-      (window as any).datafast('signup_thank_you_viewed', {
-        page: '/thank-you',
-        referrer: document.referrer || '',
-      })
-    } catch {}
-  }
+export const metadata: Metadata = {
+  title: 'Thanks for subscribing',
+  robots: 'noindex, nofollow',
+  alternates: { canonical: 'https://www.mattmerrick.com/thank-you' }
+}
 
+export default function ThankYouPage() {
   return (
     <main className='min-h-screen flex flex-col pb-footer' style={{backgroundColor: '#FFFFFF'}}>
+      <ThankYouTracker />
       <Header />
       <section className="flex-1 flex items-center">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 w-full">

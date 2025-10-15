@@ -2,19 +2,22 @@ import type { Metadata } from 'next'
 import CTA from '@/components/CTA'
 
 export const metadata: Metadata = {
-  title: 'The Best Tech Newsletters - SundayCents',
+  title: 'The Best Tech Newsletters - Matt Merrick',
   description: 'Discover the best tech newsletters to stay updated with technology trends, startup news, and innovation. Our curated list of top tech newsletters for professionals and enthusiasts.',
   keywords: 'best tech newsletters, technology newsletter, tech news, startup newsletter, innovation newsletter, tech trends, software newsletter',
   authors: [{ name: 'Matt Merrick' }],
   creator: 'Matt Merrick',
-  publisher: 'SundayCents',
+  publisher: 'Matt Merrick',
   robots: 'index, follow',
+  alternates: {
+    canonical: 'https://www.mattmerrick.com/newsletters/the-best-tech-newsletters-for-2024'
+  },
   openGraph: {
-    title: 'The Best Tech Newsletters - SundayCents',
+    title: 'The Best Tech Newsletters - Matt Merrick',
     description: 'Discover the best tech newsletters to stay updated with technology trends, startup news, and innovation.',
     type: 'article',
-    url: 'https://sundaycents.com/newsletters/the-best-tech-newsletters',
-    siteName: 'SundayCents',
+    url: 'https://www.mattmerrick.com/newsletters/the-best-tech-newsletters-for-2024',
+    siteName: 'Matt Merrick',
     publishedTime: '2024-01-25T00:00:00.000Z',
     authors: ['Matt Merrick'],
     images: [
@@ -22,13 +25,13 @@ export const metadata: Metadata = {
         url: '/share.png',
         width: 1200,
         height: 630,
-        alt: 'The Best Tech Newsletters - SundayCents',
+        alt: 'The Best Tech Newsletters - Matt Merrick',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'The Best Tech Newsletters - SundayCents',
+    title: 'The Best Tech Newsletters - Matt Merrick',
     description: 'Discover the best tech newsletters to stay updated with technology trends, startup news, and innovation.',
     images: ['/share.png'],
   },

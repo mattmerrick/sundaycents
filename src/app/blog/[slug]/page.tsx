@@ -30,7 +30,7 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
     }
   }
 
-  const canonicalUrl = `https://mattmerrick.com/blog/${post.id}`
+  const canonicalUrl = `https://www.mattmerrick.com/blog/${post.id}`
 
   return {
     title: post.seoTitle || `${post.title} - Matt Merrick`,

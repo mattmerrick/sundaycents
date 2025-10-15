@@ -2,31 +2,34 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Newsletter Articles - SundayCents',
+  title: 'Newsletter Articles - Matt Merrick',
   description: 'Discover the best newsletters and learn how to create successful email marketing campaigns. Expert insights on newsletter strategies and top industry newsletters.',
   keywords: 'newsletter articles, email marketing, best newsletters, newsletter strategy, email campaigns, newsletter tips',
   authors: [{ name: 'Matt Merrick' }],
   creator: 'Matt Merrick',
-  publisher: 'SundayCents',
+  publisher: 'Matt Merrick',
   robots: 'index, follow',
+  alternates: {
+    canonical: 'https://www.mattmerrick.com/newsletters'
+  },
   openGraph: {
-    title: 'Newsletter Articles - SundayCents',
+    title: 'Newsletter Articles - Matt Merrick',
     description: 'Discover the best newsletters and learn how to create successful email marketing campaigns.',
     type: 'website',
-    url: 'https://sundaycents.com/newsletters',
-    siteName: 'SundayCents',
+    url: 'https://www.mattmerrick.com/newsletters',
+    siteName: 'Matt Merrick',
     images: [
       {
         url: '/share.png',
         width: 1200,
         height: 630,
-        alt: 'Newsletter Articles - SundayCents',
+        alt: 'Newsletter Articles - Matt Merrick',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Newsletter Articles - SundayCents',
+    title: 'Newsletter Articles - Matt Merrick',
     description: 'Discover the best newsletters and learn how to create successful email marketing campaigns.',
     images: ['/share.png'],
   },
@@ -37,7 +40,7 @@ export default function NewslettersPage() {
     {
       title: 'The Best AI Newsletters',
       excerpt: 'Discover the top AI newsletters to stay updated with artificial intelligence trends, tools, and insights for entrepreneurs and professionals.',
-      slug: 'the-best-ai-newsletters',
+      slug: 'the-best-ai-newsletters-for-2024',
       date: 'January 15, 2025',
       readTime: '8 min read',
       category: 'AI & Technology',
@@ -47,7 +50,7 @@ export default function NewslettersPage() {
     {
       title: 'The Best Investing Newsletters',
       excerpt: 'Stay informed about markets, stocks, and investment strategies with our curated list of top investment newsletters.',
-      slug: 'the-best-investing-newsletters',
+      slug: 'the-best-investing-newsletters-for-2024',
       date: 'January 20, 2025',
       readTime: '10 min read',
       category: 'Finance & Investing',
@@ -57,7 +60,7 @@ export default function NewslettersPage() {
     {
       title: 'The Best Tech Newsletters',
       excerpt: 'Stay ahead of technology trends, startup news, and innovation with the best tech newsletters for professionals.',
-      slug: 'the-best-tech-newsletters',
+      slug: 'the-best-tech-newsletters-for-2024',
       date: 'January 25, 2025',
       readTime: '9 min read',
       category: 'AI & Technology',
@@ -67,7 +70,7 @@ export default function NewslettersPage() {
     {
       title: 'The Best SEO Newsletters',
       excerpt: 'Stay updated with search engine optimization trends, Google algorithm updates, and ranking strategies.',
-      slug: 'the-best-seo-newsletters',
+      slug: 'the-best-seo-newsletters-for-2025',
       date: 'January 25, 2025',
       readTime: '8 min read',
       category: 'Digital Marketing',

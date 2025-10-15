@@ -6,6 +6,8 @@ import Footer from '@/components/Footer'
 export const metadata: Metadata = {
   title: 'Thank You - Matt Merrick Newsletter',
   description: 'Thank you for subscribing to Matt\'s 365-day newsletter journey',
+  robots: 'noindex, nofollow',
+  alternates: { canonical: 'https://www.mattmerrick.com/subscriber-thank-you' }
 }
 
 export default function SubscriberThankYouPage() {

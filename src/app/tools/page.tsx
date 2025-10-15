@@ -9,6 +9,9 @@ export const metadata: Metadata = {
   creator: 'Matt Merrick',
   publisher: 'Matt Merrick',
   robots: 'index, follow',
+  alternates: {
+    canonical: 'https://www.mattmerrick.com/tools'
+  },
   openGraph: {
     title: 'Tools I Use - Matt Merrick',
     description: 'The tools I use to build my $1M solopreneur business. Email Octopus, DataFast, and Typefully.',
