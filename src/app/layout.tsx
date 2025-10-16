@@ -7,13 +7,13 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.mattmerrick.com'),
-  title: 'Matt Merrick',
-  description: 'Subscribe to My Daily Newsletter | Matt Merrick',
+  title: 'A Daily Newsletter to Make You Think | Matt Merrick',
+  description: 'A daily newsletter to make you think. Subscribe for thoughtful insights, every day.',
   openGraph: {
     type: 'website',
     url: 'https://www.mattmerrick.com/',
-    title: 'Matt Merrick',
-    description: 'Subscribe to My Daily Newsletter | Matt Merrick',
+    title: 'A Daily Newsletter to Make You Think | Matt Merrick',
+    description: 'A daily newsletter to make you think.',
     images: [
       {
         url: '/share.png',
@@ -25,8 +25,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Matt Merrick',
-    description: 'Subscribe to My Daily Newsletter | Matt Merrick',
+    title: 'A Daily Newsletter to Make You Think | Matt Merrick',
+    description: 'A daily newsletter to make you think.',
     images: ['/share.png'],
   },
 }
