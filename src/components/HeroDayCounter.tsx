@@ -33,8 +33,8 @@ export default function HeroDayCounter() {
   }, [])
 
   if (!isStarted) {
-    return <span className="text-blue-200">Day 1</span>
+    return <span className="text-gray-900">Day 1</span>
   }
 
-  return <span className="text-blue-200">Day {dayNumber}</span>
+  return <span className="text-gray-900">Day {dayNumber}</span>
 }

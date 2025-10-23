@@ -87,7 +87,7 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
               "url": "https://mattmerrick.com",
               "logo": {
                 "@type": "ImageObject",
-                "url": "https://mattmerrick.com/opengraph-image.png"
+                "url": "https://mattmerrick.com/share.png"
               }
             },
             "datePublished": post.date,

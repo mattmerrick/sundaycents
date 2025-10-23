@@ -4,7 +4,7 @@ import EmailSignup from '@/components/EmailSignup'
 import HeroDayCounter from '@/components/HeroDayCounter'
 
 export const metadata: Metadata = {
-  title: 'A Free 5‑Day Crash Course on Solopreneurship | Matt Merrick',
+  title: 'Subscribe If you Want to Learn.',
   description: 'A free 5‑day crash course on solopreneurship. Learn to turn one idea into a real business — without investors, employees, or burnout. Plus, get the daily newsletter.',
   keywords: 'solopreneur, solo business, side hustle, audience building, newsletter, Matt Merrick, 5-day course',
   authors: [{ name: 'Matt Merrick' }],
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     canonical: 'https://www.mattmerrick.com/'
   },
   openGraph: {
-    title: 'A Free 5‑Day Crash Course on Solopreneurship | Matt Merrick',
+    title: 'Subscribe if you want to learn. | Matt Merrick',
     description: 'A free 5‑day crash course on solopreneurship. Start today and get the daily newsletter.',
     type: 'website',
     siteName: 'Matt Merrick',
@@ -40,9 +40,9 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <>
-      <main className="min-h-screen bg-neutral-950">
+      <main className="min-h-screen bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white leading-tight mb-6">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-6 font-serif">
             A daily newsletter to make you think.
           </h1>
 
@@ -52,47 +52,42 @@ export default function Home() {
               placeholder="Enter your email"
               buttonLabel="→ Subscribe"
               note="No spam. Unsubscribe anytime."
-              buttonBgColor="#FFFFFF"
-              buttonTextColor="#111111"
+              buttonBgColor="#1e3a8a"
+              buttonTextColor="#FFFFFF"
             />
           </div>
 
-          <div className="text-neutral-300 text-base sm:text-lg mt-6">
-            <span className="text-white font-medium"><HeroDayCounter /></span> of one email a day.
+          <div className="text-gray-600 text-base sm:text-lg mt-6">
+            <span className="text-gray-900 font-medium"><HeroDayCounter /></span> of <Link href="/latest" className="text-navy-600 hover:text-navy-700 transition-colors underline font-medium">one email a day</Link>.
           </div>
         </div>
       </main>
 
-      <footer className="bg-neutral-950 py-8">
+      <footer className="bg-white py-8 border-t border-gray-200">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <div className="flex justify-center space-x-8">
             <Link 
-              href="/blog"
-              className="text-white hover:text-neutral-300 transition-colors font-medium"
+              href="https://medium.com/@mattmerrick16"
+              className="text-gray-900 hover:text-navy-600 transition-colors font-medium"
             >
-              Blog
+              Medium
             </Link>
-            <span className="text-neutral-500">/</span>
+            <span className="text-gray-400">/</span>
             <Link 
-              href="/newsletters"
-              className="text-white hover:text-neutral-300 transition-colors font-medium"
+              href="https://x.com/mattmerrick16"
+              className="text-gray-900 hover:text-navy-600 transition-colors font-medium"
             >
-              Newsletters
+              X
             </Link>
-            <span className="text-neutral-500">/</span>
+            <span className="text-gray-400">/</span>
             <Link 
-              href="/tools"
-              className="text-white hover:text-neutral-300 transition-colors font-medium"
+              href="https://mattmerrick.com/latest"
+              className="text-gray-900 hover:text-navy-600 transition-colors font-medium"
             >
-              Tools
+              Latest
             </Link>
-            <span className="text-neutral-500">/</span>
-            <Link 
-              href="/free-tools"
-              className="text-white hover:text-neutral-300 transition-colors font-medium"
-            >
-              Free Tools
-            </Link>
+            <span className="text-gray-400">/</span>
+            
           </div>
         </div>
       </footer>
