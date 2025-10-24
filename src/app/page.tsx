@@ -31,8 +31,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'A Free 5‑Day Crash Course on Solopreneurship | Matt Merrick',
-    description: 'A free 5‑day crash course on solopreneurship. Start today and get the daily newsletter.',
+    title: 'A daily newsletter to make you think | Matt Merrick',
+    description: 'A daily newsletter to make you think.',
     images: ['/share.png'],
   },
 }
@@ -87,6 +87,12 @@ export default function Home() {
               Latest
             </Link>
             <span className="text-gray-400">/</span>
+            <Link 
+              href="https://medium.com/@Mattmerrick/the-failed-founder-705e5d4c4f68?sk=ad08df37670ac580e58b255f798208ba"
+              className="text-gray-900 hover:text-navy-600 transition-colors font-medium"
+            >
+              Short Stories
+            </Link>
             
           </div>
         </div>
