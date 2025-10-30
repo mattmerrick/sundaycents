@@ -72,7 +72,7 @@ export default function Latest() {
             {/* Email Subject */}
             <div className="px-4 py-3 bg-white border-b border-gray-100">
               <h1 className="text-lg font-semibold text-gray-900">
-                Day 35 - The funny thing is, they go so fast
+               Day 41 -  starting power forward #41
               </h1>
             </div>
 
@@ -80,43 +80,43 @@ export default function Latest() {
             <div className="px-4 py-6 bg-white">
               <div className="text-gray-800 text-sm leading-relaxed space-y-4 font-serif">
                 <p>
-                  The funny thing is, they go so fast, but you don't move at all.
+                  Number 41... That was my basketball number. It's what i've played my entire life.
                 </p>
 
                 <p>
-                  I have lots of time to think on my commute daily, and I'm pretty much writing for the entire time.
+                  Basketball taught me a lot, and I'm grateful for it. I learned how to be a team player, how to go through life always busy and so much more.
                 </p>
 
                 <p>
-                  Why? Because why not? I wanna be the person everyone follows for my writing. They open my emails to laugh, learn something, and think.
+                  Its a great memory I have now in my old age. It makes you think and say Was it worth it. All those hours "wasted" going to the gym late at night, getting up jump shots,and  hitting the weight room to work on my foot speed. I don't regret any of it and I think it shaped me to be who I am today....
                 </p>
 
                 <p>
-                  Thinking is so important. As you get older, the more you think and interact with people, the better. I don't wanna stop writing, and trains showed me that.
+                  a broke 37-year-old who doesn't know what to do with his life, can't keep a job, and had to sell everything to keep his family afloat.
                 </p>
 
                 <p>
-                  The crazy thing is, you can too. There is time in your day when you can write, build whatever you wish.
+                  So yeah basketball taught me a lot... haha
                 </p>
 
                 <p>
-                  But to me writing is the easiest. Put your thoughts on your phone, a notebook, and share them with people. You'd be surprised how many wanna read it.
+                  But in all seriousness.... I do not regret playing and I loved every second of it. Now I am older and all I wanna do is teach my kids how to play.
                 </p>
 
                 <p>
-                  If you watch TikTok for 30 minutes a night… instead write for 15, watch for 15. Over time, I bet you the writing will be longer than the watching.
+                  Some things come into your life that you just know is a benefit for you. You find your spouse, you start that new job, you get your d-1 scholarship for sports, and you build a Micro SaaS that does 10k MRR.
                 </p>
 
                 <p>
-                  Writing not your thing?
+                  It doesn't matter what it is, everything in life creates who you are. So next time you are thinking... what is this gonna do for me take a second and reflect on that. Maybe in that moment you don't see it working out, but who knows when the time will come to meet and be around someone smarter than me.
                 </p>
 
                 <p>
-                  You can read, talk with friends, whatever you want. The people who get ahead aren't wasting time with the fun stuff; they are doing the boring stuff.
+                  Keep building, Keep going. you got this. Remember I wasn't always good at basketball... I worked at it. Yea I had the height and some skills but I worked on my craft. You need to do the same. It's the same thing i'm doing with this writing. Write every day and see what happens.
                 </p>
 
                 <p>
-                  So the train goes fast, but so can you. Make your time valuable, box out time to think and improve. Do that every day and you'll be surprised.
+                  Just remember... you gotta try to see results.
                 </p>
               </div>
             </div>
