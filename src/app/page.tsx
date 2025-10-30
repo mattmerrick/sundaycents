@@ -5,7 +5,7 @@ import HeroDayCounter from '@/components/HeroDayCounter'
 
 export const metadata: Metadata = {
   title: 'Subscribe If you Want to Learn.',
-  description: 'A free 5‑day crash course on solopreneurship. Learn to turn one idea into a real business — without investors, employees, or burnout. Plus, get the daily newsletter.',
+  description: 'Get smarter every morning at 6am.',
   keywords: 'solopreneur, solo business, side hustle, audience building, newsletter, Matt Merrick, 5-day course',
   authors: [{ name: 'Matt Merrick' }],
   creator: 'Matt Merrick',
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Subscribe if you want to learn. | Matt Merrick',
-    description: 'A free 5‑day crash course on solopreneurship. Start today and get the daily newsletter.',
+    description: 'Get smarter every morning at 6am.',
     type: 'website',
     siteName: 'Matt Merrick',
     url: 'https://www.mattmerrick.com/',
@@ -25,13 +25,13 @@ export const metadata: Metadata = {
         url: '/share.png',
         width: 1200,
         height: 630,
-        alt: 'Matt Merrick - Free 5‑Day Solopreneurship Crash Course',
+        alt: 'Matt Merrick - Get smarter every morning at 6am',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'A daily newsletter to make you think | Matt Merrick',
+    title: 'Get smarter every morning at 6am | Matt Merrick',
     description: 'A daily newsletter to make you think.',
     images: ['/share.png'],
   },
