@@ -43,7 +43,7 @@ export default function Home() {
       <main className="min-h-screen bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-6 font-serif">
-            A daily newsletter to make you think.
+            A newsletter that makes you smarter every morning at 6am.  
           </h1>
 
           <div className="mt-6">
@@ -58,7 +58,7 @@ export default function Home() {
           </div>
 
           <div className="text-gray-600 text-base sm:text-lg mt-6">
-            <span className="text-gray-900 font-medium"><HeroDayCounter /></span> of <Link href="/latest" className="text-navy-600 hover:text-navy-700 transition-colors underline font-medium">one email a day</Link>.
+          No Spam, No Fluff, No AI. <br></br><span className="text-gray-900 font-medium"><HeroDayCounter /></span> of <Link href="/latest" className="text-navy-600 hover:text-navy-700 transition-colors underline font-medium">one email a day</Link>.
           </div>
         </div>
       </main>
