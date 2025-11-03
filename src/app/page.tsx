@@ -67,7 +67,7 @@ export default function Home() {
         <div className="max-w-4xl mx-auto px-4 text-center">
           <div className="flex justify-center space-x-8">
             <Link 
-              href="https://medium.com/@mattmerrick16"
+              href="https://medium.com/@mattmerrick"
               className="text-gray-900 hover:text-navy-600 transition-colors font-medium"
             >
               Medium
@@ -88,12 +88,11 @@ export default function Home() {
             </Link>
             <span className="text-gray-400">/</span>
             <Link 
-              href="https://medium.com/@Mattmerrick/the-failed-founder-705e5d4c4f68?sk=ad08df37670ac580e58b255f798208ba"
+              href="/subscribe"
               className="text-gray-900 hover:text-navy-600 transition-colors font-medium"
             >
-              Short Stories
+              Subscribe
             </Link>
-            
           </div>
         </div>
       </footer>
