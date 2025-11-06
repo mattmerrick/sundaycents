@@ -4,7 +4,7 @@ import Header from '@/components/Header'
 
 export const metadata: Metadata = {
   title: 'Subscribe - Matt Merrick',
-  description: 'Support Matt for $5/month to keep it ad free.',
+  description: 'Support Matt for $5/month or $50/year to keep it ad free.',
 }
 
 export default function SubscribePage() {
@@ -19,7 +19,7 @@ export default function SubscribePage() {
           </h1>
           
           <p className="text-lg text-gray-700 mb-4 max-w-md">
-            $5/month — to keep this ad free.
+            $5/month or $50/year — to keep this ad free.
           </p>
 
           <p className="text-base text-gray-600 mb-10 max-w-md">
@@ -27,14 +27,25 @@ export default function SubscribePage() {
             This newsletter stays completely independent because of readers like you.
           </p>
 
-          <Link 
-            href="https://buy.stripe.com/7sY00i6T49rW2y2bYla7C03"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="px-8 py-4 rounded-lg font-bold text-lg transition-colors bg-gray-900 text-white hover:bg-gray-800"
-          >
-            Subscribe $5/month
-          </Link>
+          <div className="flex flex-col sm:flex-row gap-4">
+            <Link 
+              href="https://buy.stripe.com/7sY00i6T49rW2y2bYla7C03"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-8 py-4 rounded-lg font-bold text-lg transition-colors bg-gray-900 text-white hover:bg-gray-800"
+            >
+              Subscribe $5/month
+            </Link>
+
+            <Link 
+              href="https://buy.stripe.com/6oU8wOdhs5bG8Wq7I5a7C04"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-8 py-4 rounded-lg font-bold text-lg transition-colors bg-gray-200 text-gray-900 hover:bg-gray-300"
+            >
+              Subscribe $50/year
+            </Link>
+          </div>
         </div>
       </main>
 
