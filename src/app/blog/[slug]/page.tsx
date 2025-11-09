@@ -1,7 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import Header from '@/components/Header'
-import CTA from '@/components/CTA'
+import BlogNewsletterCTA from '@/components/BlogNewsletterCTA'
 import Footer from '@/components/Footer'
 import { notFound } from 'next/navigation'
 import { getBlogPost, getRelatedPosts, getAllBlogPosts, type BlogPost } from '@/lib/blog-posts'
@@ -104,17 +103,26 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
           })
         }}
       />
-      <Header />
-      
-      {/* Back Button */}
-      <div className="max-w-4xl mx-auto px-4 pt-8">
-        <Link 
-          href="/blog" 
-          className="text-gray-600 hover:text-black transition-colors flex items-center"
-        >
-          ← Back to Blog
-        </Link>
-      </div>
+      {/* Breadcrumbs */}
+      <nav className="max-w-4xl mx-auto px-4 pt-8 text-sm text-gray-600" aria-label="Breadcrumb">
+        <ol className="flex items-center space-x-2">
+          <li>
+            <Link href="/" className="hover:text-black transition-colors">
+              Home
+            </Link>
+          </li>
+          <li className="text-gray-400">/</li>
+          <li>
+            <Link href="/blog" className="hover:text-black transition-colors">
+              Blog
+            </Link>
+          </li>
+          <li className="text-gray-400">/</li>
+          <li className="text-gray-900 font-medium">
+            {post.title}
+          </li>
+        </ol>
+      </nav>
       
       {/* Article Header */}
       <section className="py-12">
@@ -156,8 +164,30 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
         </div>
       </article>
 
-      {/* CTA Component */}
-      <CTA />
+      {/* External Resources */}
+      {post.resources && post.resources.length > 0 && (
+        <section className="py-12">
+          <div className="max-w-4xl mx-auto px-4">
+            <h2 className="text-2xl font-semibold mb-4 text-gray-900">
+              Explore the Resources Mentioned
+            </h2>
+            <ul className="space-y-3 text-lg text-blue-600">
+              {post.resources.map(({ label, url }) => (
+                <li key={url}>
+                  <Link
+                    href={url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="underline hover:text-blue-800 transition-colors"
+                  >
+                    {label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </section>
+      )}
 
       {/* Related Posts */}
       {relatedPosts.length > 0 && (
@@ -188,6 +218,8 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
           </div>
         </section>
       )}
+
+      <BlogNewsletterCTA />
 
       <Footer />
     </main>

@@ -10,6 +10,7 @@ export interface BlogPost {
   seoTitle?: string
   seoDescription?: string
   featured?: boolean
+  resources?: { label: string; url: string }[]
 }
 
 export const blogPosts: BlogPost[] = [

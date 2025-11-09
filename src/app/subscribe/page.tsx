@@ -23,8 +23,7 @@ export default function SubscribePage() {
           </p>
 
           <p className="text-base text-gray-600 mb-10 max-w-md">
-            I’ll never run ads, sell sponsorships, or push paid promos.  
-            This newsletter stays completely independent because of readers like you.
+            You can support me if you wish.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4">

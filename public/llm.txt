@@ -285,7 +285,7 @@ This LLM.txt file is updated regularly to reflect new content additions and busi
 - Building in Public: My Biggest Mistakes
 - How I Plan to Grow My Daily Newsletter from 0 → 1,000 Subscribers in 90 Days
 
-## Newsletter Articles (4 Total)
+## Newsletter Articles (24 Total)
 
 ### Newsletter Recommendation Articles
 Matt Merrick has created comprehensive newsletter recommendation articles covering different industries and topics:
@@ -313,6 +313,126 @@ Matt Merrick has created comprehensive newsletter recommendation articles coveri
 - **Focus**: Top SEO newsletters for digital marketers and content creators
 - **Key Newsletters**: Search Engine Land, Moz Top 10, Ahrefs Digest, SEMrush Newsletter, Screaming Frog SEO Spider, Search Engine Journal, Backlinko, Yoast SEO, SearchPilot, The SEO Mindset
 - **Content**: 10 detailed newsletter reviews with SEO strategies and ranking insights
+
+#### The Best Food Newsletters
+- **URL**: /food-newsletters
+- **Focus**: Culinary newsletters covering recipes, restaurant intel, and global food culture
+- **Key Newsletters**: The Bittman Project, Whetstone Media Dispatch, King Arthur Baking, Snuk Foods Pantry Notes, Vittles, The Drop, Stained Page News, Good Food Jobs, The Counter
+- **Content**: 9 newsletter breakdowns with cadence, audience fit, and standout coverage
+
+#### The Best Travel Newsletters
+- **URL**: /travel-newsletters
+- **Focus**: Travel intel covering flight deals, cultural storytelling, remote work hubs, and sustainable travel
+- **Key Newsletters**: Thrifty Traveler Premium, The Trip That Changed Me, Remote Year Dispatch, Hidden Compass Navigator, Skift Daily Briefing, Unpacked by AFAR, Field Guide by Atlas Obscura, Good Tourism Institute Digest
+- **Content**: 8 newsletter rundowns with publishing frequency, key benefits, and ideal reader profiles
+
+#### The Best Coffee Newsletters
+- **URL**: /coffee-newsletters
+- **Focus**: Specialty coffee newsletters featuring brewing science, cafe culture, sustainability, and gear
+- **Key Newsletters**: Sprudge Letter, Daily Coffee News, European Coffee Trip Weekly, The Pourover, Rwandan Coffee Newsletter, Pull & Pour Coffee Club, Barista Hustle Dispatch
+- **Content**: 7 newsletter profiles highlighting release cadence, expertise level, and brewing guidance
+
+#### The Best Parenting Newsletters
+- **URL**: /parenting-newsletters
+- **Focus**: Parenting newsletters with evidence-based guidance across child development stages
+- **Key Newsletters**: Parent Data, The Week Junior Newsletter, Big Little Feelings Dispatch, Scary Mommy Morning Scoop, Raising Race Conscious Kids, Your Teen Media Newsletter, Fatherly, The 19th Family Newsletter, Aha! Parenting Toolkit, Doing It At Home
+- **Content**: 10 newsletter summaries covering focus area, send cadence, and parent type served
+
+#### Deep Learning Newsletters
+- **URL**: /deep-learning-newsletters
+- **Focus**: Research recaps, benchmark tracking, and deployment lessons for deep learning teams
+- **Key Newsletters**: The Gradient, Import AI, Yannic Kilcher Newsletter, Chip Huyen Update, Lil'Log, Berkeley AI Research Digest, Weights & Biases Fully Connected, AlphaSignal
+- **Content**: 8 newsletter profiles emphasizing practical research takeaways and production readiness
+
+#### Automation Newsletters
+- **URL**: /automation-newsletters
+- **Focus**: Workflow automation, RPA rollouts, AI agents, and process improvement stories
+- **Key Newsletters**: Ben's Bites Automation, Zapier Automation Guide, Workato Automate, Future of SaaS Automation Brief, The Automator, UiPath Community Pulse, Automation Unplugged, EveryPrompt Dispatch, Rework
+- **Content**: 9 newsletters with lessons on vendor changes, governance, and experiment design
+
+#### Data Science Newsletters
+- **URL**: /data-science-newsletters
+- **Focus**: Applied data science, analytics engineering, storytelling, and MLOps
+- **Key Newsletters**: Data Elixir, Practical Data Science, Analytics Engineering Roundup, The Data Driven Investor, ecoML, Storytelling with Data, Machine Learning Ops Roundup, Towards Data Science Digest, Women in Data, The Diff
+- **Content**: 10 newsletter breakdowns highlighting case studies, tooling shifts, and team rituals
+
+#### Software Engineering Newsletters
+- **URL**: /software-engineering-newsletters
+- **Focus**: Architecture, reliability, management, tooling, and staff-level growth
+- **Key Newsletters**: Pointer, Pragmatic Engineer, ByteByteGo, LeadDev Newsletter, Increment Dispatch, SRE Weekly, Console, TLDR, StaffEng Dispatch
+- **Content**: 9 newsletter summaries covering delivery practices and leadership development
+
+#### Developer Newsletters
+- **URL**: /developer-newsletters
+- **Focus**: General developer learning across web, mobile, backend, and tooling
+- **Key Newsletters**: Frontend Focus, JS Weekly, Ruby Weekly, DevOps Weekly, Changelog News, TLDR, Bytes, Postgres Weekly, Flutter Digest, Stack Overflow Newsletter
+- **Content**: 10 newsletter snapshots with quick tutorials and community updates
+
+#### Coding Newsletters
+- **URL**: /coding-newsletters
+- **Focus**: Beginner and intermediate coding lessons, project ideas, and language practice
+- **Key Newsletters**: Code with Mosh Weekly, freeCodeCamp News, Real Python, CSS-Tricks, PyCoder's Weekly, Kotlin Weekly, CodeNewbie Community, ByteSized JavaScript, The Audio Programmer
+- **Content**: 9 newsletter reviews centered on hands-on exercises and portfolio building
+
+#### Programming Newsletters
+- **URL**: /programming-newsletters
+- **Focus**: Polyglot programming trends, system design, and research for experienced developers
+- **Key Newsletters**: Better Dev Link, Programming Digest, Golang Weekly, Rust Times, Kotlin Weekly, This Week in React, Monday Morning Architect, The Morning Paper
+- **Content**: 8 newsletter descriptions that encourage cross-language learning
+
+#### Web Dev Newsletters
+- **URL**: /web-dev-newsletters
+- **Focus**: Frontend engineering, UX patterns, accessibility, and performance for web teams
+- **Key Newsletters**: Smashing Magazine Newsletter, WebOps Weekly, CSS Weekly, UI Dev Newsletter, Web Performance Calendar, Accessibility Weekly, Jamstacked, Build UX
+- **Content**: 8 newsletter profiles highlighting tools, demos, and inclusive design tactics
+
+#### Cybersecurity Newsletters
+- **URL**: /cybersecurity-newsletters
+- **Focus**: Threat intelligence, incident response, policy updates, and security tooling
+- **Key Newsletters**: Krebs on Security, Risky Business, SANS NewsBites, Dark Reading Daily, TLDR Security, Graham Cluley Security Newsletter, The CyberWire Daily Briefing, Google Cloud Security Newsletter, Defender's Advantage
+- **Content**: 9 newsletter summaries with actionable guidance for security teams
+
+#### Blockchain Newsletters
+- **URL**: /blockchain-newsletters
+- **Focus**: Blockchain protocols, governance, DeFi, and on-chain analytics
+- **Key Newsletters**: Bankless, Messari Unqualified Opinions, The Defiant, Delphi Daily, Milk Road, The Block Research, Our Network, Chainletter
+- **Content**: 8 newsletter overviews centered on protocol progress and market context
+
+#### Crypto Newsletters
+- **URL**: /crypto-newsletters
+- **Focus**: Crypto markets, trading strategies, liquidity flows, and macro context
+- **Key Newsletters**: CoinDesk Daily, The Block Markets Daily, CoinSnacks, CryptoSlate Edge, Delphi Daily, Wu Blockchain, Not Boring Crypto, Coin Metrics State of the Network, Crypto Trader Digest
+- **Content**: 9 newsletter summaries with price action coverage and risk framing
+
+#### Web3 Newsletters
+- **URL**: /web3-newsletters
+- **Focus**: DAOs, NFTs, decentralized social, and community design
+- **Key Newsletters**: Forefront Newsletter, The Generalist, Future by a16z, The Tilt, Zora Zine, DAO Times, Lens Protocol Update, The Drop
+- **Content**: 8 newsletter breakdowns linking culture, governance, and product development
+
+#### Cloud Computing Newsletters
+- **URL**: /cloud-computing-newsletters
+- **Focus**: Cloud provider updates, FinOps, Kubernetes, and cloud-native operations
+- **Key Newsletters**: Last Week in AWS, Azure Weekly, Google Cloud Innovators, Cloudflare Radar, InfoQ Cloud, KubeWeekly, Cloud Native Now, FinOps Foundation Newsletter, Cloud Cost Weekly
+- **Content**: 9 newsletter summaries covering releases, cost control, and platform engineering
+
+#### API Newsletters
+- **URL**: /api-newsletters
+- **Focus**: API design, governance, monetization, and developer experience
+- **Key Newsletters**: API Developer Weekly, API Evangelist, Postman API Network News, Nordic APIs Digest, Moesif API Analytics Pulse, API World Newsletter, Stoplight API Design, InfluxData's Time Series News
+- **Content**: 8 newsletter descriptions focused on lifecycle management and platform strategy
+
+#### Open Source Newsletters
+- **URL**: /open-source-newsletters
+- **Focus**: Open source releases, maintainer support, funding, and community news
+- **Key Newsletters**: GitHub The ReadME Project, Open Source Weekly, The Changelog, Tidelift Upstream, FOSS Weekly, LWN.net Weekly Edition, GitLab This Week in GitLab, Linux Foundation Newsletter, FOSSlife
+- **Content**: 9 newsletter summaries highlighting community health and enterprise adoption
+
+#### Future Tech Newsletters
+- **URL**: /future-tech-newsletters
+- **Focus**: Emerging technology, climate progress, frontier startups, and long-term planning
+- **Key Newsletters**: Exponential View, Not Boring, Future Crunch, Superorganizers, The Guardian Future Planet, Singularity Hub Newsletter, Benedict Evans, Pirate Wires
+- **Content**: 8 newsletter profiles aimed at strategic foresight and scenario planning
 
 ## Free Tools (17 Total)
 

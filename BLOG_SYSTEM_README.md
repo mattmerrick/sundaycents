@@ -81,6 +81,7 @@ src/
 - Include actionable insights
 - Use clear, scannable formatting
 - Keep paragraphs short (2-3 sentences)
+- Follow the Cursor writing prompt exactly, including a clear introduction and conclusion
 
 ### Formatting
 - Use proper HTML structure
@@ -88,6 +89,8 @@ src/
 - Use lists for scannable content
 - Add internal links to other posts
 - Include relevant images (when needed)
+- End every post with the shared BlogNewsletterCTA (automatically rendered on the page)
+- Add external resources to the optional `resources` array so outbound links display in the resources section
 
 ### SEO Optimization
 - Use target keywords naturally
@@ -95,6 +98,7 @@ src/
 - Write descriptions 150-160 characters
 - Use 3-5 relevant tags
 - Include internal links
+- Provide complete metadata: title tag, meta description, keywords, Open Graph, and Twitter card data
 
 ## Technical Features
 

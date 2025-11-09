@@ -2,19 +2,29 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Newsletter Articles - Matt Merrick',
-  description: 'Discover the best newsletters and learn how to create successful email marketing campaigns. Expert insights on newsletter strategies and top industry newsletters.',
-  keywords: 'newsletter articles, email marketing, best newsletters, newsletter strategy, email campaigns, newsletter tips',
+  title: 'Newsletter Guides - Matt Merrick',
+  description: 'Browse curated newsletter guides across AI, investing, SEO, food, travel, coffee, and parenting niches.',
+  keywords: [
+    'newsletter guides',
+    'best newsletters',
+    'AI newsletters',
+    'investing newsletters',
+    'seo newsletters',
+    'food newsletters',
+    'travel newsletters',
+    'coffee newsletters',
+    'parenting newsletters'
+  ],
   authors: [{ name: 'Matt Merrick' }],
   creator: 'Matt Merrick',
   publisher: 'Matt Merrick',
   robots: 'index, follow',
   alternates: {
-    canonical: 'https://www.mattmerrick.com/newsletters'
+    canonical: 'https://www.mattmerrick.com/newsletters',
   },
   openGraph: {
-    title: 'Newsletter Articles - Matt Merrick',
-    description: 'Discover the best newsletters and learn how to create successful email marketing campaigns.',
+    title: 'Newsletter Guides - Matt Merrick',
+    description: 'Browse curated newsletter guides across AI, investing, SEO, food, travel, coffee, and parenting niches.',
     type: 'website',
     url: 'https://www.mattmerrick.com/newsletters',
     siteName: 'Matt Merrick',
@@ -23,214 +33,215 @@ export const metadata: Metadata = {
         url: '/share.png',
         width: 1200,
         height: 630,
-        alt: 'Newsletter Articles - Matt Merrick',
+        alt: 'Newsletter Guides - Matt Merrick',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Newsletter Articles - Matt Merrick',
-    description: 'Discover the best newsletters and learn how to create successful email marketing campaigns.',
+    title: 'Newsletter Guides - Matt Merrick',
+    description: 'Browse curated newsletter guides across AI, investing, SEO, food, travel, coffee, and parenting niches.',
     images: ['/share.png'],
   },
 }
 
 export default function NewslettersPage() {
-  const articles = [
+  const sections = [
     {
-      title: 'The Best AI Newsletters',
-      excerpt: 'Discover the top AI newsletters to stay updated with artificial intelligence trends, tools, and insights for entrepreneurs and professionals.',
-      slug: 'the-best-ai-newsletters-for-2024',
-      date: 'January 15, 2025',
-      readTime: '8 min read',
-      category: 'AI & Technology',
-      featured: true,
-      image: '/newsletters/ai-newsletters.jpg'
+      title: 'AI & Data',
+      items: [
+        {
+          title: 'The Best AI Newsletters',
+          description: 'Daily and weekly AI rundowns plus research analysis for founders and operators.',
+          href: '/newsletters/the-best-ai-newsletters-for-2024',
+        },
+        {
+          title: '8 Deep Learning Newsletters that Keep Research Practical',
+          description: 'Research digests, benchmark tracking, and deployment lessons for serious machine learning teams.',
+          href: '/deep-learning-newsletters',
+        },
+        {
+          title: '9 Automation Newsletters for Smarter Ops',
+          description: 'Workflow design playbooks, RPA wins, and agent use cases that save hours.',
+          href: '/automation-newsletters',
+        },
+        {
+          title: '10 Data Science Newsletters with Real-World Value',
+          description: 'Analytics roadmaps, tooling updates, and communication tactics from active data teams.',
+          href: '/data-science-newsletters',
+        },
+        {
+          title: '9 Future Tech Newsletters for Big Picture Thinkers',
+          description: 'Emerging science, climate breakthroughs, and frontier startups shaping the next decade.',
+          href: '/future-tech-newsletters',
+        },
+      ],
     },
     {
-      title: 'The Best Investing Newsletters',
-      excerpt: 'Stay informed about markets, stocks, and investment strategies with our curated list of top investment newsletters.',
-      slug: 'the-best-investing-newsletters-for-2024',
-      date: 'January 20, 2025',
-      readTime: '10 min read',
-      category: 'Finance & Investing',
-      featured: false,
-      image: '/newsletters/investing-newsletters.jpg'
+      title: 'Engineering & Development',
+      items: [
+        {
+          title: 'The Best Tech Newsletters',
+          description: 'Technology, startup, and product briefings that keep you ahead of industry shifts.',
+          href: '/newsletters/the-best-tech-newsletters-for-2024',
+        },
+        {
+          title: '9 Software Engineering Newsletters Worth Shipping to Your Inbox',
+          description: 'Architecture diagrams, reliability stories, and management experiments for engineering leaders.',
+          href: '/software-engineering-newsletters',
+        },
+        {
+          title: '10 Developer Newsletters for Continuous Learning',
+          description: 'Tutorials, repo highlights, and tooling news curated for active developers.',
+          href: '/developer-newsletters',
+        },
+        {
+          title: '9 Coding Newsletters for Leveling Up Fast',
+          description: 'Beginner-friendly lessons, project prompts, and language tips for steady growth.',
+          href: '/coding-newsletters',
+        },
+        {
+          title: '8 Programming Newsletters for Polyglot Developers',
+          description: 'Cross-language trends, system design primers, and research summaries that broaden skills.',
+          href: '/programming-newsletters',
+        },
+        {
+          title: '8 Web Dev Newsletters Designers and Engineers Trust',
+          description: 'Frontend patterns, accessibility updates, and performance tactics for modern sites.',
+          href: '/web-dev-newsletters',
+        },
+        {
+          title: '9 Cloud Computing Newsletters for Modern Infra Teams',
+          description: 'Provider release notes, FinOps guidance, and cloud-native stories for platform squads.',
+          href: '/cloud-computing-newsletters',
+        },
+        {
+          title: '8 API Newsletters for Product and Platform Teams',
+          description: 'API design patterns, governance lessons, and developer experience strategies.',
+          href: '/api-newsletters',
+        },
+        {
+          title: '9 Open Source Newsletters for Builders and Maintainers',
+          description: 'Maintainer spotlights, governance debates, and funding updates across the OSS world.',
+          href: '/open-source-newsletters',
+        },
+      ],
     },
     {
-      title: 'The Best Tech Newsletters',
-      excerpt: 'Stay ahead of technology trends, startup news, and innovation with the best tech newsletters for professionals.',
-      slug: 'the-best-tech-newsletters-for-2024',
-      date: 'January 25, 2025',
-      readTime: '9 min read',
-      category: 'AI & Technology',
-      featured: false,
-      image: '/newsletters/tech-newsletters.jpg'
+      title: 'Security & Crypto',
+      items: [
+        {
+          title: '9 Cybersecurity Newsletters Security Teams Depend On',
+          description: 'Threat intelligence, incident playbooks, and governance news for security leaders.',
+          href: '/cybersecurity-newsletters',
+        },
+        {
+          title: '8 Blockchain Newsletters for Builders and Analysts',
+          description: 'Protocol upgrades, governance votes, and on-chain data pulled into one feed.',
+          href: '/blockchain-newsletters',
+        },
+        {
+          title: '9 Crypto Newsletters for Daily Market Clarity',
+          description: 'Market structure breakdowns, liquidity dashboards, and macro commentary for active traders.',
+          href: '/crypto-newsletters',
+        },
+        {
+          title: '8 Web3 Newsletters Mapping the Decentralized Internet',
+          description: 'DAO proposals, NFT culture, and community design tactics for decentralized builders.',
+          href: '/web3-newsletters',
+        },
+        {
+          title: 'The Best SEO Newsletters',
+          description: 'Search updates, algorithm notes, and tactical ranking playbooks from trusted editors.',
+          href: '/newsletters/the-best-seo-newsletters-for-2025',
+        },
+      ],
     },
     {
-      title: 'The Best SEO Newsletters',
-      excerpt: 'Stay updated with search engine optimization trends, Google algorithm updates, and ranking strategies.',
-      slug: 'the-best-seo-newsletters-for-2025',
-      date: 'January 25, 2025',
-      readTime: '8 min read',
-      category: 'Digital Marketing',
-      featured: false,
-      image: '/newsletters/seo-newsletters.jpg'
-    }
-  ]
-
-  const categories = [
-    'All Articles',
-    'AI & Technology',
-    'Finance & Investing',
-    'Digital Marketing',
-    'Business Strategy', 
-    'Tools & Resources',
-    'Case Studies'
+      title: 'Finance & Business',
+      items: [
+        {
+          title: 'The Best Investing Newsletters',
+          description: 'Market research, macro takes, and portfolio ideas for retail and advanced investors.',
+          href: '/newsletters/the-best-investing-newsletters-for-2024',
+        },
+      ],
+    },
+    {
+      title: 'Food & Lifestyle',
+      items: [
+        {
+          title: 'The Best Food Newsletters',
+          description: 'Recipe gems, restaurant intel, and global food culture stories in one inbox.',
+          href: '/food-newsletters',
+        },
+        {
+          title: 'The Best Travel Newsletters',
+          description: 'Flight deals, destination briefings, and slow-travel guides from trusted explorers.',
+          href: '/travel-newsletters',
+        },
+        {
+          title: 'The Best Coffee Newsletters',
+          description: 'Brewing science, cafe culture, and sourcing updates for coffee obsessives.',
+          href: '/coffee-newsletters',
+        },
+        {
+          title: 'The Best Parenting Newsletters',
+          description: 'Evidence-based parenting guidance for every stage, from toddlers to teens.',
+          href: '/parenting-newsletters',
+        },
+      ],
+    },
   ]
 
   return (
-    <main className='min-h-screen bg-gradient-to-br from-blue-600 via-purple-600 to-pink-600'>
-      {/* Back Button */}
-      <div className="max-w-6xl mx-auto px-4 pt-8">
-        <Link 
-          href="/" 
-          className="transition-colors flex items-center text-white hover:text-blue-400"
-        >
-          ← Back to Home
-        </Link>
-      </div>
-      
-      <section className="py-20 px-4">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16">
-            <h1 className="text-4xl sm:text-6xl font-bold text-white mb-6">
-              Newsletter Articles
-            </h1>
-            <p className="text-xl text-white max-w-3xl mx-auto">
-              Discover the best newsletters, learn email marketing strategies, and get insights 
-              from successful newsletter creators and entrepreneurs.
-            </p>
-          </div>
-
-          {/* Featured Article */}
-          {articles.find(article => article.featured) && (
-            <div className="mb-16">
-              <h2 className="text-2xl font-bold mb-8" style={{color: '#FFFFFF'}}>Featured Article</h2>
-              <div className='backdrop-blur-sm rounded-2xl p-8 shadow-xl' style={{backgroundColor: 'rgba(255, 255, 255, 0.1)', border: '1px solid rgba(255, 255, 255, 0.2)'}}>
-                {(() => {
-                  const featured = articles.find(article => article.featured)!
-                  return (
-                    <div className="grid md:grid-cols-2 gap-8 items-center">
-                      <div>
-                        <div className="flex items-center gap-3 mb-4">
-                          <span className='px-3 py-1 rounded-full text-sm font-semibold' style={{backgroundColor: '#FFFFFF', color: '#111111'}}>
-                            Featured
-                          </span>
-                          <span className='text-sm' style={{color: '#FFFFFF'}}>{featured.category}</span>
-                        </div>
-                        <h3 className="text-3xl font-bold mb-4" style={{color: '#FFFFFF'}}>
-                          {featured.title}
-                        </h3>
-                        <p className="leading-relaxed mb-6" style={{color: '#FFFFFF'}}>
-                          {featured.excerpt}
-                        </p>
-                        <div className="flex items-center gap-4 text-sm mb-6" style={{color: '#FFFFFF'}}>
-                          <span>{featured.date}</span>
-                          <span>•</span>
-                          <span>{featured.readTime}</span>
-                        </div>
-                        <Link
-                          href={`/newsletters/${featured.slug}`}
-                          className='inline-block font-semibold px-6 py-3 rounded-lg transition-all duration-200 hover:scale-105 hover:bg-gray-50' style={{backgroundColor: '#FFFFFF', color: '#0070F3'}}
-                        >
-                          Read Article →
-                        </Link>
-                      </div>
-                      <div className='rounded-lg h-64 flex items-center justify-center' style={{backgroundColor: 'rgba(255, 255, 255, 0.1)'}}>
-                        <span style={{color: '#FFFFFF'}}>Article Image</span>
-                      </div>
-                    </div>
-                  )
-                })()}
-              </div>
-            </div>
-          )}
-
-          {/* Category Filter */}
-          <div className="mb-12">
-            <div className="flex flex-wrap gap-3 justify-center">
-              {categories.map((category, index) => (
-                <button
-                  key={index}
-                  className={`px-4 py-2 rounded-lg transition-all duration-200 ${
-                    index === 0 
-                      ? 'bg-white text-blue-600' 
-                      : 'bg-white/10 text-white hover:bg-white/20'
-                  }`}
-                >
-                  {category}
-                </button>
-              ))}
-            </div>
-          </div>
-
-          {/* Articles Grid */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {articles.map((article, index) => (
-              <div key={index} className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20 shadow-xl hover:bg-white/20 transition-all duration-300 hover:scale-105">
-                <div className="flex items-center gap-3 mb-4">
-                  <span className="bg-white/20 text-white px-3 py-1 rounded-full text-xs font-medium">
-                    {article.category}
-                  </span>
-                  {article.featured && (
-                    <span className="bg-yellow-500 text-black px-2 py-1 rounded-full text-xs font-semibold">
-                      Featured
-                    </span>
-                  )}
-                </div>
-                
-                <h3 className="text-xl font-bold text-white mb-3 leading-tight">
-                  {article.title}
-                </h3>
-                
-                <p className="text-white/90 text-sm leading-relaxed mb-4">
-                  {article.excerpt}
-                </p>
-                
-                <div className="flex items-center justify-between text-white/60 text-xs mb-4">
-                  <span>{article.date}</span>
-                  <span>{article.readTime}</span>
-                </div>
-                
-                <Link
-                  href={`/newsletters/${article.slug}`}
-                  className="inline-block bg-white/20 hover:bg-white/30 text-white font-semibold px-4 py-2 rounded-lg transition-all duration-200 text-sm"
-                >
-                  Read More →
-                </Link>
-              </div>
-            ))}
-          </div>
-
-          {/* Newsletter CTA */}
-          <div className="mt-20 text-center">
-            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20 shadow-xl">
-              <h2 className="text-3xl font-bold text-white mb-4">Want More Newsletter Insights?</h2>
-              <p className="text-white/90 mb-6 max-w-2xl mx-auto">
-                Get weekly insights on newsletter strategies, email marketing tips, and business growth 
-                delivered directly to your inbox.
-              </p>
-              <Link 
-                href="/subscribe"
-                className="inline-block bg-white text-blue-600 font-bold px-8 py-4 rounded-lg hover:bg-white/90 transition-all duration-200 hover:scale-105"
-              >
-                Subscribe to SundayCents Newsletter
+    <main className="min-h-screen bg-white">
+      <div className="max-w-4xl mx-auto px-4 py-12">
+        <nav className="text-sm text-gray-500 mb-6" aria-label="Breadcrumb">
+          <ol className="flex items-center space-x-2">
+            <li>
+              <Link href="/" className="hover:text-gray-900 transition-colors">
+                Home
               </Link>
-            </div>
-          </div>
+            </li>
+            <li className="text-gray-300">/</li>
+            <li className="text-gray-900 font-medium">Newsletter Guides</li>
+          </ol>
+        </nav>
+
+        <header className="mb-10">
+          <h1 className="text-4xl font-bold text-gray-900 mb-4">
+            Newsletter Guides
+          </h1>
+          <p className="text-lg text-gray-600">
+            Browse every newsletter roundup in one place. Pick a niche, click a guide, and find the emails worth your inbox space.
+          </p>
+        </header>
+
+        <div className="space-y-10">
+          {sections.map((section) => (
+            <section key={section.title}>
+              <h2 className="text-2xl font-semibold text-gray-900 mb-4">
+                {section.title}
+              </h2>
+              <ul className="space-y-3">
+                {section.items.map((item) => (
+                  <li key={item.href} className="border border-gray-200 rounded-lg p-4 hover:border-gray-300 transition-colors">
+                    <Link href={item.href} className="block">
+                      <span className="text-lg font-semibold text-gray-900">
+                        {item.title}
+                      </span>
+                      <p className="text-sm text-gray-600 mt-1">
+                        {item.description}
+                      </p>
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          ))}
         </div>
-      </section>
+      </div>
     </main>
   )
 }

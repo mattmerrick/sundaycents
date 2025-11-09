@@ -6,7 +6,7 @@ export const newBlogPostTemplate = {
   title: 'Your Blog Post Title Here',
   excerpt: 'A compelling 1-2 sentence summary of your post that will appear in previews and search results.',
   content: `
-    <p>Your opening paragraph that hooks the reader and introduces the main topic.</p>
+    <p>Your opening paragraph that hooks the reader and introduces the main topic while following the writing prompt.</p>
     
     <h2>Your First Main Section</h2>
     <p>Develop your main points with clear, actionable content.</p>
@@ -30,15 +30,19 @@ export const newBlogPostTemplate = {
     </ul>
     
     <h2>Conclusion</h2>
-    <p>Your concluding paragraph that ties everything together and gives the reader a clear next step.</p>
+    <p>Your concluding paragraph that ties everything together, restates the promise you delivered, and gives the reader a clear next step.</p>
   `,
   date: '2025-01-15', // YYYY-MM-DD format
   readTime: '5 min read', // Estimate based on word count
   category: 'Business', // Choose from: Journey, Business, Tech, Personal, Lessons
   tags: ['tag1', 'tag2', 'tag3'], // 3-5 relevant tags for SEO
-  seoTitle: 'SEO-Optimized Title - Matt Merrick', // Optional: custom SEO title
-  seoDescription: 'SEO-optimized description that will appear in search results and social shares.', // Optional: custom SEO description
-  featured: false // Set to true to feature on homepage
+  seoTitle: 'SEO-Optimized Title - Matt Merrick', // Required: unique title tag under 60 characters
+  seoDescription: 'SEO-optimized description that will appear in search results and social shares.', // Required: 150-160 character meta description
+  featured: false, // Set to true to feature on homepage
+  resources: [
+    // Optional: external resources mentioned in the article
+    { label: 'Example Resource Name', url: 'https://example.com' }
+  ]
 }
 
 // Categories to choose from:
@@ -66,3 +70,6 @@ export const blogCategories = [
 // - Use proper heading structure (H2 for main sections, H3 for subsections)
 // - Avoid numbered headings (1., 2., 3.) - use clean H3 titles instead
 // - Each H3 should be a standalone, scannable section
+// - Include the BlogNewsletterCTA component at the end of each post (already handled globally)
+// - Confirm every draft contains a clear introduction and conclusion that follow the active writing prompt
+// - Add any external resources to the optional "resources" array so they render as tracked outbound links
