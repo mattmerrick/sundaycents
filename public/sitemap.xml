@@ -241,6 +241,20 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+
+  <url>
+    <loc>https://mattmerrick.com/blog/how-to-build-a-one-person-business-from-scratch</loc>
+    <lastmod>2025-11-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://mattmerrick.com/blog/10-ai-powered-tools-every-solopreneur-needs-2025</loc>
+    <lastmod>2025-11-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
   
   <url>
     <loc>https://mattmerrick.com/blog/what-are-creator-tools</loc>
