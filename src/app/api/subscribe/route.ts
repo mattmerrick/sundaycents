@@ -1,11 +1,15 @@
 import { NextRequest, NextResponse } from 'next/server'
 
+const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i
+
 export async function POST(request: NextRequest) {
   try {
     const { email } = await request.json()
 
+    const normalizedEmail = typeof email === 'string' ? email.trim() : ''
+
     // Validate email
-    if (!email || !email.includes('@')) {
+    if (!EMAIL_REGEX.test(normalizedEmail)) {
       return NextResponse.json(
         { error: 'Invalid email address' },
         { status: 400 }
@@ -32,7 +36,7 @@ export async function POST(request: NextRequest) {
       },
       body: JSON.stringify({
         api_key: apiKey,
-        email_address: email,
+        email_address: normalizedEmail.toLowerCase(),
         fields: {
           FirstName: '', // You can expand this to collect names if needed
         },

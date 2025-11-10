@@ -3,6 +3,8 @@
 import { useState, useEffect, useRef } from 'react'
 import { useRouter } from 'next/navigation'
 
+const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i
+
 interface EmailSignupProps {
   variant?: 'hero' | 'cta'
   placeholder?: string
@@ -32,7 +34,9 @@ export default function EmailSignup({ variant = 'hero', placeholder, buttonLabel
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     
-    if (!email || !email.includes('@')) {
+    const normalizedEmail = email.trim()
+
+    if (!EMAIL_REGEX.test(normalizedEmail)) {
       setMessage({ text: 'Please enter a valid email address.', type: 'error' })
       return
     }
@@ -46,7 +50,7 @@ export default function EmailSignup({ variant = 'hero', placeholder, buttonLabel
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ email }),
+        body: JSON.stringify({ email: normalizedEmail }),
       })
 
       const data = await response.json()
