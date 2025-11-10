@@ -236,30 +236,6 @@ export default function LatestEmail() {
               <span aria-hidden="true">←</span> Back Home
             </Link>
           </div>
-          <div
-            className="rounded-2xl p-6 sm:p-8 transition-all duration-300"
-            style={{
-              background: tokens.heroBg,
-              border: `1px solid ${tokens.heroBorder}`,
-              boxShadow: tokens.heroShadow,
-              color: tokens.pageText,
-            }}
-          >
-            <div className="flex flex-col gap-4">
-              <h1 className="text-3xl font-semibold tracking-tight sm:text-4xl">
-                Get new issues straight to your inbox
-              </h1>
-              <div className="w-full max-w-lg">
-                <EmailSignup
-                  variant="cta"
-                  placeholder="Enter your email"
-                  buttonLabel="Subscribe"
-                  buttonBgColor={tokens.buttonPrimaryBg}
-                  buttonTextColor={tokens.buttonPrimaryText}
-                />
-              </div>
-            </div>
-          </div>
         </header>
 
         {mainArticle && (
@@ -315,93 +291,6 @@ export default function LatestEmail() {
                 }}
               >
                 Page {currentIndex + 1} of {totalPages}
-              </div>
-            </div>
-          </div>
-
-          <div
-            className="flex w-full flex-wrap items-center gap-4 rounded-2xl px-4 py-3 sm:px-5"
-            style={{
-              background: tokens.controlBg,
-              border: `1px solid ${tokens.controlBorder}`,
-              boxShadow: tokens.controlShadow,
-              color: tokens.controlText,
-            }}
-          >
-            <div className="flex flex-wrap items-center gap-2">
-              <span
-                className="text-[11px] uppercase tracking-[0.3em]"
-                style={{ color: tokens.controlText }}
-              >
-                Font
-              </span>
-              <div className="flex items-center gap-1.5">
-                <button
-                  type="button"
-                  onClick={decreaseFont}
-                  className="flex h-9 w-9 items-center justify-center rounded-full text-sm font-semibold transition"
-                  style={secondaryButtonStyles}
-                  aria-label="Decrease font size"
-                >
-                  A-
-                </button>
-                <span className="text-sm font-semibold" style={{ color: tokens.controlText }}>
-                  {Math.round(fontScale * 100)}%
-                </span>
-                <button
-                  type="button"
-                  onClick={increaseFont}
-                  className="flex h-9 w-9 items-center justify-center rounded-full text-sm font-semibold transition"
-                  style={secondaryButtonStyles}
-                  aria-label="Increase font size"
-                >
-                  A+
-                </button>
-                <button
-                  type="button"
-                  onClick={resetFont}
-                  className="rounded-full px-3 py-1.5 text-xs font-semibold uppercase tracking-[0.25em] transition"
-                  style={secondaryButtonStyles}
-                >
-                  Reset
-                </button>
-              </div>
-            </div>
-            <div className="flex flex-wrap items-center gap-2">
-              <span
-                className="text-[11px] uppercase tracking-[0.3em]"
-                style={{ color: tokens.controlText }}
-              >
-                Theme
-              </span>
-              <div className="flex flex-wrap gap-2">
-                {(Object.keys(themeTokens) as ThemeId[]).map((mode) => {
-                  const isActive = theme === mode;
-                  const chipStyles = isActive
-                    ? {
-                        background: tokens.chipActiveBg,
-                        color: tokens.chipActiveText,
-                        border: `1px solid ${tokens.chipActiveBorder}`,
-                        boxShadow: tokens.controlShadow,
-                      }
-                    : {
-                        background: themeTokens[mode].chipInactiveBg,
-                        color: themeTokens[mode].chipInactiveText,
-                        border: `1px solid ${themeTokens[mode].chipInactiveBorder}`,
-                      };
-                  return (
-                    <button
-                      key={mode}
-                      type="button"
-                      onClick={() => setTheme(mode)}
-                      aria-pressed={isActive}
-                      className="rounded-full px-3 py-1.5 text-xs font-semibold uppercase tracking-[0.25em] transition"
-                      style={chipStyles}
-                    >
-                      {themeTokens[mode].name}
-                    </button>
-                  );
-                })}
               </div>
             </div>
           </div>
@@ -490,7 +379,10 @@ export default function LatestEmail() {
                   <button
                     key={issue.day}
                     type="button"
-                    onClick={() => setCurrentIndex(issueIndex)}
+                    onClick={() => {
+                      setCurrentIndex(issueIndex);
+                      scrollToTop();
+                    }}
                     className="rounded-full px-3 py-1.5 text-xs font-semibold uppercase tracking-[0.25em] transition"
                     style={chipStyles}
                   >
@@ -510,6 +402,118 @@ export default function LatestEmail() {
                   More…
                 </span>
               )}
+            </div>
+
+            <div
+              className="rounded-2xl p-6 sm:p-8 transition-all duration-300"
+              style={{
+                background: tokens.heroBg,
+                border: `1px solid ${tokens.heroBorder}`,
+                boxShadow: tokens.heroShadow,
+                color: tokens.pageText,
+              }}
+            >
+              <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+                <h2 className="text-2xl font-semibold tracking-tight sm:text-3xl">
+                  Get new issues straight to your inbox
+                </h2>
+                <div className="w-full max-w-md sm:w-auto">
+                  <EmailSignup
+                    variant="cta"
+                    placeholder="Enter your email"
+                    buttonLabel="Subscribe"
+                    buttonBgColor={tokens.buttonPrimaryBg}
+                    buttonTextColor={tokens.buttonPrimaryText}
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div
+              className="flex w-full flex-wrap items-center gap-4 rounded-2xl px-4 py-3 sm:px-5"
+              style={{
+                background: tokens.controlBg,
+                border: `1px solid ${tokens.controlBorder}`,
+                boxShadow: tokens.controlShadow,
+                color: tokens.controlText,
+              }}
+            >
+              <div className="flex flex-wrap items-center gap-2">
+                <span
+                  className="text-[11px] uppercase tracking-[0.3em]"
+                  style={{ color: tokens.controlText }}
+                >
+                  Font
+                </span>
+                <div className="flex items-center gap-1.5">
+                  <button
+                    type="button"
+                    onClick={decreaseFont}
+                    className="flex h-9 w-9 items-center justify-center rounded-full text-sm font-semibold transition"
+                    style={secondaryButtonStyles}
+                    aria-label="Decrease font size"
+                  >
+                    A-
+                  </button>
+                  <span className="text-sm font-semibold" style={{ color: tokens.controlText }}>
+                    {Math.round(fontScale * 100)}%
+                  </span>
+                  <button
+                    type="button"
+                    onClick={increaseFont}
+                    className="flex h-9 w-9 items-center justify-center rounded-full text-sm font-semibold transition"
+                    style={secondaryButtonStyles}
+                    aria-label="Increase font size"
+                  >
+                    A+
+                  </button>
+                  <button
+                    type="button"
+                    onClick={resetFont}
+                    className="rounded-full px-3 py-1.5 text-xs font-semibold uppercase tracking-[0.25em] transition"
+                    style={secondaryButtonStyles}
+                  >
+                    Reset
+                  </button>
+                </div>
+              </div>
+              <div className="flex flex-wrap items-center gap-2">
+                <span
+                  className="text-[11px] uppercase tracking-[0.3em]"
+                  style={{ color: tokens.controlText }}
+                >
+                  Theme
+                </span>
+                <div className="flex flex-wrap gap-2">
+                  {(Object.keys(themeTokens) as ThemeId[]).map((mode) => {
+                    const isActive = theme === mode;
+                    const chipStyles = isActive
+                      ? {
+                          background: tokens.chipActiveBg,
+                          color: tokens.chipActiveText,
+                          border: `1px solid ${tokens.chipActiveBorder}`,
+                          boxShadow: tokens.controlShadow,
+                        }
+                      : {
+                          background: themeTokens[mode].chipInactiveBg,
+                          color: themeTokens[mode].chipInactiveText,
+                          border: `1px solid ${themeTokens[mode].chipInactiveBorder}`,
+                        };
+                    return (
+                      <button
+                        key={mode}
+                        type="button"
+                        onClick={() => setTheme(mode)}
+                        aria-pressed={isActive}
+                        className="rounded-full px-3 py-1.5 text-xs font-semibold uppercase tracking-[0.25em] transition"
+                        style={chipStyles}
+                      >
+                        {themeTokens[mode].name}
+                      </button>
+                    );
+                  })}
+                </div>
+              </div>
             </div>
           </div>
         </section>

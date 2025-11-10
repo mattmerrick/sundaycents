@@ -2,9 +2,15 @@
 
 import { useState, useEffect } from 'react'
 
-export default function HeroDayCounter() {
+interface HeroDayCounterProps {
+  className?: string
+}
+
+export default function HeroDayCounter({ className }: HeroDayCounterProps) {
   const [dayNumber, setDayNumber] = useState(0)
   const [isStarted, setIsStarted] = useState(false)
+
+  const appliedClassName = className ?? 'text-gray-900'
 
   useEffect(() => {
     const calculateDay = () => {
@@ -33,8 +39,8 @@ export default function HeroDayCounter() {
   }, [])
 
   if (!isStarted) {
-    return <span className="text-gray-900">Day 1</span>
+    return <span className={appliedClassName}>Day 1</span>
   }
 
-  return <span className="text-gray-900">Day {dayNumber}</span>
+  return <span className={appliedClassName}>Day {dayNumber}</span>
 }
