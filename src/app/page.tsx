@@ -119,10 +119,12 @@ export default function Home() {
             </Link>
             <span className="text-gray-600">/</span>
             <Link 
-              href="/subscribe"
+              href="https://provenideas.net"
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-gray-200 hover:text-blue-200 transition-colors font-medium"
             >
-              Subscribe
+              Proven Ideas
             </Link>
           </div>
         </div>
