@@ -17,7 +17,7 @@ export default function HeroDayCounter({ className }: HeroDayCounterProps) {
       // Start date: September 18, 2025 at 12:00 AM EST/EDT
       // Hardcoded so that December 16, 2025 shows as day 89
       // On Dec 16, 2025 it shows day 89, at midnight Dec 17 it becomes day 90
-      const startDate = new Date('2025-09-18T00:00:00-04:00') // EDT timezone
+      const startDate = new Date('2025-09-19T00:00:00-04:00') // EDT timezone
       const now = new Date()
       
       // Get current date in EST/EDT timezone
