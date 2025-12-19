@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Script from 'next/script'
 import './globals.css'
 
 export const metadata: Metadata = {
@@ -42,7 +43,28 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <Script
+          id="datafast-queue"
+          strategy="beforeInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+            window.datafast = window.datafast || function() {
+              window.datafast.q = window.datafast.q || [];
+              window.datafast.q.push(arguments);
+            };
+          `,
+          }}
+        />
+        <Script
+          defer
+          data-website-id="68bfba1e9857cbb4de137228"
+          data-domain="mattmerrick.com"
+          src="https://datafa.st/js/script.js"
+          strategy="afterInteractive"
+        />
+        {children}
+      </body>
     </html>
   )
 }
