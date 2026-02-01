@@ -3,9 +3,9 @@ import Script from 'next/script'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Subscribe If you Want to Learn.',
-  description: 'Get smarter every morning at 6am.',
-  keywords: 'solopreneur, solo business, side hustle, audience building, newsletter, Matt Merrick, 5-day course',
+  title: 'Weather Bot - Join the Revolution',
+  description: 'Working on the perfect weather bot so a hedge fund hires me. Check it out on Telegram.',
+  keywords: 'weather bot, weather trading, hedge fund, trading bot, weather prediction, telegram bot',
   authors: [{ name: 'Matt Merrick' }],
   creator: 'Matt Merrick',
   publisher: 'Matt Merrick',
@@ -14,24 +14,24 @@ export const metadata: Metadata = {
     canonical: 'https://www.mattmerrick.com/'
   },
   openGraph: {
-    title: 'Subscribe if you want to learn. | Matt Merrick',
-    description: 'Get smarter every morning at 6am.',
+    title: 'Weather Bot - Working on the perfect weather bot',
+    description: 'Join the journey to build the perfect weather trading bot. Check it out on Telegram.',
     type: 'website',
-    siteName: 'Matt Merrick',
+    siteName: 'Weather Bot',
     url: 'https://www.mattmerrick.com/',
     images: [
       {
         url: '/share.png',
         width: 1200,
         height: 630,
-        alt: 'Matt Merrick - Get smarter every morning at 6am',
+        alt: 'Weather Bot - Join the Revolution',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Get smarter every morning at 6am | Matt Merrick',
-    description: 'A daily newsletter to make you think.',
+    title: 'Weather Bot - Join the Revolution',
+    description: 'Working on the perfect weather bot so a hedge fund hires me.',
     images: ['/share.png'],
   },
 }
