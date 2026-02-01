@@ -36,12 +36,12 @@ export default function Home() {
       `}</style>
       
       {/* Floating weather icons */}
-      <div className="weather-icon" style={{ top: '10%', left: '10%', animationDelay: '0s' }}>🌩️</div>
-      <div className="weather-icon" style={{ top: '15%', right: '15%', animationDelay: '2s' }}>⛈️</div>
-      <div className="weather-icon" style={{ bottom: '20%', left: '20%', animationDelay: '4s' }}>🌪️</div>
-      <div className="weather-icon" style={{ bottom: '15%', right: '10%', animationDelay: '3s' }}>⚡</div>
-      <div className="weather-icon" style={{ top: '50%', left: '5%', animationDelay: '1s' }}>☁️</div>
-      <div className="weather-icon" style={{ top: '40%', right: '8%', animationDelay: '5s' }}>🌧️</div>
+      <div className="weather-icon" style={{ top: '10%', left: '10%', animationDelay: '0s' }} aria-hidden="true">🌩️</div>
+      <div className="weather-icon" style={{ top: '15%', right: '15%', animationDelay: '2s' }} aria-hidden="true">⛈️</div>
+      <div className="weather-icon" style={{ bottom: '20%', left: '20%', animationDelay: '4s' }} aria-hidden="true">🌪️</div>
+      <div className="weather-icon" style={{ bottom: '15%', right: '10%', animationDelay: '3s' }} aria-hidden="true">⚡</div>
+      <div className="weather-icon" style={{ top: '50%', left: '5%', animationDelay: '1s' }} aria-hidden="true">☁️</div>
+      <div className="weather-icon" style={{ top: '40%', right: '8%', animationDelay: '5s' }} aria-hidden="true">🌧️</div>
 
       <div 
         className="max-w-4xl mx-auto w-full text-center relative z-10"
