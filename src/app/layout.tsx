@@ -3,9 +3,9 @@ import Script from 'next/script'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Subscribe If you Want to Learn.',
-  description: 'Get smarter every morning at 6am.',
-  keywords: 'solopreneur, solo business, side hustle, audience building, newsletter, Matt Merrick, 5-day course',
+  title: 'Professional Prediction Market Trader - Join Me on Polymarket',
+  description: 'I\'m trying to become a professional prediction market trader. Join me on this exciting journey into the future of markets.',
+  keywords: 'prediction markets, polymarket, trading, forecasting, future markets, professional trader, crypto markets',
   authors: [{ name: 'Matt Merrick' }],
   creator: 'Matt Merrick',
   publisher: 'Matt Merrick',
@@ -14,24 +14,24 @@ export const metadata: Metadata = {
     canonical: 'https://www.mattmerrick.com/'
   },
   openGraph: {
-    title: 'Subscribe if you want to learn. | Matt Merrick',
-    description: 'Get smarter every morning at 6am.',
+    title: 'Professional Prediction Market Trader - Join Me',
+    description: 'Navigate the future of markets with precision. Join me on Polymarket as I work to become a professional prediction market trader.',
     type: 'website',
-    siteName: 'Matt Merrick',
+    siteName: 'Prediction Market Trader',
     url: 'https://www.mattmerrick.com/',
     images: [
       {
         url: '/share.png',
         width: 1200,
         height: 630,
-        alt: 'Matt Merrick - Get smarter every morning at 6am',
+        alt: 'Professional Prediction Market Trader',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Get smarter every morning at 6am | Matt Merrick',
-    description: 'A daily newsletter to make you think.',
+    title: 'Professional Prediction Market Trader - Join Me',
+    description: 'I\'m trying to become a professional prediction market trader. Join me on Polymarket!',
     images: ['/share.png'],
   },
 }
